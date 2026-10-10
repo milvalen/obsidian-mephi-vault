@@ -13,7 +13,7 @@ tags:
 ---
 # Module 4: the path from browser to service
 
-[System Administration](system-administration.md) · [Containers](container-fundamentals.md) · [Compose networking](docker-compose.md)
+[System Administration](system-administration.md) · [Containers](container-fundamentals.md) · [Compose networking](docker-compose.md) · [Nginx reverse proxy](nginx-reverse-proxy.md)
 
 ## Course context
 

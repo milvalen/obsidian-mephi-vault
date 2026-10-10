@@ -21,6 +21,7 @@ Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A
 
 ## Lectures and concepts
 
+- [Nginx web serving and reverse proxying](nginx-reverse-proxy.md) — static/dynamic content, proxy configuration, package layouts and graceful reload.
 - [Module 4: the path from browser to service](module-4-request-path.md) — ports, listening addresses, DNS, HTTP, TLS and layered diagnosis.
 - [Module 3 review: software delivery and storage](module-3-review.md) — packages, containers, Compose, registries, RAID and LVM.
 - [RPM packages and digital signatures](rpm-and-digital-signatures.md) — RPM structure, spec files, GPG and APT/DNF verification.
@@ -40,6 +41,7 @@ These notes reconstruct topics named in the supplied review. They do not claim t
 
 ## Problems and laboratories
 
+- [Practice: route legacy and new applications](practice/nginx-two-app-routing.md) — worked configuration and slash behavior; not deployed.
 - [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner-supplied inspection reports a clean `/dev/md0` RAID 1 mirror with `/dev/loop0` and `/dev/loop1` active, 499 MiB array capacity and no failed devices; formatting and mounting remain unreported.
 
 Use the [problem template](../../90-templates/problem.md) or [lab template](../../90-templates/lab.md). Preserve attempts and distinguish reported observations from independently verified results.

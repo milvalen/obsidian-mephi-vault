@@ -15,3 +15,5 @@ The eight reconstructed Module 3 topic notes expand the review using official re
 Chuck Nelson, [Introduction to Software RAID](https://chnelson.quarto.pub/citc1321/modules/06_Storage/Exercise_6.3.html), published 2025-10-22, consulted 2026-10-11. Used in [the RAID 1 practice record](../02-courses/system-administration/practice/raid1-loop-devices.md). Reference only; original text is not stored.
 
 [Module 4: the path from browser to service](../02-courses/system-administration/module-4-request-path.md) summarizes material supplied on 2026-10-11 at 02:33, with official protocol references and Meta’s 2021 outage account. Original text is not stored; example command results are not treated as new measurements.
+
+[Nginx web serving and reverse proxying](../02-courses/system-administration/nginx-reverse-proxy.md) consolidates material supplied on 2026-10-11 at 02:41 and 02:42. [The routing exercise](../02-courses/system-administration/practice/nginx-two-app-routing.md) contains an agent-written worked solution. Official Nginx, Ubuntu and Docker references are linked in the notes; original text is not retained.
