@@ -17,11 +17,11 @@ Semester, instructor, course code and prerequisites are not yet recorded.
 
 ## Syllabus and sources
 
-No syllabus, lecture materials or textbooks have been supplied. Add source references with exact pages, slides or URLs when available.
+Получен [исходный текст о RPM и цифровых подписях](../../05-sources/system-administration/rpm-signatures-original.md) от 11.10.2026, 01:33. Полная программа, учебники и официальное название курса пока не предоставлены.
 
 ## Lectures and concepts
 
-No lecture notes have been added. Use the [lecture template](../../90-templates/lecture.md) for actual lectures and the [concept template](../../90-templates/concept.md) for focused explanations.
+- [RPM-пакеты и цифровые подписи](rpm-and-digital-signatures.md) — устройство RPM, spec-файл, GPG и различия APT/DNF.
 
 ## Problems and laboratories
 
@@ -29,7 +29,7 @@ No assignments or attempts have been recorded. Use the [problem template](../../
 
 ## Review and assessment
 
-Assessment requirements and deadlines are unknown. Add recall questions to each substantive note and record actual attempts using the [review template](../../90-templates/review.md).
+В присланном тексте блок о RPM назван демонстрационным и неоцениваемым. Общие требования к сдаче и сроки неизвестны. Вопросы для самопроверки находятся в конспекте; фактические попытки следует фиксировать через [шаблон повторения](../../90-templates/review.md).
 
 ## Connections
 
