@@ -19,6 +19,19 @@ tags:
 
 This summary covers owner-supplied material dated 2026-10-11 at 01:38. It groups Module 3 topics before the module's final test, identified in that material as Section 6. The RAID comparison is associated with Section 3.5. The original course URL, complete section numbering and test questions are unknown. Original text is not retained. No student review attempt is recorded.
 
+## Detailed topic notes
+
+- [Software delivery, dependencies and archives](software-delivery.md)
+- [APT and DNF package management](apt-and-dnf.md)
+- [Container images, lifecycle and data](container-fundamentals.md)
+- [Dockerfiles and build caching](dockerfile-and-build-cache.md)
+- [Docker Compose services, readiness and persistence](docker-compose.md)
+- [Image registries, tags and distribution](image-registries.md)
+- [RAID layouts, capacity and Linux mdadm](raid-and-mdadm.md)
+- [LVM allocation and filesystem growth](lvm-and-filesystem-growth.md)
+
+Reconstructed from this review with official references; exact original lecture contents remain unknown.
+
 ## Software delivery
 
 Binary packages provide a prepared build that is usually quick to install. Building from source allows customization but requires build tools, dependencies and more work. Neither delivery method alone establishes that software is trustworthy.

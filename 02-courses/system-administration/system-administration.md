@@ -24,6 +24,19 @@ Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A
 - [Module 3 review: software delivery and storage](module-3-review.md) — packages, containers, Compose, registries, RAID and LVM.
 - [RPM packages and digital signatures](rpm-and-digital-signatures.md) — RPM structure, spec files, GPG and APT/DNF verification.
 
+## Reconstructed Module 3 topics
+
+- [Software delivery, dependencies and archives](software-delivery.md)
+- [APT and DNF package management](apt-and-dnf.md)
+- [Container images, lifecycle and data](container-fundamentals.md)
+- [Dockerfiles and build caching](dockerfile-and-build-cache.md)
+- [Docker Compose services, readiness and persistence](docker-compose.md)
+- [Image registries, tags and distribution](image-registries.md)
+- [RAID layouts, capacity and Linux mdadm](raid-and-mdadm.md)
+- [LVM allocation and filesystem growth](lvm-and-filesystem-growth.md)
+
+These notes reconstruct topics named in the supplied review. They do not claim to reproduce missing course lectures or unseen test questions.
+
 ## Problems and laboratories
 
 No assignments or attempts have been recorded. Use the [problem template](../../90-templates/problem.md) or [lab template](../../90-templates/lab.md). Preserve attempts and distinguish raw observations from interpretation.
