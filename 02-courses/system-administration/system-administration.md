@@ -21,6 +21,8 @@ Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A
 
 ## Lectures and concepts
 
+- [TLS certificates and Nginx HTTPS](tls-certificates-and-nginx.md) — Section 4.3 certificate trust, lab generation and HTTPS setup.
+- [systemd service lifecycle and container supervision](systemd-service-lifecycle.md) — Section 4.3 units, dependencies, enable/start and PID 1.
 - [Nginx web serving and reverse proxying](nginx-reverse-proxy.md) — static/dynamic content, proxy configuration, package layouts and graceful reload.
 - [Module 4: the path from browser to service](module-4-request-path.md) — ports, listening addresses, DNS, HTTP, TLS and layered diagnosis.
 - [Module 3 review: software delivery and storage](module-3-review.md) — packages, containers, Compose, registries, RAID and LVM.
