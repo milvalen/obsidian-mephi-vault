@@ -1,0 +1,32 @@
+{
+  "colorGroups": [
+    {
+      "query": "path:\"02-courses/\"",
+      "color": {
+        "a": 1,
+        "rgb": 5088255
+      }
+    },
+    {
+      "query": "path:\"03-concepts/\"",
+      "color": {
+        "a": 1,
+        "rgb": 6471277
+      }
+    },
+    {
+      "query": "path:\"04-review/\"",
+      "color": {
+        "a": 1,
+        "rgb": 15119949
+      }
+    },
+    {
+      "query": "path:\"05-sources/\"",
+      "color": {
+        "a": 1,
+        "rgb": 10583780
+      }
+    }
+  ]
+}

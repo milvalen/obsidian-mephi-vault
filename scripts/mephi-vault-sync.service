@@ -1,0 +1,16 @@
+# MEPHI vault synchronization. Managed by install-mephi-vault-sync.sh.
+[Unit]
+Description=Mirror MEPHI study notes to Windows
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/eak/mephi/obsidian-mephi-vault/scripts/start-mephi-vault-sync.sh --run
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=30
+StandardOutput=append:/home/eak/mephi/.local/vault-sync/sync.log
+StandardError=append:/home/eak/mephi/.local/vault-sync/sync.log
+
+[Install]
+WantedBy=default.target

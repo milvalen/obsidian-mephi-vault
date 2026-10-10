@@ -1,0 +1,14 @@
+.local/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.obsidian/*
+!.obsidian/graph.json
+!.obsidian/app.json
+.trash/
+__pycache__/
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
