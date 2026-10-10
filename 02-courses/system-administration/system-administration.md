@@ -17,10 +17,11 @@ Semester, instructor, course code and prerequisites are not yet recorded.
 
 ## Syllabus and sources
 
-Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A Module 3 summary was also supplied on 2026-10-11 at 01:38. The full syllabus, textbooks and official course title have not been supplied. See [Sources](../../05-sources/sources.md).
+Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A Module 3 summary was also supplied on 2026-10-11 at 01:38. A Module 4 introduction was supplied on 2026-10-11 at 02:33. The full syllabus, textbooks and official course title have not been supplied. See [Sources](../../05-sources/sources.md).
 
 ## Lectures and concepts
 
+- [Module 4: the path from browser to service](module-4-request-path.md) — ports, listening addresses, DNS, HTTP, TLS and layered diagnosis.
 - [Module 3 review: software delivery and storage](module-3-review.md) — packages, containers, Compose, registries, RAID and LVM.
 - [RPM packages and digital signatures](rpm-and-digital-signatures.md) — RPM structure, spec files, GPG and APT/DNF verification.
 
