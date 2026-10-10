@@ -39,7 +39,9 @@ These notes reconstruct topics named in the supplied review. They do not claim t
 
 ## Problems and laboratories
 
-No assignments or attempts have been recorded. Use the [problem template](../../90-templates/problem.md) or [lab template](../../90-templates/lab.md). Preserve attempts and distinguish raw observations from interpretation.
+- [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner reports `/dev/loop1` and `/dev/loop2` attached; array creation and later steps remain unreported.
+
+Use the [problem template](../../90-templates/problem.md) or [lab template](../../90-templates/lab.md). Preserve attempts and distinguish reported observations from independently verified results.
 
 ## Review and assessment
 
