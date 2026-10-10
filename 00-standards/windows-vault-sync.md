@@ -22,3 +22,7 @@ python3 tools/test_vault_sync.py
 ```
 
 Stopping the service does not remove its enabled startup configuration. Windows sign-out/sign-in and Obsidian visual rendering require a separate interactive check.
+
+## Verification — 2026-10-11
+
+The repository was published under `milvalen` with default branch `main`. The user service was verified enabled and running, and the installed Windows README matched the Linux bytes. An uncommitted probe reached Windows automatically; its removal propagated automatically. Disposable regression checks passed for remote updates, dirty worktrees, divergence, branch guards, offline copying, exclusions, newer Windows edits, backups, deletions, graph settings and daemon shutdown. Shell syntax, systemd unit validation, relative note links and shared JSON settings passed. Windows sign-in and visual rendering in Obsidian were not exercised.

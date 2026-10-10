@@ -16,7 +16,7 @@ Use the README as the home page and maintain folder indexes. Use relative Markdo
 
 ## Git and Windows mirror
 
-Use `main` as the working and default branch. Review intended changes and run `python3 tools/validate-vault.py` plus relevant sync checks before commits. Routine documentation commits and pushes are permitted by the owner; do not force-push or overwrite unrelated changes. Repository visibility is private.
+Use `main` as the working and default branch. Review intended changes and run `python3 tools/validate-vault.py` plus relevant sync checks before commits. Routine documentation commits and pushes are permitted by the owner; do not force-push or overwrite unrelated changes. Repository visibility is public, as requested by the owner. Publish only personal notes and material permitted for public sharing.
 
 Linux is the canonical editable vault. Windows is a one-way reading mirror; edits there do not return to Linux. The mirror preserves newer Windows files, backs up replaced/deleted files and excludes personal Obsidian state. Only graph color groups are shared automatically. Edit canonical notes in Linux to avoid conflicts. Sync scripts are documented in [the Windows guide](00-standards/windows-vault-sync.md).
 
