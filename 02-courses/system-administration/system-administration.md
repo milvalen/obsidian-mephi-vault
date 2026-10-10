@@ -17,10 +17,11 @@ Semester, instructor, course code and prerequisites are not yet recorded.
 
 ## Syllabus and sources
 
-Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. The full syllabus, textbooks and official course title have not been supplied. See [Sources](../../05-sources/sources.md).
+Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A Module 3 summary was also supplied on 2026-10-11 at 01:38. The full syllabus, textbooks and official course title have not been supplied. See [Sources](../../05-sources/sources.md).
 
 ## Lectures and concepts
 
+- [Module 3 review: software delivery and storage](module-3-review.md) — packages, containers, Compose, registries, RAID and LVM.
 - [RPM packages and digital signatures](rpm-and-digital-signatures.md) — RPM structure, spec files, GPG and APT/DNF verification.
 
 ## Problems and laboratories
@@ -29,7 +30,7 @@ No assignments or attempts have been recorded. Use the [problem template](../../
 
 ## Review and assessment
 
-The supplied material describes the RPM block as an ungraded demonstration. General assessment requirements and deadlines remain unknown. Recall questions are included in the note; record actual attempts with the [review template](../../90-templates/review.md).
+The supplied material describes the RPM block as an ungraded demonstration. The Module 3 summary refers to a final module test in Section 6; its questions, grading and date have not been supplied. General assessment requirements and deadlines remain unknown. Recall questions are included in the note; record actual attempts with the [review template](../../90-templates/review.md).
 
 ## Connections
 
