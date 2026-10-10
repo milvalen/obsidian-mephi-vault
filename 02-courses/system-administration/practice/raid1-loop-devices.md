@@ -25,44 +25,61 @@ The owner reports that two virtual disks are already attached:
 
 Attachment is owner-reported, not independently verified in the practice machine. The agent's current WSL environment showed neither loop device in `lsblk` or `losetup --list` on 2026-10-11. That observation does not invalidate the report from a separate VM.
 
-RAID creation, filesystem formatting, mounting and cleanup have not been reported as completed. No storage changes were performed by the agent.
+The owner supplied the output of `sudo mdadm --detail /dev/md0`. It confirms that the array exists with two active synchronized members. Formatting, mounting and cleanup remain unreported. No storage changes were performed by the agent.
 
-## Next step in the practice machine
+## Reported array inspection
 
-Verify the mappings before writing metadata:
+Source: owner-supplied command output from `milvalen@fedora`, received on 2026-10-11. Observed fields are summarized below; the terminal transcript is not stored. The array was not inspected directly by the agent.
+
+| Field | Reported value |
+| --- | --- |
+| Array device | `/dev/md0` |
+| Metadata version | `1.2` |
+| RAID level | `raid1` |
+| Creation time | `2026-10-11 02:12:16` |
+| Last update time | `2026-10-11 02:14:23` |
+| Array size | `510976 KiB`, displayed as `499.00 MiB` / `523.24 MB` |
+| Used size per member | `510976 KiB`, displayed as `499.00 MiB` / `523.24 MB` |
+| Configured / total devices | `2 / 2` |
+| Array state | `clean` |
+| Active / working devices | `2 / 2` |
+| Failed / spare devices | `0 / 0` |
+| Consistency policy | `resync` |
+| Metadata persistence | Persistent superblock |
+| Array name | `fedora:0` |
+| Array UUID | `54812b0d:efa4e112:635092ef:436cbcbb` |
+| Event count | `17` |
+
+The output does not specify the timezone of its timestamps.
+
+| RAID member slot | Device | Major:minor | Reported state |
+| --- | --- | --- | --- |
+| 0 | `/dev/loop0` | `7:0` | `active sync` |
+| 1 | `/dev/loop1` | `7:1` | `active sync` |
+
+The reported state and counts show a clean, non-degraded mirror at inspection time. `Consistency Policy: resync` names the policy, not an indication that synchronization is currently running. These results do not establish filesystem creation, mount status, a completed file-write test or protection against failure of the backing physical disk. [mdadm reference](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
+
+## Next step: filesystem preparation
+
+First inspect the array in the practice VM:
 
 ```sh
-sudo losetup --list
-lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS /dev/loop0 /dev/loop1
-cat /proc/mdstat
+lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS /dev/md0
 ```
 
-Confirm both paths still refer to the intended disposable images, are not mounted or used by another array, and that `/dev/md0` is available. Loop numbers can change after detachment or restart.
-
-Once verified, the adapted creation command is:
+If this is the newly created disposable array, has no filesystem to retain, and is not mounted, the exercise's next operation is:
 
 ```sh
-sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/loop0 /dev/loop1
+sudo mkfs.ext4 /dev/md0
 ```
 
-This command writes RAID metadata to those members. `--level=1` selects mirroring; `--raid-devices=2` specifies two members. [mdadm reference](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
+Formatting creates a filesystem and overwrites existing filesystem data. Target the array device, not either member. Do not recreate the RAID array: it already exists. Record formatting output before proceeding to mount it.
 
-Inspect actual results with:
-
-```sh
-cat /proc/mdstat
-sudo mdadm --detail /dev/md0
-```
-
-`[UU]` indicates both expected members are present and active; it alone does not establish that initial synchronization has finished. Also inspect any recovery/resync progress and detailed state. `[U_]` or `[_U]` indicates a missing active member in a two-member array. [Linux MD reference](https://manpages.debian.org/testing/mdadm/md.4.en.html).
-
-## Evidence to record
-
-Record the actual creation outcome, array state, member count, synchronization progress and reported capacity. Add formatting and mounting results only after those steps are performed. A screenshot requested by the external exercise is not yet supplied.
+A screenshot requested by the external exercise has not been supplied. Future observations must retain their actual timestamps; the array inspection above is not evidence of later steps.
 
 ## Capacity reasoning
 
-A two-member mirror stores two copies, so its nominal capacity is about that of the smaller member, not their sum. Filesystem and RAID metadata reduce usable capacity. Two loop devices backed by the same physical disk demonstrate mirroring mechanics but do not protect against loss of that physical disk.
+The reported array and used-member sizes are equal: `510976 × 1024 = 523239424` bytes, or `499 MiB` (approximately `523.24 MB`). A two-member mirror stores two copies, so its nominal capacity is about that of the smaller member, not their sum. The complete loop-device sizes are still unknown. Filesystem and RAID metadata reduce usable capacity. Two loop devices backed by the same physical disk demonstrate mirroring mechanics but do not protect against loss of that physical disk.
 
 ## Pending reflection
 

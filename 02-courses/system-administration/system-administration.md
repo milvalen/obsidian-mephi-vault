@@ -39,7 +39,7 @@ These notes reconstruct topics named in the supplied review. They do not claim t
 
 ## Problems and laboratories
 
-- [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner reports `/dev/loop0` and `/dev/loop1` attached; array creation and later steps remain unreported.
+- [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner-supplied inspection reports a clean `/dev/md0` RAID 1 mirror with `/dev/loop0` and `/dev/loop1` active, 499 MiB array capacity and no failed devices; formatting and mounting remain unreported.
 
 Use the [problem template](../../90-templates/problem.md) or [lab template](../../90-templates/lab.md). Preserve attempts and distinguish reported observations from independently verified results.
 
