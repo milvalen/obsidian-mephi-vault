@@ -6,9 +6,9 @@ This vault holds personal study notes, course maps, worked problems, laboratory 
 
 ## Learning and evidence
 
-Follow [the note standard](00-standards/documentation-standard.md). Use the language of the course material; preserve Russian terms and exact quotations. Use English for tooling and commit messages. Summarize in the student's own words. Separate source statements, derivations, assumptions and open questions. Cite textbook edition and page, lecture date/slide, or official URL. Never invent citations, grades, attendance, completed reviews or laboratory measurements. Mark AI-created explanations as drafts until checked against a source or a reproducible calculation.
+Follow [the note standard](00-standards/documentation-standard.md). Use English for all conversation, notes, documentation, headings, metadata, tooling and commit messages, regardless of the input language. Translate and summarize supplied material; do not retain its original text, transcripts, verbatim copies or source attachments. Keep only bibliographic references and URLs for provenance. Preserve exact code identifiers and commands. Summarize in the student's own words. Separate source statements, derivations, assumptions and open questions. Cite textbook edition and page, lecture date/slide, or official URL. Never invent citations, grades, attendance, completed reviews or laboratory measurements. Mark AI-created explanations as drafts until checked against a source or a reproducible calculation.
 
-Keep course-specific lecture notes within their course. Extract reusable concepts only when useful and link both ways. Include recall questions, conditions of applicability, units and common errors. For exercises, retain the statement, attempt, reasoning and checked answer; for labs, preserve raw observations separately from analysis. Preserve original attachments and respect course restrictions on sharing assessed work.
+Keep course-specific lecture notes within their course. Extract reusable concepts only when useful and link both ways. Include recall questions, conditions of applicability, units and common errors. For exercises, summarize the task in English and retain the attempt, reasoning and checked answer; for labs, preserve raw observations separately from analysis. Respect course restrictions on sharing assessed work.
 
 ## Organization and maintenance
 

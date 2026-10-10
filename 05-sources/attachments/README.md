@@ -1,5 +1,5 @@
-# Source attachments
+# Attachments policy
 
 [Sources](../sources.md)
 
-Store only files permitted for public sharing here. Preserve original bytes and link each file from a source note. No course attachments have been supplied.
+Source documents and copies of supplied text are not stored in this vault. Keep bibliographic references and external URLs instead. No course attachments are stored here.

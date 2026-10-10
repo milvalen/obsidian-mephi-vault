@@ -2,8 +2,8 @@
 
 [Home](../README.md)
 
-Register actual textbooks, lectures and other references with the source template. Store permitted original files in `attachments/` and preserve their bytes.
+Record bibliographic references and external URLs with the source template. Do not save original text, transcripts, verbatim copies or source documents. All reference descriptions use English.
 
 ## System Administration
 
-- [RPM и цифровые подписи — исходный текст](system-administration/rpm-signatures-original.md), предоставлен владельцем 11.10.2026.
+[RPM packages and digital signatures](../02-courses/system-administration/rpm-and-digital-signatures.md) summarizes material supplied by the owner on 2026-10-11 at 01:33. The original author, course URL and section number are unknown. Official technical references are linked beside the relevant claims in the note.

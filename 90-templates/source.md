@@ -15,7 +15,7 @@ updated: "{{date:YYYY-MM-DD}}"
 
 <!-- Add actual information; keep unknowns explicit. -->
 
-## URL or attachment
+## External URL
 
 <!-- Add actual information; keep unknowns explicit. -->
 
@@ -27,6 +27,6 @@ updated: "{{date:YYYY-MM-DD}}"
 
 <!-- Add actual information; keep unknowns explicit. -->
 
-## Notes that use this source
+## Notes that reference this source
 
 <!-- Add actual information; keep unknowns explicit. -->

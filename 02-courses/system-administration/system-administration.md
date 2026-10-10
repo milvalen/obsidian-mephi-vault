@@ -17,11 +17,11 @@ Semester, instructor, course code and prerequisites are not yet recorded.
 
 ## Syllabus and sources
 
-Получен [исходный текст о RPM и цифровых подписях](../../05-sources/system-administration/rpm-signatures-original.md) от 11.10.2026, 01:33. Полная программа, учебники и официальное название курса пока не предоставлены.
+Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. The full syllabus, textbooks and official course title have not been supplied. See [Sources](../../05-sources/sources.md).
 
 ## Lectures and concepts
 
-- [RPM-пакеты и цифровые подписи](rpm-and-digital-signatures.md) — устройство RPM, spec-файл, GPG и различия APT/DNF.
+- [RPM packages and digital signatures](rpm-and-digital-signatures.md) — RPM structure, spec files, GPG and APT/DNF verification.
 
 ## Problems and laboratories
 
@@ -29,7 +29,7 @@ No assignments or attempts have been recorded. Use the [problem template](../../
 
 ## Review and assessment
 
-В присланном тексте блок о RPM назван демонстрационным и неоцениваемым. Общие требования к сдаче и сроки неизвестны. Вопросы для самопроверки находятся в конспекте; фактические попытки следует фиксировать через [шаблон повторения](../../90-templates/review.md).
+The supplied material describes the RPM block as an ungraded demonstration. General assessment requirements and deadlines remain unknown. Recall questions are included in the note; record actual attempts with the [review template](../../90-templates/review.md).
 
 ## Connections
 

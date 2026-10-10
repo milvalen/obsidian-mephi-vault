@@ -11,7 +11,7 @@ updated: "{{date:YYYY-MM-DD}}"
 
 <!-- Add actual information; keep unknowns explicit. -->
 
-## Original statement
+## Task summary in English
 
 <!-- Add actual information; keep unknowns explicit. -->
 

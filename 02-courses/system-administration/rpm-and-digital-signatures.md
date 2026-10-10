@@ -1,5 +1,5 @@
 ---
-title: "RPM-пакеты и цифровые подписи"
+title: RPM packages and digital signatures
 type: lecture
 status: draft
 created: 2026-10-11
@@ -10,83 +10,83 @@ tags:
   - packages
   - signatures
 ---
-# RPM-пакеты и цифровые подписи
+# RPM packages and digital signatures
 
-[Системное администрирование](system-administration.md) · [Исходный текст](../../05-sources/system-administration/rpm-signatures-original.md)
+[System Administration](system-administration.md) · [Sources](../../05-sources/sources.md)
 
-## Контекст курса
+## Course context
 
-Материал прислан 11.10.2026 в 01:33. В исходном тексте этот блок назван демонстрационным: баллы не начисляются, изучение устройства RPM не требуется для сдачи. Это сведения из присланного материала, а не независимо проверенные правила курса. Номер блока неизвестен. Упоминания разделов 1.5, 3.1–3.4 сохранены в источнике; сами разделы пока не получены.
+The owner supplied this material on 2026-10-11 at 01:33. It describes an ungraded demonstration: understanding RPM internals is not required to pass the course. These are reported course rules, not independently verified requirements. The block number is unknown. Referenced sections 1.5 and 3.1–3.4 have not been supplied. Original text is not retained.
 
-## Что хранится в RPM
+## RPM contents
 
-RPM содержит полезную нагрузку с файлами и метаданные: имя, версию, зависимости, сведения о файлах и их контрольные суммы. Возможны сценарии установки и удаления, например `%pre`, `%post`, `%preun`, `%postun`. Они отличаются от команд сборки в spec-файле. Зависимости могут выражаться через требуемые возможности и ограничения версий; не всякая зависимость означает отдельный пакет, установленный заранее. Метаданные помогают проверить транзакцию до размещения файлов пакета. [Документация RPM](https://rpm.org/docs/4.20.x/manual/spec.html).
+An RPM contains a file payload and metadata: name, version, dependencies, file information and checksums. Installation and removal scripts can include `%pre`, `%post`, `%preun` and `%postun`. These differ from spec build scripts. Dependencies can express capabilities and version constraints; they do not always require a separate package installed beforehand. Metadata supports transaction checks before package files are placed. [RPM documentation](https://rpm.org/docs/4.20.x/manual/spec.html).
 
-## Spec-файл и сборка
+## Spec files and package building
 
-Spec описывает исходники, метаданные и шаги подготовки пакета. Заголовок содержит, например, `Name`, `Version`, `Release`, `Source` и `BuildRequires`.
+A spec file describes sources, metadata and package preparation. Header fields include `Name`, `Version`, `Release`, `Source` and `BuildRequires`.
 
-| Секция | Назначение |
+| Section | Purpose |
 | --- | --- |
-| `%description` | Описание пакета |
-| `%prep` | Подготовка исходников и патчей |
-| `%build` | Компиляция или другая сборка |
-| `%install` | Размещение результата во временном дереве `buildroot` |
-| `%check` | Проверки собранного проекта, если заданы |
-| `%files` | Перечень файлов для упаковки |
-| `%changelog` | История изменений пакета |
+| `%description` | Package description |
+| `%prep` | Prepare sources and patches |
+| `%build` | Compile or otherwise build the project |
+| `%install` | Stage output in the temporary `buildroot` tree |
+| `%check` | Run project checks when defined |
+| `%files` | Select files for packaging |
+| `%changelog` | Record package changes |
 
-`%install` подготавливает содержимое пакета в `buildroot`, а не устанавливает готовый RPM в рабочую систему. Не все секции являются исполняемыми сценариями: `%description`, `%files`, `%changelog` содержат данные. Набор выполняемых стадий зависит от режима `rpmbuild`; фраза «выполняет все секции» в исходнике упрощена. [Описание spec](https://rpm.org/docs/4.20.x/manual/spec.html).
+`%install` prepares package contents in `buildroot`; it does not install a finished RPM into the running system. `%description`, `%files` and `%changelog` contain data rather than executable build scripts. The stages executed depend on the `rpmbuild` mode. [Spec reference](https://rpm.org/docs/4.20.x/manual/spec.html).
 
-## Подпись и доверие к ключу
+## Signatures and key trust
 
-Закрытый ключ создаёт подпись; соответствующий открытый ключ позволяет проверить её. Контрольная сумма обнаруживает изменение, но сама по себе не доказывает происхождение: подменить можно и файл, и опубликованную рядом сумму.
+A private key creates a signature, and the corresponding public key verifies it. A checksum detects changes but does not establish origin by itself: both the file and a checksum from an untrusted source can be replaced.
 
-`Good signature` означает, что подпись соответствует проверяемым данным и найденному ключу. Чтобы связать её с ожидаемым издателем, нужно также проверить происхождение ключа и его fingerprint по доверенному каналу. Имя или email внутри ключа сами по себе этого не доказывают. Подписантом может быть сопровождающий дистрибутива, а не автор исходного проекта. [Рекомендации GnuPG](https://gnupg.org/download/integrity_check.html).
+`Good signature` confirms that the signature matches the data and the identified key. Establishing the expected publisher also requires checking the key's provenance and fingerprint through a trusted channel. A name or email inside a key is insufficient. A distribution maintainer can be the signer rather than the upstream software author. [GnuPG guidance](https://gnupg.org/download/integrity_check.html).
 
-Подпись не гарантирует отсутствие вредоносного кода. Компрометация доверенного ключа или самого издателя остаётся отдельной угрозой. Для APT это различие прямо отмечено в [apt-secure](https://manpages.debian.org/testing/apt/apt-secure.8.en.html).
+A valid signature does not establish that software is harmless. Compromise of the trusted key or publisher remains a separate threat. [apt-secure](https://manpages.debian.org/testing/apt/apt-secure.8.en.html) explains this trust distinction.
 
-## Пример отдельной подписи GPG
+## Detached GPG signature example
 
-Пример для архива, а не команда встроенного подписания RPM. Для создания подписи нужен доступный закрытый ключ; для проверки — открытый ключ подписанта.
+These commands sign an archive, not an RPM's embedded signature. Signing requires an available private key; verification requires the signer's public key.
 
 ```sh
 gpg --detach-sign --armor package.tar.gz
 gpg --verify package.tar.gz.asc package.tar.gz
 ```
 
-Первой командой создаётся отдельная ASCII-armored подпись `package.tar.gz.asc`; исходный архив не изменяется. После изменения подписанных байтов прежняя подпись перестаёт соответствовать файлу. [Справка GPG](https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html).
+The first command creates an ASCII-armored detached signature, `package.tar.gz.asc`, without changing the archive. Changing signed bytes invalidates the existing signature. [GPG reference](https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html).
 
-Проверка 11.10.2026: в изолированном временном каталоге создан тестовый ключ Ed25519. Подпись исходного `example.txt` успешно проверена (`GOODSIG`, код 0). После замены одного ASCII-байта проверка вернула `BADSIG` и ненулевой код. Личные ключи и конфигурация GPG не использовались. Это проверка агента на искусственных данных, а не выполненная студентом лабораторная работа. Сборка RPM и настройка репозиториев в этой проверке не выполнялись.
+Verification on 2026-10-11 used an isolated temporary directory and a disposable Ed25519 key. The original `example.txt` returned `GOODSIG` and exit code 0. Replacing one ASCII byte produced `BADSIG` and a nonzero exit code. Personal keys and GPG configuration were not used. This was an agent check with synthetic data, not a completed student lab. RPM building and repository configuration were not tested.
 
-## APT и DNF: разные уровни проверки
+## APT and DNF verification
 
-| Система | Проверка подписи | Связь с файлом пакета |
+| System | Signature checks | Link to the package file |
 | --- | --- | --- |
-| APT | Подписанный `InRelease` либо `Release` с отдельной `Release.gpg` | Контрольные суммы в Release удостоверяют индексы Packages; индексы содержат суммы `.deb` |
-| DNF | `gpgcheck` проверяет подписи RPM-пакетов; `repo_gpgcheck` отдельно управляет проверкой метаданных репозитория | Проверка метаданных дополняет проверку подписи пакета |
+| APT | Signed `InRelease`, or `Release` with detached `Release.gpg` | Release checksums authenticate Packages indexes; those indexes contain `.deb` checksums |
+| DNF | `gpgcheck` checks RPM package signatures; `repo_gpgcheck` separately controls repository metadata verification | Metadata verification complements package signature verification |
 
-APT использует цепочку «подписанный Release → сумма индекса Packages → сумма пакета». `apt-secure` не выполняет отдельную проверку подписи каждого `.deb`. [apt-secure](https://manpages.debian.org/testing/apt/apt-secure.8.en.html).
+APT uses the chain: signed Release → Packages index checksum → package checksum. `apt-secure` does not separately verify a signature on each `.deb`. [apt-secure](https://manpages.debian.org/testing/apt/apt-secure.8.en.html).
 
-Для DNF нельзя переносить эту схему без уточнения: подписи самих RPM и подписи метаданных управляются отдельно. Фактическое поведение зависит от конфигурации и политики RPM; включённая проверка метаданных не следует автоматически из проверки пакетов. [DNF Configuration Reference](https://dnf.readthedocs.io/en/latest/conf_ref.html).
+DNF controls package signatures and metadata signatures separately. Effective behavior depends on configuration and RPM policy; package checking does not automatically enable metadata signature checking. [DNF configuration reference](https://dnf.readthedocs.io/en/latest/conf_ref.html).
 
-## Уточнения к исходнику
+## Common misunderstandings
 
-- Проверки могут выполняться пакетным менеджером автоматически; отсутствие ручной команды проверки не означает отсутствие проверки.
-- APT и DNF не используют полностью одинаковую схему проверки подписей.
-- `Good signature` требует отдельного установления доверия к ключу.
-- `%install` работает с деревом сборки; не все секции spec исполняются как команды.
+- Automatic verification does not require the administrator to run a separate manual check each time.
+- APT and DNF do not use identical signature verification schemes.
+- A valid signature still requires establishing trust in the signing key.
+- `%install` operates on the build tree, and not every spec section is executable.
 
-## Вопросы для самопроверки
+## Recall questions
 
-1. Почему контрольная сумма из того же недоверенного источника не подтверждает автора?
-2. Чем отличается правильная подпись от подтверждённой личности подписанта?
-3. Где размещаются файлы на стадии `%install`?
-4. Чем `%post` отличается от `%build`?
-5. Как APT связывает подпись Release с конкретным `.deb`?
-6. Чем различаются `gpgcheck` и `repo_gpgcheck` в DNF?
-7. Что произойдёт при изменении одного байта после подписания?
+1. Why does a checksum from the same untrusted source not authenticate the publisher?
+2. How does a valid signature differ from a verified signer identity?
+3. Where are files placed during `%install`?
+4. How does `%post` differ from `%build`?
+5. How does APT connect a Release signature to a specific `.deb`?
+6. How do DNF's `gpgcheck` and `repo_gpgcheck` differ?
+7. What happens if one byte changes after signing?
 
-## Источники и пределы проверки
+## References and verification limits
 
-[Исходный текст владельца](../../05-sources/system-administration/rpm-signatures-original.md); официальные документы RPM 4.20, GnuPG, APT и DNF приведены рядом с утверждениями и просмотрены 11.10.2026. Версия и дистрибутив учебной среды неизвестны. Статус draft сохраняется: контекст курса и соответствие его программе ещё не подтверждены.
+Provenance: owner-supplied material dated 2026-10-11 at 01:33. The original text is not stored. Official RPM 4.20, GnuPG, APT and DNF references are linked beside claims and were consulted on 2026-10-11. The teaching environment's distribution and versions are unknown. This note remains a draft because course context and syllabus alignment are unconfirmed. The recorded GPG check retains its actual verification date; translation does not constitute a new runtime check.
