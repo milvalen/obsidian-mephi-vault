@@ -20,8 +20,8 @@ The owner reports that two virtual disks are already attached:
 
 | Member | Reported device path | Backing file | Size |
 | --- | --- | --- | --- |
-| First | `/dev/loop1` | Not supplied | Not supplied |
-| Second | `/dev/loop2` | Not supplied | Not supplied |
+| First | `/dev/loop0` | Not supplied | Not supplied |
+| Second | `/dev/loop1` | Not supplied | Not supplied |
 
 Attachment is owner-reported, not independently verified in the practice machine. The agent's current WSL environment showed neither loop device in `lsblk` or `losetup --list` on 2026-10-11. That observation does not invalidate the report from a separate VM.
 
@@ -33,7 +33,7 @@ Verify the mappings before writing metadata:
 
 ```sh
 sudo losetup --list
-lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS /dev/loop1 /dev/loop2
+lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS /dev/loop0 /dev/loop1
 cat /proc/mdstat
 ```
 
@@ -42,7 +42,7 @@ Confirm both paths still refer to the intended disposable images, are not mounte
 Once verified, the adapted creation command is:
 
 ```sh
-sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/loop1 /dev/loop2
+sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/loop0 /dev/loop1
 ```
 
 This command writes RAID metadata to those members. `--level=1` selects mirroring; `--raid-devices=2` specifies two members. [mdadm reference](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
