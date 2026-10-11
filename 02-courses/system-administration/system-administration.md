@@ -21,6 +21,7 @@ Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A
 
 ## Lectures and concepts
 
+- [Service logs, metrics and health](service-logs-and-metrics.md) — Section 4.4 journald, Nginx logs and resource trends.
 - [TLS certificates and Nginx HTTPS](tls-certificates-and-nginx.md) — Section 4.3 certificate trust, lab generation and HTTPS setup.
 - [systemd service lifecycle and container supervision](systemd-service-lifecycle.md) — Section 4.3 units, dependencies, enable/start and PID 1.
 - [Nginx web serving and reverse proxying](nginx-reverse-proxy.md) — static/dynamic content, proxy configuration, package layouts and graceful reload.
@@ -43,6 +44,7 @@ These notes reconstruct topics named in the supplied review. They do not claim t
 
 ## Problems and laboratories
 
+- [Practice: recurring nighttime crashes](practice/nighttime-service-crashes.md) — proposed evidence collection and hypothesis testing; no actual crash reported.
 - [Practice: route legacy and new applications](practice/nginx-two-app-routing.md) — worked configuration and slash behavior; not deployed.
 - [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner-supplied inspection reports a clean `/dev/md0` RAID 1 mirror with `/dev/loop0` and `/dev/loop1` active, 499 MiB array capacity and no failed devices; formatting and mounting remain unreported.
 

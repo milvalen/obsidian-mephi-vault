@@ -8,7 +8,7 @@ course: System Administration
 ---
 # systemd service lifecycle and container supervision
 
-[System Administration](system-administration.md) · [Nginx reverse proxy](nginx-reverse-proxy.md)
+[System Administration](system-administration.md) · [Nginx reverse proxy](nginx-reverse-proxy.md) · [Logs and metrics](service-logs-and-metrics.md)
 
 English summary of owner-supplied Section 4.3 material dated 2026-10-11 at 02:52, with official-reference corrections. Original text is not retained. Commands are proposed study examples, not completed work or a recorded student attempt. References were consulted on 2026-10-11.
 
