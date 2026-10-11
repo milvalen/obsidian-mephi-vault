@@ -63,7 +63,7 @@ sudo tail -F /var/log/nginx/access.log
 sudo tail -F /var/log/nginx/error.log
 ```
 
-These examples assume real files at those paths. `tail -F` follows by name and retries across replacement during rotation.
+These examples assume real files at those paths. `tail -F` follows by name and retries across replacement during rotation. [GNU tail manual](https://manpages.debian.org/testing/coreutils/tail.1.en.html).
 
 ## Resource trends
 
@@ -73,7 +73,7 @@ These examples assume real files at those paths. `tail -F` follows by name and r
 | `free -h` | RAM/swap snapshot, including available memory | Host totals do not show every container limit |
 | `df -h` | Filesystem space use | Does not directly measure a disk's health |
 
-Linux load averages include runnable tasks and tasks in uninterruptible sleep, often waiting for I/O. Relate load to CPU count and workload rather than declaring a fixed universal threshold. [uptime](https://manpages.debian.org/testing/procps/uptime.1.en.html). `available` estimates RAM usable for new work without swapping; cached memory is not automatically a leak. [free](https://manpages.debian.org/testing/procps/free.1.en.html). [df reference](https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html).
+Linux load averages include runnable tasks and tasks in uninterruptible sleep, often waiting for I/O. Relate load to CPU count and workload rather than declaring a fixed universal threshold. [uptime](https://manpages.debian.org/testing/procps/uptime.1.en.html). `available` estimates RAM usable for new work without swapping; cached memory is not automatically a leak. [free](https://manpages.debian.org/testing/procps/free.1.en.html). [df reference](https://manpages.debian.org/testing/coreutils/df.1.en.html).
 
 Timestamp repeated observations. A rising trend can reveal resource pressure; a single post-crash snapshot cannot reconstruct the peak. Inspect inode availability with `df -i` when writes fail despite apparent free space.
 
