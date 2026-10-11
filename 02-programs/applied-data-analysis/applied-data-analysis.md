@@ -19,9 +19,9 @@ The owner supplied these details on 2026-10-11.
 
 ## Courses and materials
 
-The owner has not supplied course titles or study material for this program.
-Add courses after the owner supplies their names.
-Do not assign Software Engineering courses to this program without confirmation.
+[Python study materials](courses/python/python.md) contains the supplied Lesson 1 summary and practice tasks.
+The official course title remains unknown.
+This placement follows the program context and does not confirm enrollment.
 
 ## Graph group
 

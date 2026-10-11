@@ -23,3 +23,18 @@ The owner supplied Section 4.3 material on 2026-10-11 at 02:52. Refer to [TLS ce
 The owner supplied Section 4.4 material on 2026-10-11 at 03:48. Refer to [Service logs, metrics and health](../02-programs/software-engineering/courses/system-administration/service-logs-and-metrics.md), with an [example nighttime-crash investigation](../02-programs/software-engineering/courses/system-administration/practice/nighttime-service-crashes.md). The vault does not save source transcripts or example log lines. The student did not report a real crash or an investigation.
 
 [WAF, ModSecurity and OWASP CRS](../02-programs/software-engineering/courses/system-administration/waf-modsecurity-and-crs.md) summarizes the ungraded demonstration supplied on 2026-10-11 at 04:47, supplemented by official engine, container, scoring and tuning documentation. Reported course responses are not runtime evidence. The vault does not save the original text.
+
+## Applied Data Analysis
+
+[Lesson 1: Python basics](../02-programs/applied-data-analysis/courses/python/lesson-01-python-basics.md) summarizes the notebook supplied on 2026-10-11.
+The original author, lecture date, and notebook URL are unknown.
+Official Python, IPython, and Colab references support the corrections.
+[Practice](../02-programs/applied-data-analysis/courses/python/lesson-01-practice.md) contains agent-written examples and local checks.
+The vault does not store the source notebook, embedded images, or original text.
+
+Additional references named in the source, without a new content check:
+
+- [Markdown reference](https://paulradzkov.com/2014/markdown_cheatsheet/)
+- [Jupyter Notebook introduction](https://devpractice.ru/python-lesson-6-work-in-jupyter-notebook/)
+- [Anaconda download](https://www.anaconda.com/download/)
+- [Python naming guidance](https://pythonworld.ru/osnovy/pep-8-rukovodstvo-po-napisaniyu-koda-na-python.html#id17)

@@ -83,3 +83,81 @@ Keep case-sensitive identifiers as written in commands and output.
 Do not change names such as `proxy_pass`, `colorGroups`, or `Restart=on-failure` to match prose rules.
 Official interface labels and code punctuation remain exact.
 The Windows profile path contains Cyrillic characters. Keep that actual path unchanged.
+
+## Python and mathematics terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| Python | Programming language used by the supplied lesson. Noun unless specified otherwise |
+| CPython | Python implementation written mainly in C. Noun unless specified otherwise |
+| Colab | Google service for hosted notebooks. Noun unless specified otherwise |
+| Jupyter notebook | Document with executable code cells and text cells. Noun unless specified otherwise |
+| IPython | Interactive Python environment with display and result caching. Noun unless specified otherwise |
+| kernel | Process that executes notebook code and retains runtime state. Noun unless specified otherwise |
+| code cell | Notebook section with executable code. Noun unless specified otherwise |
+| text cell | Notebook section with formatted text. Noun unless specified otherwise |
+| runtime | Environment and state used during program execution. Noun unless specified otherwise |
+| object | Python data entity with a type, identity, and value. Noun unless specified otherwise |
+| name binding | Association between a name and an object. Noun unless specified otherwise |
+| assignment | Statement that associates a target with a value. Noun unless specified otherwise |
+| reference | Association that permits access to an object. Noun unless specified otherwise |
+| identity | Property that distinguishes one object from another. Noun unless specified otherwise |
+| type | Classification that determines supported object operations. Noun unless specified otherwise |
+| mutable | Adjective for an object that permits changes. Noun unless specified otherwise |
+| immutable | Adjective for an object that prohibits changes to its own contents. Noun unless specified otherwise |
+| garbage collection | Automatic management of unreachable objects. Noun unless specified otherwise |
+| GIL | Global interpreter lock in standard CPython. Noun unless specified otherwise |
+| free threading | Python execution without the global interpreter lock. Noun unless specified otherwise |
+| integer | Number without a fractional part. Noun unless specified otherwise |
+| floating-point number | Finite-precision numeric representation with an exponent. Noun unless specified otherwise |
+| complex number | Number with real and imaginary parts. Noun unless specified otherwise |
+| Boolean value | One of the logical values True and False. Noun unless specified otherwise |
+| Unicode | Standard that assigns code points to characters. Noun unless specified otherwise |
+| code point | Integer assigned to a character by a character standard. Noun unless specified otherwise |
+| identifier | Name permitted by programming-language syntax. Noun unless specified otherwise |
+| literal | Code notation that directly specifies a value. Noun unless specified otherwise |
+| scientific notation | Numeric notation with a decimal exponent. Noun unless specified otherwise |
+| binary | Adjective for base-two representation. Noun unless specified otherwise |
+| octal | Adjective for base-eight representation. Noun unless specified otherwise |
+| hexadecimal | Adjective for base-sixteen representation. Noun unless specified otherwise |
+| string | Ordered sequence of text characters. Noun unless specified otherwise |
+| raw string | String literal that preserves backslashes with specified syntax restrictions. Noun unless specified otherwise |
+| f-string | String literal with embedded expressions. Noun unless specified otherwise |
+| newline | Character that starts a new text line. Noun unless specified otherwise |
+| backslash | Character used in escape sequences and specified syntax. Noun unless specified otherwise |
+| list | Mutable ordered collection of item references. Noun unless specified otherwise |
+| tuple | Ordered collection with fixed item references. Noun unless specified otherwise |
+| dictionary | Mapping from unique hashable keys to values. Noun unless specified otherwise |
+| mapping | Association between keys and values. Noun unless specified otherwise |
+| hashable | Adjective for an object with a stable hash and compatible equality. Noun unless specified otherwise |
+| set | Unordered collection of distinct hashable elements. Noun unless specified otherwise |
+| built-in object | Object provided by the language environment. Noun unless specified otherwise |
+| keyword | Word reserved by programming-language syntax. Noun unless specified otherwise |
+| snake_case | Naming style with lowercase words separated by underscores. Noun unless specified otherwise |
+| CapWords | Naming style with capitalized words for Python classes. Noun unless specified otherwise |
+| camel case | Naming style that separates words with capital letters. Noun unless specified otherwise |
+| function | Callable unit that performs an operation. Noun unless specified otherwise |
+| class | Definition of an object type. Noun unless specified otherwise |
+| expression | Code that produces a value. Noun unless specified otherwise |
+| operand | Value on which an operator acts. Noun unless specified otherwise |
+| operator | Syntax element that specifies an operation. Noun unless specified otherwise |
+| floor division | Division that rounds the quotient downward. Noun unless specified otherwise |
+| remainder | Value left after floor division and multiplication by the divisor. Noun unless specified otherwise |
+| bitwise operation | Operation on the bits of integer values. Noun unless specified otherwise |
+| exclusive OR | Operation whose output bit is one when the input bits differ. Noun unless specified otherwise |
+| short-circuit evaluation | Evaluation that stops when an earlier operand determines the result. Noun unless specified otherwise |
+| comparison chain | Sequence of comparisons with shared middle expressions. Noun unless specified otherwise |
+| truth value | Logical interpretation of an object. Noun unless specified otherwise |
+| conditional expression | Expression that selects one value from a condition. Noun unless specified otherwise |
+| block | Group of statements with the same structural indentation. Noun unless specified otherwise |
+| indentation | Leading whitespace that indicates code structure. Noun unless specified otherwise |
+| control flow | Order in which a program executes instructions. Noun unless specified otherwise |
+| parity | Classification of an integer as even or odd. Noun unless specified otherwise |
+| disk | Set of points within a specified radius, including the boundary. Noun unless specified otherwise |
+| radius | Distance from a center to a circle boundary. Noun unless specified otherwise |
+| coordinate | Value that locates a point along an axis. Noun unless specified otherwise |
+| squared distance | Sum of squared coordinate differences. Noun unless specified otherwise |
+| rounding tolerance | Permitted difference for a numerical boundary check. Noun unless specified otherwise |
+
+Python verb use: `bind` also means to associate a name with an object.
+Python verb use: `display` means to present an object through an interactive output interface.
