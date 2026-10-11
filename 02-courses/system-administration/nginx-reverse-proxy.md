@@ -8,7 +8,7 @@ course: System Administration
 ---
 # Nginx web serving and reverse proxying
 
-[System Administration](system-administration.md) · [Request path](module-4-request-path.md) · [Routing exercise](practice/nginx-two-app-routing.md) · [TLS setup](tls-certificates-and-nginx.md) · [systemd lifecycle](systemd-service-lifecycle.md)
+[System Administration](system-administration.md) · [Request path](module-4-request-path.md) · [Routing exercise](practice/nginx-two-app-routing.md) · [TLS setup](tls-certificates-and-nginx.md) · [systemd lifecycle](systemd-service-lifecycle.md) · [WAF inspection](waf-modsecurity-and-crs.md)
 
 ## Course context
 

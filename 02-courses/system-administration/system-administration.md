@@ -21,6 +21,7 @@ Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A
 
 ## Lectures and concepts
 
+- [WAF, ModSecurity and OWASP CRS](waf-modsecurity-and-crs.md) — ungraded demonstration, HTTP inspection and anomaly scoring.
 - [Service logs, metrics and health](service-logs-and-metrics.md) — Section 4.4 journald, Nginx logs and resource trends.
 - [TLS certificates and Nginx HTTPS](tls-certificates-and-nginx.md) — Section 4.3 certificate trust, lab generation and HTTPS setup.
 - [systemd service lifecycle and container supervision](systemd-service-lifecycle.md) — Section 4.3 units, dependencies, enable/start and PID 1.
