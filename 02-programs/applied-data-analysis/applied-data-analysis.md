@@ -19,7 +19,7 @@ The owner supplied these details on 2026-10-11.
 
 ## Courses and materials
 
-[Python study materials](courses/python/python.md) contains the supplied Lesson 1 summary and practice tasks.
+[Python study materials](courses/python/python.md) contains the supplied Python lesson summaries and practice tasks.
 The official course title remains unknown.
 This placement follows the program context and does not confirm enrollment.
 

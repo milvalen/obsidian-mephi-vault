@@ -38,3 +38,12 @@ Additional references named in the source, without a new content check:
 - [Jupyter Notebook introduction](https://devpractice.ru/python-lesson-6-work-in-jupyter-notebook/)
 - [Anaconda download](https://www.anaconda.com/download/)
 - [Python naming guidance](https://pythonworld.ru/osnovy/pep-8-rukovodstvo-po-napisaniyu-koda-na-python.html#id17)
+
+[Lesson 2: loops and functions](../02-programs/applied-data-analysis/courses/python/lesson-02-loops-and-functions.md) summarizes material supplied on 2026-10-11.
+The original author, lecture date, and notebook URL are unknown.
+Official references support loop, function, argument, and scope corrections.
+[Lesson 2 practice](../02-programs/applied-data-analysis/courses/python/lesson-02-practice.md) contains agent-written answers and local checks.
+
+The notebook metadata reports Python 3.9.7, without a verified active runtime.
+The source also names a [PEP 257 translation](https://habr.com/ru/articles/499358/), without a new content check.
+The vault does not retain the source notebook or original text.

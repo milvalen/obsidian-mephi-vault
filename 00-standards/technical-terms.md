@@ -161,3 +161,39 @@ The Windows profile path contains Cyrillic characters. Keep that actual path unc
 
 Python verb use: `bind` also means to associate a name with an object.
 Python verb use: `display` means to present an object through an interactive output interface.
+
+## Loop and function terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| loop | Repeated execution controlled by a condition or an iterable. Noun |
+| iteration | One execution of a loop body. Noun |
+| infinite loop | Loop that does not reach a terminating condition or exit. Noun |
+| sentinel | Value that marks the end of an input sequence. Noun |
+| accumulator | Variable that retains a running calculation result. Noun |
+| counter | Variable that records successive counts. Noun |
+| augmented assignment | Assignment that combines an operation with storage of its result. Noun |
+| iterable | Object from which an iterator can be obtained. Noun |
+| iterator | Object that supplies successive items and retains consumption state. Noun |
+| range | Immutable sequence of integers specified by start, stop, and step. Noun |
+| progression | Sequence whose values follow a specified rule. Noun |
+| parameter | Named input in a function definition. Noun |
+| argument | Value supplied in a function call. Noun |
+| positional argument | Argument assigned according to its position. Noun |
+| keyword argument | Argument supplied with a parameter name. Noun |
+| keyword-only parameter | Parameter that must receive its argument by keyword. Noun |
+| default value | Value used when a caller omits an optional argument. Noun |
+| type annotation | Metadata that expresses an intended type. Noun |
+| argument unpacking | Expansion of an iterable or mapping into call arguments. Noun |
+| docstring | Initial string statement that documents a Python object. Noun |
+| lambda | Expression that creates a function with one expression body. Noun |
+| scope | Region in which a name binding is accessible. Noun |
+| LEGB | Local, enclosing function, global, and built-in name lookup order. Noun |
+| local name | Name bound within a function. Noun |
+| global name | Name bound at module level. Noun |
+| nested function | Function defined inside another function. Noun |
+| recursion | Function execution that calls the same function again. Noun |
+| module | Python unit with its own global namespace. Noun |
+| percentage point | Unit for the arithmetic difference between percentages. Noun |
+| timing command | Interactive command that measures execution duration. Noun |
+| VIP | Customer classification that selects an additional example discount. Noun |
