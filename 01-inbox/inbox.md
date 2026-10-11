@@ -2,4 +2,6 @@
 
 [Home](../README.md)
 
-Capture a source, question or rough note here. Record where it came from. Process each item into a course note, source note or explicit open question.
+Write an English summary, question, or draft note here.
+Record the source reference. Do not store the original source text.
+Put each item in a course note, source reference note, or open question when its purpose is clear.

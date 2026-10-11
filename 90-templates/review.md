@@ -9,20 +9,20 @@ updated: "{{date:YYYY-MM-DD}}"
 
 ## Topics and questions
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Recall attempt without notes
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Feedback and corrections
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
-## Errors and follow-up
+## Errors and next review
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Next review plan
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->

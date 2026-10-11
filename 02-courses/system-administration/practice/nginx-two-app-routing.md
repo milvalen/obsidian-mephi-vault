@@ -12,9 +12,14 @@ course: System Administration
 
 ## Task summary and assumptions
 
-Route `/legacy/` to an older application and other paths under `/` to a new application. This English summary is based on material supplied at 02:41 and repeated at 02:42 on 2026-10-11. Original text is not stored. No student attempt has been supplied.
+Route `/legacy/` to an older application and other paths under `/` to a new application. This English summary is based on material supplied at 02:41 and repeated at 02:42 on 2026-10-11. The vault does not store the original text. The student did not supply an attempt.
 
-Worked solution assumptions: Nginx runs on the host; the legacy application listens at host loopback port 8081 and expects root-relative request paths; the new application listens at 8080. These port choices are illustrative, not measured or assigned course values. Neither application has been started or tested.
+This solution uses these assumptions:
+
+- Nginx operates on the host.
+- The legacy application listens on host loopback port 8081.
+- The legacy application expects root-relative request paths.
+- The new application listens on port 8080. These port choices are example, not measured or assigned course values. The agent did not start or test either application.
 
 ## Suggested configuration
 
@@ -38,7 +43,7 @@ server {
 }
 ```
 
-The exact match handles the slashless entry point. `^~ /legacy/` reserves that prefix against later regex locations; `/` supplies the fallback. A plain `location /legacy/` also suffices when no competing regex location exists. A prefix `/legacy` would also match `/legacy-other`, which is usually unintended. [Location selection](https://nginx.org/en/docs/http/ngx_http_core_module.html#location).
+The exact match handles the slashless entry point. `^~ /legacy/` reserves that prefix against later regex locations. `/` supplies the fallback. A plain `location /legacy/` also works if no competing regex location exists. A prefix `/legacy` would also match `/legacy-other`, which is usually unintended. [Location selection](https://nginx.org/en/docs/http/ngx_http_core_module.html#location).
 
 ## The two different trailing slashes
 
@@ -47,15 +52,17 @@ The exact match handles the slashless entry point. `^~ /legacy/` reserves that p
 | `proxy_pass http://127.0.0.1:8081/;` | `/legacy/items?x=1` | `/items?x=1` |
 | `proxy_pass http://127.0.0.1:8081;` | `/legacy/items?x=1` | `/legacy/items?x=1` |
 
-A URI in `proxy_pass` replaces the matched location prefix; omitting that URI preserves the path in this simple configuration. Choose based on the upstream's expected path. A slash in `location` defines a prefix boundary; a slash after the upstream port controls URI rewriting. They are not interchangeable. An incorrect choice can produce application 404s. [proxy_pass semantics](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass).
+A URI in `proxy_pass` replaces the matched location prefix. Omitting that URI preserves the path in this simple configuration. Choose based on the upstream's expected path. A slash in `location` defines a prefix boundary. A slash after the upstream port controls URI rewriting. The two slashes have different functions.
+
+An incorrect choice can produce application 404s. [proxy_pass semantics](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass).
 
 ## Application integration gap
 
-Prefix stripping handles incoming request paths, but does not automatically make application-generated links, redirects or cookie paths use `/legacy/`. Configure the application's external base path or adapt responses deliberately. Otherwise a legacy HTML page can point at `/assets/...`, which reaches the new application's fallback. This is a consequence of the proposed routing, not an observed failure.
+Prefix stripping handles incoming request paths, but does not automatically make application-generated links, redirects or cookie paths use `/legacy/`. Configure the application's external base path. If necessary, change the response paths. Otherwise a legacy HTML page can point at `/assets/...`, which reaches the new application's fallback. This is a consequence of the proposed routing, not an observed failure.
 
 ## Proposed checks
 
-First run `sudo nginx -t`; reload only on success. After deployment, inspect responses and upstream logs:
+First execute `sudo nginx -t`. If the test succeeds, reload Nginx. After deployment, inspect responses and upstream logs:
 
 | Request | Expected destination or behavior |
 | --- | --- |
@@ -66,7 +73,7 @@ First run `sudo nginx -t`; reload only on success. After deployment, inspect res
 | `/legacy/items?x=1` | Legacy application, URI `/items?x=1` |
 | `/legacy-other` | New application |
 
-These expectations derive from the configuration; they are not runtime results. Confirm method handling, query strings, assets, redirects and cookies against real applications. The example uses plain HTTP; TLS, authentication and domain selection are separate configuration work.
+These expectations derive from the configuration. They are not runtime results. Check method handling with the actual applications. Check query strings, assets, redirects, and cookies. The example uses plain HTTP. TLS, authentication and domain selection are separate configuration work.
 
 ## Recall and verification limits
 
@@ -75,4 +82,4 @@ These expectations derive from the configuration; they are not runtime results. 
 3. What must change if the legacy application expects `/legacy/items`?
 4. Why can incoming routing work while generated asset URLs fail?
 
-Official references were consulted on 2026-10-11. No Nginx syntax or runtime check was performed because the binary is unavailable in the agent environment. This is an agent-written worked solution, not completed student practice.
+The agent read the official references on 2026-10-11. The agent did not execute a Nginx syntax or runtime check. The Nginx binary is not available in the agent environment. This is an agent-written worked solution, not completed student practice.

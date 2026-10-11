@@ -10,11 +10,11 @@ course: System Administration
 
 [System Administration](system-administration.md) · [Module 3 review](module-3-review.md)
 
-Reconstructed study note based on the owner's Module 3 review supplied on 2026-10-11 at 01:38, supplemented by official documentation. This is not a recovered lecture transcript. Exact course section mapping and environment versions are unconfirmed. Examples are illustrative and have not been run; original source text is not stored. Official references were consulted on 2026-10-11.
+The agent wrote this study note from the Module 3 review that the owner supplied on 2026-10-11 at 01:38. Official documents give additional information. The exact course sections and software versions are unknown. The agent did not recover the original lecture or do the example procedures. The vault does not store the original text. The agent read the official references on 2026-10-11.
 
 ## Layouts and failure domains
 
-Use [the Module 3 RAID table](module-3-review.md#raid-comparison) for minimum disks and formulas under conventional equal-disk assumptions. Striping spreads data; mirroring keeps copies; parity permits reconstruction after the supported number of failures. RAID protects availability against certain device failures, not deleted files, malicious changes or every form of corruption.
+Use [the Module 3 RAID table](module-3-review.md#raid-comparison) for minimum disks and formulas under conventional equal-disk assumptions. Striping spreads data. Mirroring keeps copies. Parity permits reconstruction after the supported number of failures. RAID protects availability against certain device failures, not deleted files, malicious changes or every form of corruption.
 
 For conventional four-disk RAID 10 with mirror pairs A/B and C/D, losing A and C leaves one copy in each pair. Losing A and B removes both copies in one pair. Two failures are therefore not always survivable. Linux MD supports additional layouts, so evaluate actual replica placement. [Linux MD](https://manpages.debian.org/testing/mdadm/md.4.en.html).
 
@@ -29,19 +29,25 @@ For four equal 1 TB disks, ignoring overhead:
 | RAID 5 | `(4 − 1) × 1 TB` | 3 TB |
 | Conventional RAID 10 | `(4 / 2) × 1 TB` | 2 TB |
 
-The review's 50% RAID 1 figure applies to two disks; a four-way mirror uses 25% here. This is a synthetic calculation, not measured storage capacity.
+The review's 50% RAID 1 figure applies to two disks. A four-way mirror uses 25% here. This is an example calculation. The agent did not measure storage capacity.
 
 ## Array lifecycle
 
-The conceptual sequence is: identify disposable members, choose a layout, create the MD device, monitor initialization, then place a filesystem or [LVM](lvm-and-filesystem-growth.md) above it. Creating an array writes member metadata; do not substitute live disks into a study example.
+For a study array, use this sequence:
 
-Command shape, deliberately not executable as written:
+1. Identify disposable member devices.
+2. Select a layout.
+3. Create the MD device.
+4. Monitor initialization.
+5. Put a filesystem or [LVM](lvm-and-filesystem-growth.md) on the MD device. Array creation writes member metadata. Do not use live disks as members of a study array.
+
+Command form with placeholders. Do not execute it as written:
 
 ```text
 mdadm --create MD_DEVICE --level=LEVEL --raid-devices=COUNT MEMBER_DEVICES...
 ```
 
-Inspection examples include `cat /proc/mdstat` and `sudo mdadm --detail /dev/md0` when that array exists. Reassembling a known array is different from creating a new one. A degraded array needs monitoring and replacement; rebuilds do not restore independent backups. [mdadm manual](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
+Inspection examples include `cat /proc/mdstat` and `sudo mdadm --detail /dev/md0` when that array exists. Reassembling a known array is different from creating a new one. A degraded array needs monitoring and replacement. Rebuilds do not restore independent backups. [mdadm manual](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
 
 ## Recall
 

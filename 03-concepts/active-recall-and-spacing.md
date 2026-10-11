@@ -9,10 +9,28 @@ updated: 2026-10-11
 
 [Concepts](concepts.md) · [Study cycle](study-cycle.md)
 
-Active recall means trying to produce an answer from memory before checking the material. Spaced practice distributes study across separate sessions. Use feedback after a recall attempt to correct errors. In mathematical subjects, practice includes explaining assumptions and solving problems, not only remembering formulas.
+Active recall is an attempt to answer from memory before a source check.
+Spaced practice uses separate study sessions.
+Feedback after an attempt helps correct errors.
+Mathematical practice includes assumptions and problem solutions, not only formulas.
 
-For each topic, write a few questions that require an explanation or derivation. Hide the answer, attempt it, then record what was correct and what needs correction. Plan the next session according to the difficulty, prior performance and exam timing. A missed question should return sooner; a confidently explained topic can return later. This scheduling rule is a practical proposal, not a universal research-derived interval.
+For each topic, use this procedure:
 
-Sources: [The Learning Scientists: retrieval practice](https://www.learningscientists.org/retrieval-practice), [spaced practice materials](https://www.learningscientists.org/posters), consulted 2026-10-11.
+1. Write questions that need an explanation or a calculation.
+2. Hide the answers.
+3. Answer from memory.
+4. Compare each answer with the source.
+5. Record correct points and necessary corrections.
+6. Plan the next session from the difficulty, previous results, and exam date.
 
-Recall prompts: How is recognition different from producing an answer? Why must a recall attempt include feedback? How would you test whether you understand a formula's assumptions?
+Review a missed question sooner. Review a well-understood topic later.
+This is a suggested schedule, not one fixed interval supported for all topics.
+
+Sources: [The Learning Scientists: retrieval practice](https://www.learningscientists.org/retrieval-practice) and [spaced practice materials](https://www.learningscientists.org/posters).
+The agent read these sources on 2026-10-11.
+
+## Recall questions
+
+1. How does recognition differ from an answer produced from memory?
+2. Why does a recall attempt need feedback?
+3. How can you check the assumptions of a formula?

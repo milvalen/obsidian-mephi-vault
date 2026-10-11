@@ -9,15 +9,15 @@ updated: 2026-10-11
 
 [Courses](../courses.md) · [Home](../../README.md)
 
-Field of study supplied by the owner on 2026-10-11: “System administration”. This page uses a normalized English title; the official course title and syllabus have not been supplied.
+The owner named this field of study on 2026-10-11. The official course title and syllabus remain unknown.
 
 ## Course context
 
-Semester, instructor, course code and prerequisites are not yet recorded.
+The semester, instructor, course code, and prerequisites are unknown.
 
 ## Syllabus and sources
 
-Material about RPM and digital signatures was supplied on 2026-10-11 at 01:33. A Module 3 summary was also supplied on 2026-10-11 at 01:38. A Module 4 introduction was supplied on 2026-10-11 at 02:33. The full syllabus, textbooks and official course title have not been supplied. See [Sources](../../05-sources/sources.md).
+The owner supplied RPM and digital signature material on 2026-10-11 at 01:33. The owner supplied a Module 3 summary on 2026-10-11 at 01:38. The owner supplied a Module 4 introduction on 2026-10-11 at 02:33. The owner did not supply the full syllabus, textbooks, or official course title. See [Sources](../../05-sources/sources.md).
 
 ## Lectures and concepts
 
@@ -45,19 +45,21 @@ These notes reconstruct topics named in the supplied review. They do not claim t
 
 ## Problems and laboratories
 
-- [Practice: recurring nighttime crashes](practice/nighttime-service-crashes.md) — proposed evidence collection and hypothesis testing; no actual crash reported.
-- [Practice: route legacy and new applications](practice/nginx-two-app-routing.md) — worked configuration and slash behavior; not deployed.
-- [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner-supplied inspection reports a clean `/dev/md0` RAID 1 mirror with `/dev/loop0` and `/dev/loop1` active, 499 MiB array capacity and no failed devices; formatting and mounting remain unreported.
+- [Practice: recurring nighttime crashes](practice/nighttime-service-crashes.md) — proposed evidence collection and hypothesis testing. No actual crash reported.
+- [Practice: route legacy and new applications](practice/nginx-two-app-routing.md) — worked configuration and slash behavior. Not deployed.
+- [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner-reported array inspection.
+
+The reported `/dev/md0` RAID 1 array has 499 MiB capacity. Both `/dev/loop0` and `/dev/loop1` are active. No devices failed. The owner did not report formatting or mounting.
 
 Use the [problem template](../../90-templates/problem.md) or [lab template](../../90-templates/lab.md). Preserve attempts and distinguish reported observations from independently verified results.
 
 ## Review and assessment
 
-The supplied material describes the RPM block as an ungraded demonstration. The Module 3 summary refers to a final module test in Section 6; its questions, grading and date have not been supplied. General assessment requirements and deadlines remain unknown. Recall questions are included in the note; record actual attempts with the [review template](../../90-templates/review.md).
+The supplied material describes the RPM block as an ungraded demonstration. The Module 3 summary refers to a final module test in Section 6. The owner did not supply its questions, grading rules, or date. General assessment requirements and deadlines remain unknown. Recall questions are included in the note. Record actual attempts with the [review template](../../90-templates/review.md).
 
 ## Connections
 
-Link related notes here as material is added.
+Add links to related notes after you add material.
 
 ## Open questions
 

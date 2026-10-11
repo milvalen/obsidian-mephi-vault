@@ -9,28 +9,28 @@ updated: "{{date:YYYY-MM-DD}}"
 
 ## Meaning
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
-## Assumptions and applicability
+## Assumptions and conditions
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Derivation or explanation
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Examples and counterexamples
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Connections
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Recall questions
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Sources
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->

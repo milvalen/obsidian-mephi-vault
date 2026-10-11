@@ -9,28 +9,28 @@ updated: "{{date:YYYY-MM-DD}}"
 
 ## Course and assignment source
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Objective and method
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
-## Raw observations and attachments
+## Observed data
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Calculations and uncertainty
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Interpretation
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Limitations and safety requirements from the course
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Recall questions
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->

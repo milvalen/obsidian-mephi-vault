@@ -1,23 +1,77 @@
 # MEPHI study vault instructions
 
-## Scope and ownership
+## Scope and language
 
-This vault holds personal study notes, course maps, worked problems, laboratory notes and exam preparation. Owner: `milvalen`. Keep personal GitHub identity separate from work accounts. Do not import Logopolza or company content. The curriculum, semester, teachers and deadlines are unknown until the owner supplies evidence.
+Owner: `milvalen`. This is a personal study vault.
+Keep personal GitHub credentials separate from work credentials.
+Do not add company or Logopolza content.
+Do not invent course details, grades, deadlines, or completed work.
 
-## Learning and evidence
+Use English for all communication, notes, documentation, templates, comments, and commit messages.
+Use ASD-STE100 Issue 9 for technical prose.
+Obey the [study note standard](00-standards/documentation-standard.md).
+Use the [technical terms](00-standards/technical-terms.md) consistently.
+STE clarity takes priority over compressed prose.
+Keep exact commands, code identifiers, device paths, and interface labels.
 
-Follow [the note standard](00-standards/documentation-standard.md). Use English for all conversation, notes, documentation, headings, metadata, tooling and commit messages, regardless of the input language. Translate and summarize supplied material; do not retain its original text, transcripts, verbatim copies or source attachments. Keep only bibliographic references and URLs for provenance. Preserve exact code identifiers and commands. Summarize in the student's own words. Separate source statements, derivations, assumptions and open questions. Cite textbook edition and page, lecture date/slide, or official URL. Never invent citations, grades, attendance, completed reviews or laboratory measurements. Mark AI-created explanations as drafts until checked against a source or a reproducible calculation.
+## Sources and learning
 
-Keep course-specific lecture notes within their course. Extract reusable concepts only when useful and link both ways. Include recall questions, conditions of applicability, units and common errors. For exercises, summarize the task in English and retain the attempt, reasoning and checked answer; for labs, preserve raw observations separately from analysis. Respect course restrictions on sharing assessed work.
+Translate and summarize supplied material in English.
+Do not store original text, transcripts, verbatim copies, or source attachments.
+Keep only source references and external URLs for source information.
 
-## Organization and maintenance
+Separate source statements, assumptions, calculations, and open questions.
+Cite the textbook edition and page, lecture date and slide, or official URL.
+Never invent citations, measurements, attendance, grades, or review results.
+Keep agent explanations as drafts until a source check or calculation supports them.
 
-Use the README as the home page and maintain folder indexes. Use relative Markdown links so GitHub and Obsidian both work. Use minimal YAML properties and templates from `90-templates`. Avoid mandatory community plugins. Do not create empty course hierarchies based on guessed subjects. Keep unresolved questions explicit. Before moving a note, search the whole vault and workspace tooling for old paths, update links and run the validator.
+Keep lecture notes in their course folder.
+Add a separate concept note when it helps study. Link related notes in both directions.
+Include recall questions, conditions of use, units, and common errors.
+For problems, write an English task summary. Keep the attempt, reasoning, and checked answer.
 
-## Git and Windows mirror
+For labs, keep observations separate from calculations and explanations.
+Obey course rules about public access to assessed work.
 
-Use `main` as the working and default branch. Review intended changes and run `python3 tools/validate-vault.py` plus relevant sync checks before commits. Routine documentation commits and pushes are permitted by the owner; do not force-push or overwrite unrelated changes. Repository visibility is public, as requested by the owner. Publish only personal notes and material permitted for public sharing.
+## Structure and review
 
-Linux is the canonical editable vault. Windows is a one-way reading mirror; edits there do not return to Linux. The mirror preserves newer Windows files, backs up replaced/deleted files and excludes personal Obsidian state. Only graph color groups are shared automatically. Edit canonical notes in Linux to avoid conflicts. Sync scripts are documented in [the Windows guide](00-standards/windows-vault-sync.md).
+Use README.md as the home page. Keep folder indexes current.
 
-Never store credentials, private keys, student identifiers or private third-party records. Keep service logs and backups outside this repository. Track only explicit portable Obsidian configuration; exclude workspace, cache and plugins.
+Use relative Markdown links and the templates in `90-templates`.
+Use only necessary YAML properties. Do not require community plugins.
+
+Do not create course folders from guessed subjects.
+Keep unresolved questions visible.
+
+Before a note move, search the vault and workspace scripts for the old path.
+Update affected links and references. Run the validator.
+Review changed prose against ASD-STE100 rules and word meanings.
+A language review does not change the date of an earlier technical check.
+
+## Git and publication
+
+Use `main` as the working and default branch.
+Review the diff before each commit. Include only intended changes.
+Run `python3 tools/validate-vault.py` before publication.
+Run relevant sync checks after a change to sync code.
+The owner permits routine documentation commits and pushes.
+
+Do not force-push or overwrite unrelated changes.
+
+The repository is public at the owner's request.
+Publish only personal notes and material permitted for public sharing.
+Do not store credentials, private keys, student identifiers, or private records about other people.
+
+## Windows mirror
+
+Linux contains the main editable vault. Windows contains a one-way copy.
+Windows changes do not return to Linux.
+The sync service keeps newer Windows files and makes backups before replacement or deletion.
+Edit the Linux notes to avoid differences between copies.
+
+Only graph color groups are shared automatically.
+Other device settings remain local.
+Keep logs and backups outside this repository.
+Track only specified portable Obsidian settings.
+Exclude workspace state, caches, and plugins.
+Refer to [Windows synchronization](00-standards/windows-vault-sync.md).

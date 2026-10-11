@@ -9,24 +9,24 @@ updated: "{{date:YYYY-MM-DD}}"
 
 ## Author and title
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Edition and publication year
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## External URL
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Pages or slides used
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Access date
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Notes that reference this source
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->

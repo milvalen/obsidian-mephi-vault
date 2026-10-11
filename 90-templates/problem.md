@@ -9,28 +9,28 @@ updated: "{{date:YYYY-MM-DD}}"
 
 ## Course and source
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Task summary in English
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## My attempt before the solution
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Reasoning and calculations
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Units and assumptions
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
 ## Answer and independent check
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->
 
-## Errors and follow-up
+## Errors and next review
 
-<!-- Add actual information; keep unknowns explicit. -->
+<!-- Add known information. Identify unknown information. -->

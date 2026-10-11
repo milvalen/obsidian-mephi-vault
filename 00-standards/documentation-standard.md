@@ -1,17 +1,99 @@
 # Study note standard
 
-[Home](../README.md)
+[Home](../README.md) · [Technical terms](technical-terms.md)
 
-Use English for all conversation and vault content, including notes, navigation, metadata, documentation and tooling. Translate and summarize inputs from any language. Do not save supplied source text, transcripts, verbatim copies or source attachments. Retain only concise provenance, bibliographic references and external URLs. Preserve exact commands and code identifiers.
+## Language standard
 
-Use clear titles and stable descriptive filenames. Keep one focused topic per concept note, while lecture notes retain the lecture's context. Link related ideas with a sentence that explains the relationship. Use course indexes to navigate; tags provide only broad categories.
+Use English for all communication and vault content. Use ASD-STE100 Issue 9, dated 2025-01-15, for technical prose.
+This requirement includes notes, instructions, comments, templates, and commit messages.
+Translate material from other languages. Write an English summary.
 
-For normal notes, use YAML properties `title`, `type`, `status`, `created`, `updated` and optionally `course`, `tags`, `review_due`. Use ISO dates. Types: course, lecture, concept, problem, lab, source, review. Status: draft or checked; checked means the stated explanation or calculation was actually verified. Indexes and instruction files need no properties. Quote template date variables in YAML. A review due date is a planning choice, not evidence that a review happened.
+Do not save original source text, transcripts, verbatim copies, or source documents.
+Keep source references and external URLs. Keep exact commands, code identifiers, and device paths.
 
-Record sources close to claims. A source note records author, title, edition/year, pages or slides, URL and access date where applicable. Source pages contain reference metadata, not copied source text. Do not archive source documents in this vault.
+Use the [official Issue 9 standard](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf) for word meanings and grammar checks.
+The [official STE website](https://www.asd-ste100.org/) identifies the current issue.
+The following rules are a local summary, not a replacement for the standard.
 
-Lecture notes include context, key claims, examples, unclear points and recall prompts. Concepts include meaning, assumptions, examples and connections. Problems include an English summary of the task, attempt before solution, derivation, units, result verification and errors. Labs separate procedure, raw data, uncertainty and interpretation. Keep historical attempts and corrections visible.
+- Use dictionary words with their approved meanings and parts of speech.
+- Use defined technical nouns and technical verbs for computing concepts.
+- Use one term for one concept. Refer to [Technical terms](technical-terms.md).
+- Use simple verb forms and active voice. Use passive voice only when the person or system that does the action is unknown.
+- Limit instruction sentences to 20 words. Give one instruction per sentence.
+- Limit descriptive sentences to 25 words. Limit each paragraph to six sentences and one topic.
+- Put a necessary condition before its instruction.
+- Do not use semicolons in prose. Keep syntax punctuation in commands and configuration unchanged.
+- Do not use phrasal verbs, slang, or noun groups that make the meaning unclear.
+- Use American English spelling. Keep official product names and exact interface labels.
 
-Use active recall before looking at answers and revisit material over time. Adjust review intervals based on performance and exam dates; no universal fixed schedule is assumed. This workflow draws on [retrieval practice](https://www.learningscientists.org/retrieval-practice) and [spaced practice](https://www.learningscientists.org/posters). Portable properties, templates and links follow the [Obsidian properties](https://obsidian.md/help/properties), [Templates](https://obsidian.md/help/plugins/templates) and [internal links](https://obsidian.md/help/links) documentation, consulted on 2026-10-11.
+## Structure and links
 
-Run `python3 tools/validate-vault.py` before publication. Check unresolved claims against the actual course sources; link validation does not verify academic correctness.
+Use clear titles and stable filenames. Keep one concept in each concept note.
+Keep course-specific notes in their course folder. Keep the folder index current.
+Use relative Markdown links. Explain the relationship between linked concepts.
+Use tags for broad groups. Do not require community plugins.
+
+## Properties
+
+Use these YAML properties for study notes:
+
+| Property | Meaning |
+| --- | --- |
+| `title` | Note title |
+| `type` | `course`, `lecture`, `concept`, `problem`, `lab`, `source`, or `review` |
+| `status` | `draft` or `checked` |
+| `created`, `updated` | Dates in ISO format |
+| `course` | Course name, if applicable |
+| `tags` | Broad subject groups, if useful |
+| `review_due` | Planned review date, if useful |
+
+Use `checked` only after a source check or a calculation check.
+A language review does not verify academic facts or complete a lab.
+Indexes and instruction files do not need properties.
+Put template date variables in quotation marks in YAML.
+A planned date does not prove that a review occurred.
+
+## Sources and evidence
+
+Put references near the statements they support.
+Record the author, title, edition, page or slide, URL, and access date when known.
+A source page contains reference data. It must not contain a copy of the source text.
+Do not invent unknown course details or source references.
+
+Keep the date and scope of each actual check.
+Identify owner-reported observations, agent checks, and examples separately.
+Do not describe an example as an executed procedure.
+A prose change does not create new runtime evidence.
+
+## Study content
+
+| Note type | Required content |
+| --- | --- |
+| Lecture | Context, key ideas, examples, open questions, and recall questions |
+| Concept | Meaning, conditions, examples, connections, and sources |
+| Problem | English task summary, attempt, reasoning, units, answer check, and errors |
+| Lab | Method, observed data, calculations, explanation, and limits |
+| Review | Recall attempt, feedback, correction, and next planned review |
+
+Keep previous student attempts and corrections available.
+Keep measured data separate from its explanation.
+
+Use active recall before you read the answer. Repeat study in separate sessions.
+Select the next review date from results and exam needs. Do not assume one fixed schedule works for every topic.
+Refer to [retrieval practice](https://www.learningscientists.org/retrieval-practice) and [spaced practice](https://www.learningscientists.org/posters).
+The agent read these learning references on 2026-10-11.
+
+Use Obsidian's portable [properties](https://obsidian.md/help/properties), [Templates](https://obsidian.md/help/plugins/templates), and [links](https://obsidian.md/help/links).
+The agent read these Obsidian references on 2026-10-11.
+
+## Review before publication
+
+1. Review the changed prose against the writing rules and dictionary.
+2. Check technical terms against the glossary.
+3. Check claims against their sources or recorded evidence.
+4. Run `python3 tools/validate-vault.py`.
+5. Review the Git diff.
+6. Record the language-review scope and limits.
+
+A link check or sentence-length check does not prove full ASD-STE100 compliance.
+Use the [language review record](ste-review.md) for the current review scope.

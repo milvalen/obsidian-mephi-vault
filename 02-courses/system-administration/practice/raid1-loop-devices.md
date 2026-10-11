@@ -12,7 +12,7 @@ course: System Administration
 
 ## Exercise reference
 
-Chuck Nelson, [Introduction to Software RAID](https://chnelson.quarto.pub/citc1321/modules/06_Storage/Exercise_6.3.html), published 2025-10-22, consulted 2026-10-11. The exercise builds, formats and mounts a two-member RAID 1 array, then deactivates it. Its stated environment is Fedora 42. This external exercise's numbering does not establish a MEPHI course section number. Original page text is not retained.
+Chuck Nelson, [Introduction to Software RAID](https://chnelson.quarto.pub/citc1321/modules/06_Storage/Exercise_6.3.html), published 2025-10-22, consulted 2026-10-11. The exercise builds, formats and mounts a two-member RAID 1 array, then deactivates it. Its stated environment is Fedora 42. This external exercise's numbering does not show a MEPHI course section number. The vault does not store the original page text.
 
 ## Progress and device record
 
@@ -23,13 +23,13 @@ The owner reports that two virtual disks are already attached:
 | First | `/dev/loop0` | Not supplied | Not supplied |
 | Second | `/dev/loop1` | Not supplied | Not supplied |
 
-Attachment is owner-reported, not independently verified in the practice machine. The agent's current WSL environment showed neither loop device in `lsblk` or `losetup --list` on 2026-10-11. That observation does not invalidate the report from a separate VM.
+The owner reported the device attachment. The agent did not verify it on the practice machine. On 2026-10-11, neither `lsblk` nor `losetup --list` showed these devices in the agent's WSL environment. That observation does not invalidate the report from a separate VM.
 
-The owner supplied the output of `sudo mdadm --detail /dev/md0`. It confirms that the array exists with two active synchronized members. Formatting, mounting and cleanup remain unreported. No storage changes were performed by the agent.
+The owner supplied the output of `sudo mdadm --detail /dev/md0`. It confirms that the array exists with two active synchronized members. The owner did not report formatting, mounting, or cleanup. The agent did not change storage.
 
 ## Reported array inspection
 
-Source: owner-supplied command output from `milvalen@fedora`, received on 2026-10-11. Observed fields are summarized below; the terminal transcript is not stored. The array was not inspected directly by the agent.
+Source: owner-supplied command output from `milvalen@fedora`, received on 2026-10-11. The table summarizes the observed fields. The vault does not store the terminal transcript. The agent did not inspect the array directly.
 
 | Field | Reported value |
 | --- | --- |
@@ -57,7 +57,7 @@ The output does not specify the timezone of its timestamps.
 | 0 | `/dev/loop0` | `7:0` | `active sync` |
 | 1 | `/dev/loop1` | `7:1` | `active sync` |
 
-The reported state and counts show a clean, non-degraded mirror at inspection time. `Consistency Policy: resync` names the policy, not an indication that synchronization is currently running. These results do not establish filesystem creation, mount status, a completed file-write test or protection against failure of the backing physical disk. [mdadm reference](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
+The reported state and counts show a clean, non-degraded mirror at inspection time. `Consistency Policy: resync` names the policy, not an indication that synchronization is currently running. These results do not prove filesystem creation, mount status, or a completed file-write test. They do not prove protection against physical-disk failure. [mdadm reference](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
 
 ## Next step: filesystem preparation
 
@@ -67,20 +67,26 @@ First inspect the array in the practice VM:
 lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS /dev/md0
 ```
 
-If this is the newly created disposable array, has no filesystem to retain, and is not mounted, the exercise's next operation is:
+Before formatting, check these conditions:
+
+- The array is the new disposable study array.
+- It has no filesystem to keep.
+- It is not mounted.
+
+If all conditions are true, execute the next command:
 
 ```sh
 sudo mkfs.ext4 /dev/md0
 ```
 
-Formatting creates a filesystem and overwrites existing filesystem data. Target the array device, not either member. Do not recreate the RAID array: it already exists. Record formatting output before proceeding to mount it.
+Formatting creates a filesystem and overwrites existing filesystem data. Select the array device as the target. Do not select either member. Do not recreate the RAID array: it already exists. Record formatting output before proceeding to mount it.
 
-A screenshot requested by the external exercise has not been supplied. Future observations must retain their actual timestamps; the array inspection above is not evidence of later steps.
+The owner did not supply the screenshot requested by the external exercise. Keep the actual timestamp of each later observation. The array inspection above does not prove completion of later steps.
 
 ## Capacity reasoning
 
-The reported array and used-member sizes are equal: `510976 × 1024 = 523239424` bytes, or `499 MiB` (approximately `523.24 MB`). A two-member mirror stores two copies, so its nominal capacity is about that of the smaller member, not their sum. The complete loop-device sizes are still unknown. Filesystem and RAID metadata reduce usable capacity. Two loop devices backed by the same physical disk demonstrate mirroring mechanics but do not protect against loss of that physical disk.
+The reported array and used-member sizes are equal: `510976 × 1024 = 523239424` bytes, or `499 MiB` (approximately `523.24 MB`). A two-member mirror stores two copies, so its nominal capacity is about that of the smaller member, not their sum. The complete loop-device sizes are unknown. Filesystem and RAID metadata reduce usable capacity. Two loop devices backed by the same physical disk demonstrate mirroring mechanics but do not protect against loss of that physical disk.
 
 ## Pending reflection
 
-Explain what `--level=1` selects, why capacity is not doubled, and how member availability differs from completed synchronization. Record the student's answers and observations when available.
+Explain what `--level=1` selects. Explain why capacity is not doubled. Compare member availability with completed synchronization. Record the student's answers and observations when available.

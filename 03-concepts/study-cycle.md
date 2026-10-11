@@ -9,13 +9,20 @@ updated: 2026-10-11
 
 [Concepts](concepts.md)
 
-1. Capture the lecture or reading with its exact source.
-2. Explain the main ideas in your own words and mark unclear steps.
-3. Attempt a related problem without consulting the solution.
-4. Check the attempt against the source or an independent calculation.
-5. Record the cause of each error in [the error log](../04-review/error-log.md).
-6. Create recall questions and schedule a later attempt using [active recall and spaced review](active-recall-and-spacing.md).
+1. Write an English summary of the lecture or reading.
+2. Record its source reference.
+3. Explain the main ideas in your own words.
+4. Identify unclear steps.
+5. Attempt a related problem without the solution.
+6. Check the attempt against the source or an independent calculation.
+7. Record each error's cause in the [error log](../04-review/error-log.md).
+8. Write recall questions.
+9. Plan a later attempt with [active recall and spaced review](active-recall-and-spacing.md).
 
-This is an initial workflow proposal, not a record of completed study.
+This is a suggested study procedure. It does not record completed study.
 
-Recall prompts: What makes a note checked? How does a problem attempt reveal a gap that rereading can miss? What source would resolve an unclear derivation?
+## Recall questions
+
+1. What checks support the status `checked`?
+2. How can a problem attempt show a gap that rereading does not show?
+3. Which source can explain an unclear calculation step?

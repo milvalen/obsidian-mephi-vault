@@ -2,4 +2,12 @@
 
 [Review](review.md)
 
-No attempts have been recorded yet. After a checked exercise, add the problem link, date, mistaken step, cause, correction and a follow-up question. Distinguish conceptual errors, invalid assumptions, algebra, units and reading errors. Keep the original attempt accessible.
+The student did not report an attempt.
+After an exercise check, record these items:
+
+- Problem link and date.
+- Incorrect step and its cause.
+- Correction and a question for the next review.
+
+Separate concept errors, incorrect assumptions, algebra errors, unit errors, and reading errors.
+Keep the student's first attempt available.
