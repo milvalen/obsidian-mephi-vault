@@ -18,6 +18,8 @@ The following rules are a local summary, not a replacement for the standard.
 - Use dictionary words with their approved meanings and parts of speech.
 - Use defined technical nouns and technical verbs for computing concepts.
 - Use one term for one concept. Refer to [Technical terms](technical-terms.md).
+- Add every new technical term to [Technical terms](technical-terms.md) in the same change that first uses it.
+- Define its meaning and permitted noun or verb form.
 - Use simple verb forms and active voice. Use passive voice only when the person or system that does the action is unknown.
 - Limit instruction sentences to 20 words. Give one instruction per sentence.
 - Limit descriptive sentences to 25 words. Limit each paragraph to six sentences and one topic.
@@ -89,11 +91,9 @@ The agent read these Obsidian references on 2026-10-11.
 ## Review before publication
 
 1. Review the changed prose against the writing rules and dictionary.
-2. Check technical terms against the glossary.
+2. Check technical terms against the glossary. Add an entry for each new technical term.
 3. Check claims against their sources or recorded evidence.
 4. Run `python3 tools/validate-vault.py`.
 5. Review the Git diff.
-6. Record the language-review scope and limits.
 
 A link check or sentence-length check does not prove full ASD-STE100 compliance.
-Use the [language review record](ste-review.md) for the current review scope.

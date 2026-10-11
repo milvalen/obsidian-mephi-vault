@@ -5,7 +5,7 @@
 These terms name computing concepts used in this vault.
 They are subject-field terms, not additions to the official STE dictionary.
 Use the noun and verb forms only with the meanings specified here.
-Add a term when a new subject needs it. Do not use a new term to hide unclear prose.
+Add every new technical term in the same change that first uses it. Define its meaning and permitted form. Do not use a new term to hide unclear prose.
 
 ## Study and evidence terms
 

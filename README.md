@@ -13,7 +13,6 @@ Use English and ASD-STE100 Issue 9 for technical prose.
 - [Templates](90-templates/templates.md) — standard note structures.
 - [Study note standard](00-standards/documentation-standard.md).
 - [Technical terms](00-standards/technical-terms.md).
-- [Language review](00-standards/ste-review.md).
 - [Windows synchronization](00-standards/windows-vault-sync.md).
 
 Start with the [study cycle](03-concepts/study-cycle.md).
