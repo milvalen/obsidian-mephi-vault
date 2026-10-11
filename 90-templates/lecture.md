@@ -2,6 +2,7 @@
 title: "{{title}}"
 type: lecture
 status: draft
+program: ""
 created: "{{date:YYYY-MM-DD}}"
 updated: "{{date:YYYY-MM-DD}}"
 ---

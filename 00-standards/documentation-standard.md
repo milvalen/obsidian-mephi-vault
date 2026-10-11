@@ -31,7 +31,10 @@ The following rules are a local summary, not a replacement for the standard.
 ## Structure and links
 
 Use clear titles and stable filenames. Keep one concept in each concept note.
-Keep course-specific notes in their course folder. Keep the folder index current.
+Keep each program in a separate folder under `02-programs`.
+Keep course-specific notes in the applicable program’s course folder. Keep folder indexes current.
+Use a separate graph color group for each program folder.
+Keep application status separate from confirmed enrollment.
 Use relative Markdown links. Explain the relationship between linked concepts.
 Use tags for broad groups. Do not require community plugins.
 
@@ -42,9 +45,10 @@ Use these YAML properties for study notes:
 | Property | Meaning |
 | --- | --- |
 | `title` | Note title |
-| `type` | `course`, `lecture`, `concept`, `problem`, `lab`, `source`, or `review` |
+| `type` | `program`, `course`, `lecture`, `concept`, `problem`, `lab`, `source`, or `review` |
 | `status` | `draft` or `checked` |
 | `created`, `updated` | Dates in ISO format |
+| `program` | Program identifier, if applicable |
 | `course` | Course name, if applicable |
 | `tags` | Broad subject groups, if useful |
 | `review_due` | Planned review date, if useful |
@@ -71,6 +75,7 @@ A prose change does not create new runtime evidence.
 
 | Note type | Required content |
 | --- | --- |
+| Program | Institution, qualification, enrollment or application status, dates, and course links |
 | Lecture | Context, key ideas, examples, open questions, and recall questions |
 | Concept | Meaning, conditions, examples, connections, and sources |
 | Problem | English task summary, attempt, reasoning, units, answer check, and errors |

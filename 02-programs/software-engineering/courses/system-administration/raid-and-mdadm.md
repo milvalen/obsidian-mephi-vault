@@ -1,0 +1,58 @@
+---
+title: "RAID layouts, capacity and Linux mdadm"
+type: concept
+status: draft
+program: software-engineering
+created: 2026-10-11
+updated: 2026-10-11
+course: System Administration
+---
+# RAID layouts, capacity and Linux mdadm
+
+[System Administration](system-administration.md) · [Module 3 review](module-3-review.md)
+
+The agent wrote this study note from the Module 3 review that the owner supplied on 2026-10-11 at 01:38. Official documents give additional information. The exact course sections and software versions are unknown. The agent did not recover the original lecture or do the example procedures. The vault does not store the original text. The agent read the official references on 2026-10-11.
+
+## Layouts and failure domains
+
+Use [the Module 3 RAID table](module-3-review.md#raid-comparison) for minimum disks and formulas under conventional equal-disk assumptions. Striping spreads data. Mirroring keeps copies. Parity permits reconstruction after the supported number of failures. RAID protects availability against certain device failures, not deleted files, malicious changes or every form of corruption.
+
+For conventional four-disk RAID 10 with mirror pairs A/B and C/D, losing A and C leaves one copy in each pair. Losing A and B removes both copies in one pair. Two failures are therefore not always survivable. Linux MD supports additional layouts, so evaluate actual replica placement. [Linux MD](https://manpages.debian.org/testing/mdadm/md.4.en.html).
+
+## Worked capacity example
+
+For four equal 1 TB disks, ignoring overhead:
+
+| Layout | Calculation | Nominal usable capacity |
+| --- | --- | --- |
+| RAID 0 | `4 × 1 TB` | 4 TB |
+| RAID 1 across all four | One mirrored copy set | 1 TB |
+| RAID 5 | `(4 − 1) × 1 TB` | 3 TB |
+| Conventional RAID 10 | `(4 / 2) × 1 TB` | 2 TB |
+
+The review's 50% RAID 1 figure applies to two disks. A four-way mirror uses 25% here. This is an example calculation. The agent did not measure storage capacity.
+
+## Array lifecycle
+
+For a study array, use this sequence:
+
+1. Identify disposable member devices.
+2. Select a layout.
+3. Create the MD device.
+4. Monitor initialization.
+5. Put a filesystem or [LVM](lvm-and-filesystem-growth.md) on the MD device. Array creation writes member metadata. Do not use live disks as members of a study array.
+
+Command form with placeholders. Do not execute it as written:
+
+```text
+mdadm --create MD_DEVICE --level=LEVEL --raid-devices=COUNT MEMBER_DEVICES...
+```
+
+Inspection examples include `cat /proc/mdstat` and `sudo mdadm --detail /dev/md0` when that array exists. Reassembling a known array is different from creating a new one. A degraded array needs monitoring and replacement. Rebuilds do not restore independent backups. [mdadm manual](https://manpages.debian.org/testing/mdadm/mdadm.8.en.html).
+
+## Recall
+
+1. Why does RAID 0 have no failed-disk tolerance?
+2. Which two failures destroy the example RAID 10?
+3. Why is four-way RAID 1 not 50% efficient?
+4. What remains unprotected when deleted data is mirrored?

@@ -63,3 +63,11 @@ They also passed for exclusions, newer Windows edits, backups, deletions, graph 
 Shell syntax, systemd unit validation, relative links, and shared JSON checks passed.
 The agent did not test Windows sign-in or the Obsidian display.
 These statements keep their actual verification date. The language review is not a new runtime check.
+
+## Program graph colors
+
+Software Engineering uses blue (`#4DA3FF`). Applied Data Analysis uses orange (`#F59E0B`).
+The groups select their separate folders under `02-programs`.
+The existing graph sync step copies these groups to Windows.
+Refer to [Obsidian graph groups](https://obsidian.md/help/plugins/graph).
+The agent read this reference on 2026-10-11.

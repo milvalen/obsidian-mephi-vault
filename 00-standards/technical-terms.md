@@ -11,6 +11,9 @@ Add every new technical term in the same change that first uses it. Define its m
 
 | Term | Meaning |
 | --- | --- |
+| study program | A named course of study that leads to a qualification |
+| professional development | Study intended to extend professional knowledge or skills |
+| graph color group | An Obsidian search group that assigns a color to matching notes |
 | vault | The collection of Obsidian study notes |
 | source reference | Data that identifies a source without a copy of its text |
 | draft | A note with facts or course details that need a check |

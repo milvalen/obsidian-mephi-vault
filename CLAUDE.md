@@ -25,7 +25,10 @@ Cite the textbook edition and page, lecture date and slide, or official URL.
 Never invent citations, measurements, attendance, grades, or review results.
 Keep agent explanations as drafts until a source check or calculation supports them.
 
-Keep lecture notes in their course folder.
+Keep each program in a separate folder under `02-programs`.
+Keep lecture notes in their program’s course folder.
+Keep the program’s graph color group current.
+Do not treat an application as confirmed enrollment.
 Add a separate concept note when it helps study. Link related notes in both directions.
 Include recall questions, conditions of use, units, and common errors.
 For problems, write an English task summary. Keep the attempt, reasoning, and checked answer.

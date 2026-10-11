@@ -1,10 +1,17 @@
 {
   "colorGroups": [
     {
-      "query": "path:\"02-courses/\"",
+      "query": "path:\"02-programs/software-engineering/\"",
       "color": {
         "a": 1,
         "rgb": 5088255
+      }
+    },
+    {
+      "query": "path:\"02-programs/applied-data-analysis/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16096779
       }
     },
     {
