@@ -4,7 +4,7 @@ type: lecture
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-19
 course: System Administration
 tags:
   - networking
@@ -19,6 +19,9 @@ tags:
 ## Course context
 
 The owner supplied this material on 2026-10-11 at 02:33. It introduces external access to a local application. The material names web servers, certificates, and system services as later topics. The owner supplied those topics in later messages. The exact title and section number are unknown. The vault does not store the original source text.
+
+The owner supplied this section again on 2026-10-19.
+This update retains the earlier source date and verification limits.
 
 ## Ports and endpoints
 
@@ -89,7 +92,7 @@ Protocol, status, and headers can change between requests. The agent did not mea
 
 ## TLS and certificate identity
 
-In a typical fresh certificate-authenticated TLS 1.3 connection, the handshake authenticates the server and shows traffic keys. Ephemeral (EC)DHE key agreement and certificate-based signatures have different roles. Bulk data uses symmetric authenticated encryption. TLS 1.3 also supports pre-shared keys and session resumption.
+In a typical fresh certificate-authenticated TLS 1.3 connection, the handshake authenticates the server and derives traffic keys. Ephemeral (EC)DHE key agreement and certificate-based signatures have different roles. Bulk data uses symmetric authenticated encryption. TLS 1.3 also supports pre-shared keys and session resumption.
 
 Optional 0-RTT permits early application data before handshake completion. Early data has replay-related limits. [TLS 1.3, RFC 8446](https://www.rfc-editor.org/rfc/rfc8446.html).
 
@@ -133,9 +136,24 @@ These are starting points, not unique diagnoses. Use `ss -ltnp` on the server to
 
 Meta's published account describes a maintenance command that disconnected its backbone. An audit-tool bug failed to block it. DNS locations lost data-center connectivity and withdrew BGP announcements. Their authoritative DNS servers still operated, but external systems could not reach them.
 
-Network and DNS failures also disabled internal recovery tools. Engineers went to the sites. They restored connectivity and returned the services to operation in controlled steps. [Meta engineering account, published 2021-10-05](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/).
+Network and DNS failures also disabled internal recovery tools. Engineers went to the sites. They restarted systems onsite, restored connectivity, and returned services to operation in controlled steps. [Meta engineering account, published 2021-10-05](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/).
 
-That account does not confirm the supplied exact outage interval, badge-system claims, or manual server resets. This note does not adopt those details. The diagnostic lesson is that routing failure can appear as DNS failure and can affect recovery infrastructure as well as users.
+That account does not confirm the supplied exact outage interval, badge-system claims, or resets of individual servers. This note does not adopt those details. The diagnostic lesson is that routing failure can appear as DNS failure and can affect recovery infrastructure as well as users.
+
+## Common errors in the supplied explanation
+
+| Simplification | Necessary qualification |
+| --- | --- |
+| An IP address and port uniquely identify a service | Include the transport protocol and network namespace |
+| A wildcard listener is externally reachable | Routing and access controls must also permit the connection |
+| A DNS edit completes a server move | Prepare the destination and account for cached records |
+| A `Server` header proves the infrastructure provider | A server can omit or change this header |
+| TLS always uses ECDHE before all HTTP data | Resumption and optional early data require qualifications |
+| A certificate's CN proves the hostname | Validate trust, dates, and the service identity in SAN |
+
+For TLS 1.3, traffic keys protect each direction separately.
+Do not describe the handshake as publication of a secret session key.
+The source's certificate fields, DNS addresses, and HTTP responses remain historical examples.
 
 ## Recall and learning targets
 
@@ -156,3 +174,10 @@ Advanced: distinguish certificate authentication from traffic encryption and rel
 ## Verification limits
 
 The agent read the official references on 2026-10-11. Commands are examples, not completed labs or fresh runtime evidence. This note does not claim a new check of supplied IP addresses, headers, certificates, or outage times. Course numbering and teaching-environment versions remain unknown. The note remains a draft.
+
+
+## Additional source check, 2026-10-19
+
+The agent reread Linux socket documentation, HTTP semantics, HTTP/3, service identity, TLS 1.3, and Meta's incident account.
+This check confirms the distinctions above. It does not repeat the example commands or verify external service availability.
+The original 2026-10-11 check remains historical evidence.

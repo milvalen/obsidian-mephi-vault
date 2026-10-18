@@ -197,3 +197,13 @@ Python verb use: `display` means to present an object through an interactive out
 | percentage point | Unit for the arithmetic difference between percentages. Noun |
 | timing command | Interactive command that measures execution duration. Noun |
 | VIP | Customer classification that selects an additional example discount. Noun |
+
+## Request-path clarification terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| traffic key | Secret key used to protect TLS records in one direction. Noun |
+| SAN | Subject Alternative Name, the certificate extension used for service identity information. Noun |
+| ECDHE | Ephemeral elliptic-curve Diffie-Hellman key agreement. Noun |
+| handshake | Protocol exchange that establishes connection parameters and authentication. Noun |
+| session resumption | Reuse of earlier TLS authentication state to establish a new connection. Noun |

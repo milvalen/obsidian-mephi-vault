@@ -47,3 +47,7 @@ Official references support loop, function, argument, and scope corrections.
 The notebook metadata reports Python 3.9.7, without a verified active runtime.
 The source also names a [PEP 257 translation](https://habr.com/ru/articles/499358/), without a new content check.
 The vault does not retain the source notebook or original text.
+
+The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
+The existing note now records that receipt and an additional official-source check.
+Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.
