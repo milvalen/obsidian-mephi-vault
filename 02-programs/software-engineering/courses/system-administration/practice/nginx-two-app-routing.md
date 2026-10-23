@@ -4,7 +4,7 @@ type: problem
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-23
 course: System Administration
 ---
 # Practice: route legacy and new applications with Nginx
@@ -84,3 +84,14 @@ These expectations derive from the configuration. They are not runtime results. 
 4. Why can incoming routing work while generated asset URLs fail?
 
 The agent read the official references on 2026-10-11. The agent did not execute a Nginx syntax or runtime check. The Nginx binary is not available in the agent environment. This is an agent-written worked solution, not completed student practice.
+
+
+## Repeated task and source check, 2026-10-23
+
+The owner supplied the same two-application routing task again on 2026-10-23.
+The existing worked solution remains applicable under its stated assumptions.
+The agent reread the official location and `proxy_pass` documentation. No live routing check occurred.
+
+If the legacy application expects the full `/legacy/` prefix, omit the URI slash from its `proxy_pass` address.
+Keep the slash in the `location /legacy/` prefix to avoid matching `/legacy-other`.
+These are independent choices, not a rule to add or remove all trailing slashes together.

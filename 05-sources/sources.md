@@ -51,3 +51,7 @@ The vault does not retain the source notebook or original text.
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.
+
+The owner supplied the [Nginx section](../02-programs/software-engineering/courses/system-administration/nginx-reverse-proxy.md) again on 2026-10-23.
+The [two-application routing exercise](../02-programs/software-engineering/courses/system-administration/practice/nginx-two-app-routing.md) retains its earlier worked solution and assumptions.
+A new official-source check confirms routing, publication, and reload distinctions. No runtime test or student completion is claimed.

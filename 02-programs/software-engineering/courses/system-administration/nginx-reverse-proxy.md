@@ -4,7 +4,7 @@ type: lecture
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-23
 course: System Administration
 ---
 # Nginx web serving and reverse proxying
@@ -16,6 +16,9 @@ course: System Administration
 This note combines repeated material that the owner supplied on 2026-10-11 at 02:41 and 02:42. It follows the Module 4 request-path introduction. The supplied material references container sections 3.3–3.4 and a later section 4.3. The exact number of this section is unconfirmed.
 
 The vault does not store the original text. The earlier submission also describes ungraded self-checks. No student answers or score are recorded.
+
+The owner supplied this section again on 2026-10-23.
+The existing note retains the earlier source dates and distinguishes source examples from agent execution.
 
 ## Static and dynamic content
 
@@ -71,8 +74,7 @@ The supplied material describes `/etc/nginx/conf.d/*.conf` as the common RHEL-fa
 ## Validation and graceful reload
 
 ```sh
-sudo nginx -t
-sudo systemctl reload nginx
+sudo nginx -t && sudo systemctl reload nginx
 ```
 
 Run the reload only after the test succeeds. `nginx -t` checks syntax and attempts to open referenced files. It does not reload the running service. A missing semicolon can fail parsing, but exact error text depends on context. A passing test does not prove upstream reachability or correct routing. [Nginx command-line reference](https://nginx.org/en/docs/switches.html).
@@ -80,6 +82,17 @@ Run the reload only after the test succeeds. `nginx -t` checks syntax and attemp
 On a normal reload, the master validates and attempts to apply the new configuration. If it cannot apply it, Nginx keeps the old configuration. After a successful reload, new workers use the new configuration. Old workers finish existing requests.
 
 A fresh start after a full stop is different. Invalid configuration can prevent that start. Test before a reload. An invalid reload does not necessarily stop every site, as the supplied material claimed. [Nginx process control](https://nginx.org/en/docs/control.html).
+
+## Practical limits
+
+A public port 8080 can permit direct access that bypasses the host proxy.
+Use the loopback publication above when only host Nginx needs the application port.
+The application still needs an appropriate listener inside its container.
+
+A valid configuration can route to the wrong application or an unavailable port.
+Check both upstream endpoints before testing their public routes.
+Use the [routing exercise](practice/nginx-two-app-routing.md) to distinguish location matching from URI replacement.
+Do not infer successful deployment from syntax validation alone.
 
 ## Recall and self-check answers
 
@@ -94,3 +107,10 @@ These are explanatory answers, not a recorded student attempt. The supplied lear
 ## Verification limits
 
 The agent read the official references on 2026-10-11. The agent's PATH contains no Nginx binary. The agent did not execute `nginx -t` or a live proxy test. The agent did not change a container or server configuration. The note remains a draft.
+
+
+## Additional source check, 2026-10-23
+
+The agent reread official Nginx location, proxy, and reload documentation, plus Docker port-publication guidance.
+These references support the routing and reload qualifications above.
+This source check does not establish a completed lab or repeat the earlier environment check.
