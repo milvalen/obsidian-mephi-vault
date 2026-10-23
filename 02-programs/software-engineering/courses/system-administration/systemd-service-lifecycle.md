@@ -4,14 +4,16 @@ type: lecture
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-23
 course: System Administration
 ---
 # systemd service lifecycle and container supervision
 
-[System Administration](system-administration.md) · [Nginx reverse proxy](nginx-reverse-proxy.md) · [Logs and metrics](service-logs-and-metrics.md)
+[System Administration](system-administration.md) · [Nginx reverse proxy](nginx-reverse-proxy.md) · [TLS setup](tls-certificates-and-nginx.md) · [Logs and metrics](service-logs-and-metrics.md)
 
 The owner supplied the Section 4.3 material on 2026-10-11 at 02:52. This English summary includes corrections from official references. The vault does not store the original text. The commands are study examples. The agent did not do these procedures. The agent read the references on 2026-10-11.
+
+The owner supplied Section 4.3 again on 2026-10-23. Earlier evidence dates remain unchanged.
 
 ## Terminal commands and managed services
 
@@ -84,3 +86,28 @@ journalctl -u my-app.service -n 50 --no-pager
 6. Why does losing PID 1 inside a container differ from losing host init?
 
 The agent did not install, enable, or start a service for this note. The note does not copy the supplied course test results or identify them as student evidence. The agent could not retrieve the freedesktop manuals. The agent used the linked systemd manuals on the Debian website instead. This note remains a draft.
+
+
+## Additional source check, 2026-10-23
+
+The agent retrieved the official freedesktop service and unit manuals during this update.
+The earlier retrieval failure remains part of the 2026-10-11 evidence.
+See [service behavior](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html) and [unit dependencies](https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html).
+No service installation, start, restart, or failure-recovery test occurred.
+
+### Limits of automatic recovery
+
+`Restart=on-failure` does not restart a cleanly exited service.
+Start-rate limits can also prevent repeated restarts.
+Docker daemon availability and application health are separate conditions.
+For this wrapper, inspect both systemd state and container state before declaring recovery.
+
+### Orphan processes and host init
+
+A living ancestor subreaper can adopt an orphan before namespace init does.
+Adoption and collection of exit status are separate steps.
+Orphan processes remain known to the kernel.
+See [Linux subreaper behavior](https://man7.org/linux/man-pages/man2/PR_SET_CHILD_SUBREAPER.2const.html).
+
+The source's host-wide panic statement must not be applied to an ordinary container's PID 1.
+The namespace boundary determines the effect described in the earlier PID section.

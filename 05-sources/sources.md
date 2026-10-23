@@ -55,3 +55,8 @@ Earlier evidence dates remain unchanged. No fresh command results or source tran
 The owner supplied the [Nginx section](../02-programs/software-engineering/courses/system-administration/nginx-reverse-proxy.md) again on 2026-10-23.
 The [two-application routing exercise](../02-programs/software-engineering/courses/system-administration/practice/nginx-two-app-routing.md) retains its earlier worked solution and assumptions.
 A new official-source check confirms routing, publication, and reload distinctions. No runtime test or student completion is claimed.
+
+The owner supplied Section 4.3 again on 2026-10-23.
+[TLS and Nginx](../02-programs/software-engineering/courses/system-administration/tls-certificates-and-nginx.md) records an additional certificate-policy source check.
+[systemd lifecycle](../02-programs/software-engineering/courses/system-administration/systemd-service-lifecycle.md) records newly retrieved freedesktop manuals and process-adoption limits.
+Earlier checks and retrieval limits remain dated. No runtime procedure or source transcript was added.

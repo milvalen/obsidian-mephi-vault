@@ -207,3 +207,16 @@ Python verb use: `display` means to present an object through an interactive out
 | ECDHE | Ephemeral elliptic-curve Diffie-Hellman key agreement. Noun |
 | handshake | Protocol exchange that establishes connection parameters and authentication. Noun |
 | session resumption | Reuse of earlier TLS authentication state to establish a new connection. Noun |
+
+## Certificate and service lifecycle terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| self-issued certificate | Certificate with matching subject and issuer names. Noun |
+| self-signed certificate | Certificate whose signature verifies with its own public key. Noun |
+| trust anchor | Explicitly trusted certificate or public-key information used to validate a chain. Noun |
+| ACME | Protocol for automated certificate management and proof of identifier control. Noun |
+| subreaper | Process that can adopt orphaned descendant processes. Noun |
+| orphan process | Process whose immediate parent has terminated. Noun |
+| PID namespace | Linux namespace with its own process identifier numbering and init process. Noun |
+| start-rate limit | Restriction on repeated service start attempts. Noun |
