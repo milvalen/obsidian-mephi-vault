@@ -4,7 +4,7 @@ type: problem
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-26
 course: System Administration
 ---
 # Practice: investigate recurring nighttime service crashes
@@ -12,6 +12,8 @@ course: System Administration
 [System Administration](../system-administration.md) · [Logs and metrics](../service-logs-and-metrics.md)
 
 The owner supplied the Section 4.4 material on 2026-10-11 at 03:48. This page gives an English summary or a suggested solution. The vault does not store the original text or log transcripts. The agent read the official references on 2026-10-11. The examples are not student measurements. The agent did not execute the commands.
+
+The owner supplied Section 4.4 again on 2026-10-26. Earlier source and verification dates remain unchanged.
 
 ## Task and status
 
@@ -73,3 +75,19 @@ Record the actual interval, unit termination result, relevant kernel events and 
 4. How would you compare the two failure windows consistently?
 
 The agent did not execute commands against a service. The agent did not investigate a real incident. This note remains a draft.
+
+
+## Repeated exercise, 2026-10-26
+
+The repeated source describes the same hypothetical two-crash scenario.
+It supplies no new incident times, measurements, or student attempt.
+The investigation plan remains unexecuted.
+
+Start with the unit journal and available memory observations around both failures.
+Compare the same interval, time zone, and boot context for each event.
+Inspect proxy errors next, then correlate request activity with those events.
+Low request volume does not exclude a crash from a background operation.
+This ordering prioritizes evidence without selecting a cause in advance.
+
+A useful answer states an observation, its time, and the hypothesis it supports or weakens.
+If earlier measurements do not exist, record that gap instead of reconstructing values from current readings.

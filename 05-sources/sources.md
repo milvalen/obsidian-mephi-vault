@@ -60,3 +60,8 @@ The owner supplied Section 4.3 again on 2026-10-23.
 [TLS and Nginx](../02-programs/software-engineering/courses/system-administration/tls-certificates-and-nginx.md) records an additional certificate-policy source check.
 [systemd lifecycle](../02-programs/software-engineering/courses/system-administration/systemd-service-lifecycle.md) records newly retrieved freedesktop manuals and process-adoption limits.
 Earlier checks and retrieval limits remain dated. No runtime procedure or source transcript was added.
+
+The owner supplied Section 4.4 again on 2026-10-26.
+[Service logs and metrics](../02-programs/software-engineering/courses/system-administration/service-logs-and-metrics.md) records the repeated source and an additional documentation check.
+[The nighttime-crash exercise](../02-programs/software-engineering/courses/system-administration/practice/nighttime-service-crashes.md) remains a proposed investigation, without incident data.
+Source log timestamps are historical examples. No original log lines or new runtime results were saved.

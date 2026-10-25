@@ -4,7 +4,7 @@ type: lecture
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-26
 course: System Administration
 ---
 # Service logs, metrics and health
@@ -12,6 +12,8 @@ course: System Administration
 [System Administration](system-administration.md) · [Service lifecycle](systemd-service-lifecycle.md)
 
 The owner supplied the Section 4.4 material on 2026-10-11 at 03:48. This page gives an English summary or a suggested solution. The vault does not store the original text or log transcripts. The agent read the official references on 2026-10-11. The examples are not student measurements. The agent did not execute the commands.
+
+The owner supplied Section 4.4 again on 2026-10-26. Earlier source and verification dates remain unchanged.
 
 ## Running versus healthy
 
@@ -92,3 +94,23 @@ Record the time of each observation. A rising trend can reveal resource pressure
 6. Why is load average different from CPU utilization?
 
 The agent did not verify log destinations or current resource use on the practice VM. Continue with [the nighttime-crash investigation](practice/nighttime-service-crashes.md).
+
+
+## Evidence comparison and source check, 2026-10-26
+
+| Evidence | First useful question | Important limit |
+| --- | --- | --- |
+| Unit journal | Did the service exit, restart, or report an error? | Output settings and retention determine available records |
+| Nginx access log | Which requests reached the proxy, and what status did it return? | It does not directly explain application memory exhaustion |
+| Nginx error log | Did the proxy report an upstream or file-access problem? | Severity settings determine which events appear |
+| Repeated memory observations | Did available RAM or swap use change before failure? | A recovered process can release memory before inspection |
+| Repeated filesystem observations | Is storage consumption increasing? | Free bytes and free inodes are separate conditions |
+
+The agent reread official journalctl and Nginx access-log documentation, plus procps memory and load references.
+See [journalctl](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html), [uptime](https://man7.org/linux/man-pages/man1/uptime.1.html), and [free](https://man7.org/linux/man-pages/man1/free.1.html).
+No service logs or resource measurements were collected in this update.
+The supplied July timestamps identify source examples, not an October lab execution.
+
+For exported journal text, use text-processing tools after journal decoding.
+For structured analysis, `journalctl -o json` exports named fields.
+Raw journal files require a journal reader, not ordinary line-oriented text processing.
