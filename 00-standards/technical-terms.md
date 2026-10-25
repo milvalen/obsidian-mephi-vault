@@ -220,3 +220,24 @@ Python verb use: `display` means to present an object through an interactive out
 | orphan process | Process whose immediate parent has terminated. Noun |
 | PID namespace | Linux namespace with its own process identifier numbering and init process. Noun |
 | start-rate limit | Restriction on repeated service start attempts. Noun |
+
+## Observability terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| eBPF | Linux facility for programs attached to supported kernel hooks. Noun |
+| bpftrace | Tracing tool and language based on eBPF. Noun |
+| verifier | Kernel component that checks BPF program constraints before loading. Noun |
+| hook | Supported attachment point for a program or observation. Noun |
+| instrumentation | Mechanism that collects measurements or events from software. Noun |
+| telemetry | Measurements and events collected from a system. Noun |
+| OpenTelemetry | Open telemetry specifications, APIs, SDKs, and tools. Noun |
+| OpenTelemetry Collector | Component that receives, processes, and exports telemetry. Noun |
+| trace | Related spans that describe an execution path. Noun |
+| span | Record of an operation within a trace. Noun |
+| exporter | Component that sends telemetry to a destination. Noun |
+| receiver | Component that accepts telemetry. Noun |
+| semantic convention | Shared rule for telemetry names and attributes. Noun |
+| syscall | System call from user space to the kernel. Noun |
+| task name | Nonunique name associated with a Linux task. Noun |
+| backend | System that receives data for storage, queries, or visualization. Noun |

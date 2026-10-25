@@ -4,7 +4,7 @@ type: course
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-26
 ---
 # System Administration
 
@@ -21,6 +21,8 @@ The semester, instructor, course code, and prerequisites are unknown.
 The owner supplied RPM and digital signature material on 2026-10-11 at 01:33. The owner supplied a Module 3 summary on 2026-10-11 at 01:38. The owner supplied a Module 4 introduction on 2026-10-11 at 02:33. The owner did not supply the full syllabus, textbooks, or official course title. See [Sources](../../../../05-sources/sources.md).
 
 ## Lectures and concepts
+
+- [Optional observability: eBPF and OpenTelemetry](ebpf-and-opentelemetry.md) — ungraded demonstration and evidence limits.
 
 - [WAF, ModSecurity and OWASP CRS](waf-modsecurity-and-crs.md) — ungraded demonstration, HTTP inspection and anomaly scoring.
 - [Service logs, metrics and health](service-logs-and-metrics.md) — Section 4.4 journald, Nginx logs and resource trends.

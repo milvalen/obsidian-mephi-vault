@@ -114,3 +114,5 @@ The supplied July timestamps identify source examples, not an October lab execut
 For exported journal text, use text-processing tools after journal decoding.
 For structured analysis, `journalctl -o json` exports named fields.
 Raw journal files require a journal reader, not ordinary line-oriented text processing.
+
+For optional external instrumentation and telemetry export, see [eBPF and OpenTelemetry](ebpf-and-opentelemetry.md).

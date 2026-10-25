@@ -65,3 +65,8 @@ The owner supplied Section 4.4 again on 2026-10-26.
 [Service logs and metrics](../02-programs/software-engineering/courses/system-administration/service-logs-and-metrics.md) records the repeated source and an additional documentation check.
 [The nighttime-crash exercise](../02-programs/software-engineering/courses/system-administration/practice/nighttime-service-crashes.md) remains a proposed investigation, without incident data.
 Source log timestamps are historical examples. No original log lines or new runtime results were saved.
+
+[Optional eBPF and OpenTelemetry observability](../02-programs/software-engineering/courses/system-administration/ebpf-and-opentelemetry.md) summarizes the ungraded demonstration supplied on 2026-10-26.
+The author, section number, and original URL are unknown.
+Official Linux, bpftrace, and OpenTelemetry references support the qualifications.
+The reported bpftrace output is not a new agent measurement. No original transcript was retained.
