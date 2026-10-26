@@ -241,3 +241,22 @@ Python verb use: `display` means to present an object through an interactive out
 | syscall | System call from user space to the kernel. Noun |
 | task name | Nonunique name associated with a Linux task. Noun |
 | backend | System that receives data for storage, queries, or visualization. Noun |
+
+## BPF lab terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| opensnoop | Tracing tool that reports supported file-open system calls. Noun |
+| bpftool | Tool for BPF program, map, and related object inspection. Noun |
+| BPF map | Kernel-managed data structure accessible through BPF interfaces. Noun |
+| event buffer | Mechanism that transfers collected events to user space. Noun |
+| user space | Execution context outside the kernel. Noun |
+| kernel handler | Program invoked for a selected kernel event. Noun |
+| ELF | Executable and Linkable Format for objects and executable content. Noun |
+| BTF | BPF Type Format for type and related debugging metadata. Noun |
+| JIT compilation | Translation into native instructions during loading or execution. Noun |
+| tracefs | Linux filesystem interface for tracing. Noun |
+| debugfs | Linux filesystem interface for debugging. Noun |
+| capability | Separately controlled Linux privilege. Noun |
+| program image | Executable code and associated process memory content. Noun |
+| loader | Program that prepares and loads executable objects. Noun |

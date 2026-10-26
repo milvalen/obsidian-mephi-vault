@@ -70,3 +70,11 @@ Source log timestamps are historical examples. No original log lines or new runt
 The author, section number, and original URL are unknown.
 Official Linux, bpftrace, and OpenTelemetry references support the qualifications.
 The reported bpftrace output is not a new agent measurement. No original transcript was retained.
+
+Isovalent, *Getting started with eBPF*, version 1.2.16, 32 pages, copyright notice 2025 Cisco.
+The owner supplied the file on 2026-10-26. The PDF gives no explicit publication date.
+[Study plan and page references](../02-programs/software-engineering/courses/system-administration/practice/isovalent-ebpf-getting-started.md).
+Original path: `C:\Users\Ерков Артемий Кирилл\Downloads\Telegram Desktop\ebpf-getting-started-notes.pdf`.
+SHA-256: `0103dcb43a2a6e440554c7e4ebcfcc9abcbf228b7d39b6599eb7fe827fa298c9`.
+The [hosted lab](https://isovalent.com/labs/ebpf-getting-started/) is the source's reproduction entry point.
+The vault stores neither the PDF nor its extracted text.

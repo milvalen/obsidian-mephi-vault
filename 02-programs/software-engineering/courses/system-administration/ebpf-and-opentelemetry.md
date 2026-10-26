@@ -113,3 +113,8 @@ These are supplied learning targets, not verified student achievements.
 The agent consulted the linked official references on 2026-10-26.
 The agent did not install tools, execute bpftrace, or deploy a Collector.
 The demonstration remains source-reported evidence. The note remains a draft.
+
+## Related reading
+
+[Isovalent Getting started with eBPF](practice/isovalent-ebpf-getting-started.md) adds a source-based opensnoop study plan and object-inspection tasks.
+The PDF does not establish lab completion or an OpenTelemetry integration.

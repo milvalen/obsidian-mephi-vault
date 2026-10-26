@@ -48,6 +48,8 @@ These notes reconstruct topics named in the supplied review. They do not claim t
 
 ## Problems and laboratories
 
+- [Isovalent eBPF study plan](practice/isovalent-ebpf-getting-started.md): PDF reading and proposed lab steps, not executed.
+
 - [Practice: recurring nighttime crashes](practice/nighttime-service-crashes.md) — proposed evidence collection and hypothesis testing. No actual crash reported.
 - [Practice: route legacy and new applications](practice/nginx-two-app-routing.md) — worked configuration and slash behavior. Not deployed.
 - [Practice: RAID 1 with loop devices](practice/raid1-loop-devices.md) — owner-reported array inspection.
