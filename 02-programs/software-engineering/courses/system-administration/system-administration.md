@@ -22,6 +22,7 @@ The owner supplied RPM and digital signature material on 2026-10-11 at 01:33. Th
 
 ## Lectures and concepts
 
+- [Optional GPU infrastructure](gpu-infrastructure.md) — ungraded final demonstration: nvidia-smi, MIG and Kubernetes.
 - [Optional observability: eBPF and OpenTelemetry](ebpf-and-opentelemetry.md) — ungraded demonstration and evidence limits.
 
 - [WAF, ModSecurity and OWASP CRS](waf-modsecurity-and-crs.md) — ungraded demonstration, HTTP inspection and anomaly scoring.

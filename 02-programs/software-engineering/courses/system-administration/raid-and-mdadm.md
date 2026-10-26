@@ -56,3 +56,5 @@ Inspection examples include `cat /proc/mdstat` and `sudo mdadm --detail /dev/md0
 2. Which two failures destroy the example RAID 10?
 3. Why is four-way RAID 1 not 50% efficient?
 4. What remains unprotected when deleted data is mirrored?
+
+See also [Optional GPU infrastructure](gpu-infrastructure.md), which applies the same resource-division principle to GPUs with MIG.

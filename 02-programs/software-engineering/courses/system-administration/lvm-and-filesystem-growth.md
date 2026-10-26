@@ -55,3 +55,5 @@ If the LV is larger but `df` shows no change, check the filesystem size. Then ch
 2. What is the difference between LV size and filesystem size?
 3. How do `-L +5G` and `-L 5G` differ?
 4. Does an ordinary LV provide disk failure tolerance?
+
+See also [Optional GPU infrastructure](gpu-infrastructure.md), which applies the same resource-division principle to GPUs with MIG.

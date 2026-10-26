@@ -260,3 +260,22 @@ Python verb use: `display` means to present an object through an interactive out
 | capability | Separately controlled Linux privilege. Noun |
 | program image | Executable code and associated process memory content. Noun |
 | loader | Program that prepares and loads executable objects. Noun |
+
+## GPU infrastructure terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| GPU | Processor with many execution units for parallel operations on data. Noun |
+| inference | Use of a trained model to calculate output from input. Noun |
+| model training | Calculation that adjusts model parameters from data. Noun |
+| matrix multiplication | Calculation of a matrix product. Noun |
+| GPU utilization | Percentage of a sample period in which one or more GPU kernels executed. Noun |
+| nvidia-smi | NVIDIA command-line tool that shows GPU state and GPU processes. Noun |
+| MIG | Multi-Instance GPU. NVIDIA division of one GPU into isolated GPU instances. Noun |
+| GPU instance | Isolated part of a MIG GPU with dedicated compute and memory resources. Noun |
+| streaming multiprocessor | NVIDIA GPU compute unit. Noun |
+| Kubernetes | Container orchestration system for clusters of nodes. Noun |
+| node | Machine that runs workloads in a Kubernetes cluster. Noun |
+| scheduler | Component that selects a node for a workload. Noun |
+| device plugin | Node component that advertises special hardware resources to Kubernetes. Noun |
+| resource limit | Maximum quantity of a resource that a container can use. Noun |

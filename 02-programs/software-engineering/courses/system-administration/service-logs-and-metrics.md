@@ -116,3 +116,5 @@ For structured analysis, `journalctl -o json` exports named fields.
 Raw journal files require a journal reader, not ordinary line-oriented text processing.
 
 For optional external instrumentation and telemetry export, see [eBPF and OpenTelemetry](ebpf-and-opentelemetry.md).
+
+See also [Optional GPU infrastructure](gpu-infrastructure.md), which applies the same observation principle to GPUs with `nvidia-smi`.
