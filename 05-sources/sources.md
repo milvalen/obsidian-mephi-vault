@@ -78,3 +78,9 @@ Original path: `C:\Users\Ерков Артемий Кирилл\Downloads\Telegr
 SHA-256: `0103dcb43a2a6e440554c7e4ebcfcc9abcbf228b7d39b6599eb7fe827fa298c9`.
 The [hosted lab](https://isovalent.com/labs/ebpf-getting-started/) is the source's reproduction entry point.
 The vault stores neither the PDF nor its extracted text.
+
+## Java Programming
+
+Owner-supplied arrays lecture text, received 2026-11-02. Author, module number, and URL are unknown.
+[Summary](../02-programs/software-engineering/courses/java-programming/arrays.md).
+The vault does not store the original text or images.

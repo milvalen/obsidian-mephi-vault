@@ -279,3 +279,26 @@ Python verb use: `display` means to present an object through an interactive out
 | scheduler | Component that selects a node for a workload. Noun |
 | device plugin | Node component that advertises special hardware resources to Kubernetes. Noun |
 | resource limit | Maximum quantity of a resource that a container can use. Noun |
+
+## Java array terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| array | Java object with a fixed length that keeps elements of one type. Noun |
+| array element | Value or reference at one index of an array. Noun |
+| array index | Integer position of an element, from `0` to `length - 1`. Noun |
+| array initializer | Comma-separated values in braces that create array content. Noun |
+| primitive type | Java type such as `int` or `boolean` that is not a reference type. Noun |
+| reference type | Java type whose variables keep references to objects. Noun |
+| default element value | Value that Java assigns to a new array element. Noun |
+| two-dimensional array | Array whose elements are references to arrays. Noun |
+| jagged array | Two-dimensional array with rows of different lengths. Noun |
+| flatten | Copy nested array elements to a one-dimensional array. Verb |
+| for-each loop | Loop that reads each element of an array or collection in sequence. Noun |
+| exception | Object that reports an error or a special condition during execution. Noun |
+| checked exception | `Exception` subclass outside the `RuntimeException` hierarchy. Noun |
+| unchecked exception | `RuntimeException` or one of its subclasses. Noun |
+| shallow copy | New outer object that shares nested objects with the original. Noun |
+| deep copy | Copy that has its own nested objects. Noun |
+| binary search | Search that divides a sorted range into two parts at each step. Noun |
+| constant time | Execution time that does not increase with input size, written O(1). Noun |

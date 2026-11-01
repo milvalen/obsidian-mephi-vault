@@ -4,7 +4,7 @@ type: course
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-11-02
 ---
 # Java Programming
 
@@ -18,15 +18,17 @@ The semester, instructor, course code, and prerequisites are unknown.
 
 ## Syllabus and sources
 
-The owner did not supply a syllabus, lecture materials, or textbooks. Add source references with exact pages, slides or URLs when available.
+The owner supplied an arrays lecture text on 2026-11-02. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
 
 ## Lectures and concepts
 
-The owner did not supply lecture notes. Use the [lecture template](../../../../90-templates/lecture.md) for actual lectures and the [concept template](../../../../90-templates/concept.md) for focused explanations.
+- [Java arrays](arrays.md) — one-dimensional, two-dimensional and jagged arrays, exceptions, copies and `java.util.Arrays`.
+
+Use the [lecture template](../../../../90-templates/lecture.md) for actual lectures and the [concept template](../../../../90-templates/concept.md) for focused explanations.
 
 ## Problems and laboratories
 
-The owner did not report an assignment or an attempt. Use the [problem template](../../../../90-templates/problem.md) or [lab template](../../../../90-templates/lab.md). Keep student attempts. Separate observed data from explanations.
+The [arrays note](arrays.md) lists three practice tasks. The owner did not report an attempt. Use the [problem template](../../../../90-templates/problem.md) or [lab template](../../../../90-templates/lab.md). Keep student attempts. Separate observed data from explanations.
 
 ## Review and assessment
 
