@@ -175,6 +175,9 @@ All results agreed with a reference solution.
 Agent comment: the result is correct, but the sentinel values make the code hard to read.
 Initialize both values from `nums[0]`, as in the lecture's maximum example. Then length 1 needs no separate branch.
 
+The owner then wrote a second `bigDiff` version in 01:36.85 (owner-reported) with initialization from `nums[0]`.
+Its logic agrees with the code below. Only the argument order in `Math.min` and `Math.max` differs.
+
 ```java
 int smallest = nums[0];
 int largest = nums[0];
