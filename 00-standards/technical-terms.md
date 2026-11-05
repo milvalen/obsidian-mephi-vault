@@ -302,3 +302,17 @@ Python verb use: `display` means to present an object through an interactive out
 | deep copy | Copy that has its own nested objects. Noun |
 | binary search | Search that divides a sorted range into two parts at each step. Noun |
 | constant time | Execution time that does not increase with input size, written O(1). Noun |
+
+## Java string terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| concatenation | Operation that joins strings. Noun |
+| `StringBuilder` | Java class for a changeable sequence of characters. Noun |
+| string literal | String value written directly in source code. Noun |
+| UTF-16 code unit | 16-bit unit of the UTF-16 encoding. Noun |
+| regular expression | Pattern that matches text. Noun |
+| locale | Set of language and region rules for text, numbers, and dates. Noun |
+| format specifier | Template element, such as `%d`, that controls the text form of a value. Noun |
+| palindrome | Text that reads the same in both directions. Noun |
+| substring | Continuous part of a string. Noun |

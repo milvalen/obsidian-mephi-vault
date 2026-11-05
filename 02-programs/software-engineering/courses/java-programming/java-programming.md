@@ -4,7 +4,7 @@ type: course
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-11-02
+updated: 2026-11-06
 ---
 # Java Programming
 
@@ -18,11 +18,12 @@ The semester, instructor, course code, and prerequisites are unknown.
 
 ## Syllabus and sources
 
-The owner supplied an arrays lecture text on 2026-11-02. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
+The owner supplied an arrays lecture text on 2026-11-02 and a strings lecture text on 2026-11-06. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
 
 ## Lectures and concepts
 
 - [Java arrays](arrays.md) — one-dimensional, two-dimensional and jagged arrays, exceptions, copies and `java.util.Arrays`.
+- [Java strings](strings.md) — concatenation, comparison, common methods, palindromes and formatting.
 
 Use the [lecture template](../../../../90-templates/lecture.md) for actual lectures and the [concept template](../../../../90-templates/concept.md) for focused explanations.
 
