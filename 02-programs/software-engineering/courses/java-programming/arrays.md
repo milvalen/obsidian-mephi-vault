@@ -5,7 +5,7 @@ status: draft
 program: software-engineering
 course: Java Programming
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-06
 ---
 # Java arrays
 
@@ -161,6 +161,29 @@ Change the maximum example to do these tasks. No attempts are reported.
 1. Calculate the sum of the elements.
 2. Count the even elements with `nums[i] % 2 == 0`.
 3. Find the minimum element and its index.
+
+## Owner attempts on CodingBat
+
+On 2026-11-06 the owner reported two solved CodingBat problems.
+Times are owner-reported. The CodingBat test results were not shown to the agent.
+
+- [countEvens](https://codingbat.com/prob/p162010): solved in approximately 30 seconds. A for-each loop counts values with `num % 2 == 0`.
+- [bigDiff](https://codingbat.com/prob/p196640): solved in 10:27.99. The solution sets `largest = 0` and `smallest = 1`. At the first loop step, `smallest > largest` causes initialization from `nums[0]` and `nums[1]`. A separate branch processes length 1.
+
+Agent check, 2026-11-06: the agent ran the owner's `bigDiff` on 11 inputs, with negative values, equal values, and length 1.
+All results agreed with a reference solution.
+Agent comment: the result is correct, but the sentinel values make the code hard to read.
+Initialize both values from `nums[0]`, as in the lecture's maximum example. Then length 1 needs no separate branch.
+
+```java
+int smallest = nums[0];
+int largest = nums[0];
+for (int num : nums) {
+    smallest = Math.min(smallest, num);
+    largest = Math.max(largest, num);
+}
+return largest - smallest;
+```
 
 ## Common errors
 
