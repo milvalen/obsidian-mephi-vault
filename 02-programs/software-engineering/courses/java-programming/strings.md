@@ -150,6 +150,8 @@ b = b.toLowerCase();
 return a.endsWith(b) || b.endsWith(a);
 ```
 
+The owner then wrote this `endsWith` version of `endOther` in 01:28.0 (owner-reported). The code is the same as the code above.
+
 ## Common errors
 
 - `==` instead of `equals`.
