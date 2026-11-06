@@ -129,6 +129,27 @@ No attempts are reported.
 1. Put the comma variable `d` into `a + b + c` to make the phrase "Kaznit' nelzya pomilovat'" have a clear meaning.
 2. Correct the argument order in a `String.format` call, so that the name, age, and status go in the correct positions.
 
+## Owner attempts on CodingBat
+
+On 2026-11-06 the owner reported two solved CodingBat problems.
+Times are owner-reported. The CodingBat test results were not shown to the agent.
+
+- [countHi](https://codingbat.com/prob/p147448): solved in 12:40.30, with a hint at approximately 10 minutes.
+  A loop with `i < str.length() - 1` compares `str.substring(i, i + 2)` with `"hi"`.
+  The owner then wrote the same logic again in 06:45.09 with a shorter `if` statement.
+- [endOther](https://codingbat.com/prob/p126880): solved in 24:28.53.
+  The solution selects the longer string, cuts its end with `substring`, and compares the two parts in lowercase.
+
+Agent check, 2026-11-06: the agent ran both solutions on 24 inputs, with empty strings, equal lengths, and overlapping `"hi"`.
+All results agreed with a reference solution.
+Agent comment: `endOther` is correct. The `endsWith` method gives shorter code with the same result:
+
+```java
+a = a.toLowerCase();
+b = b.toLowerCase();
+return a.endsWith(b) || b.endsWith(a);
+```
+
 ## Common errors
 
 - `==` instead of `equals`.
