@@ -9,7 +9,7 @@ updated: 2026-10-11
 ---
 # Lesson 2: loops and functions
 
-[Python](python.md) · [Lesson 1](lesson-01-python-basics.md) · [Practice](lesson-02-practice.md)
+[Python](python.md) · [Lesson 1](lesson-01-python-basics.md) · [Practice](lesson-02-practice.md) · [Lesson 3](lesson-03-strings-and-collections.md)
 
 ## Context and evidence
 

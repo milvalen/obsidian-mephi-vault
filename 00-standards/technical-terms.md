@@ -316,3 +316,13 @@ Python verb use: `display` means to present an object through an interactive out
 | format specifier | Template element, such as `%d`, that controls the text form of a value. Noun |
 | palindrome | Text that reads the same in both directions. Noun |
 | substring | Continuous part of a string. Noun |
+
+## Python collection terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| slice | Part of a sequence selected by start, stop, and step. Noun |
+| list comprehension | Expression that makes a list from an iterable in one statement. Noun |
+| `frozenset` | Immutable Python set. Noun |
+| subset | Set whose items are all in a second set. Noun |
+| symmetric difference | Items that are in exactly one of two sets. Noun |

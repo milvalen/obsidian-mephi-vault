@@ -48,6 +48,12 @@ The notebook metadata reports Python 3.9.7, without a verified active runtime.
 The source also names a [PEP 257 translation](https://habr.com/ru/articles/499358/), without a new content check.
 The vault does not retain the source notebook or original text.
 
+[Lesson 3: strings and collections](../02-programs/applied-data-analysis/courses/python/lesson-03-strings-and-collections.md) summarizes the notebook supplied on 2026-11-06.
+The original author, lecture date, and notebook URL are unknown.
+The [built-in types reference](https://docs.python.org/3/library/stdtypes.html) supports the corrections.
+The source also names a [string method reference](https://python-reference.readthedocs.io/en/latest/docs/str/), without a new content check.
+The vault does not retain the source notebook or original text.
+
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.
