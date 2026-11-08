@@ -206,6 +206,9 @@ def count_code(text):
     return count
 ```
 
+The owner then wrote this version in 02:11.67 (owner-reported). The logic is the same. It keeps the name `str` from the CodingBat function signature.
+The agent ran this version on the same 87,381 strings. All results agreed with the reference solution.
+
 ## Recall questions
 
 1. Which collection types are mutable?
