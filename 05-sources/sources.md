@@ -65,6 +65,13 @@ The original author, lecture date, and notebook URL are unknown.
 The [NumPy documentation](https://numpy.org/doc/stable/) is the reference that the source names.
 The vault does not retain the source notebook or original text.
 
+[Lesson 6: pandas](../02-programs/applied-data-analysis/courses/python/lesson-06-pandas.md) summarizes the notebook supplied on 2026-11-08.
+The original author, lecture date, and notebook URL are unknown.
+The [pandas documentation](https://pandas.pydata.org/docs/) is the reference that the source names.
+The source loads [the Titanic data file](https://raw.githubusercontent.com/MariaZharova/Python-for-Data-Analysis/refs/heads/main/Pandas/train.csv). The agent used this file for checks.
+The source also names a [Titanic article](https://neurohive.io/ru/osnovy-data-science/razbor-resheniya-zadachi-titanik-na-kaggle-dlya-nachinajushhih/) and a [comparison with other tools](http://pandas.geekwriter.ru/getting_started/comparison/index.html), without a new content check.
+The vault does not retain the source notebook, data file, or original text.
+
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.

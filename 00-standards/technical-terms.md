@@ -385,3 +385,20 @@ Python verb use: `display` means to present an object through an interactive out
 | sigmoid | Function that changes a number to a value from 0 to 1. Noun |
 | softmax | Function that changes a vector to probabilities with sum 1. Noun |
 | one-hot encoding | Vector of zeros with a one at the position of a class. Noun |
+
+## pandas terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| pandas | Python library for tables of data. Noun |
+| `Series` | One-dimensional pandas object with an index. Noun |
+| `DataFrame` | Two-dimensional pandas table. Noun |
+| dataset | Table of data for analysis. Noun |
+| target | Column with the variable to predict. Noun |
+| exploratory data analysis (EDA) | First examination of data with calculations and charts. Noun |
+| missing value | Table position with no data, shown as `NaN`. Noun |
+| label | Name of a row or column in a pandas index. Noun |
+| filter | To select rows that agree with a condition. Verb |
+| median | Middle value of sorted data. Noun |
+| mode | Most frequent value. Noun |
+| identifier column | Column with values that identify each row. Noun |

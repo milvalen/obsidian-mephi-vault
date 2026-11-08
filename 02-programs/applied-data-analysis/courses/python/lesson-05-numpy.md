@@ -9,7 +9,7 @@ updated: 2026-11-08
 ---
 # Lesson 5: NumPy
 
-[Python](python.md) · [Lesson 4](lesson-04-object-oriented-programming.md)
+[Python](python.md) · [Lesson 4](lesson-04-object-oriented-programming.md) · [Lesson 6](lesson-06-pandas.md)
 
 ## Context and evidence
 
