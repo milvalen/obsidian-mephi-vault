@@ -185,6 +185,14 @@ A list comprehension gives shorter code: `[Alien(x, y) for x, y in positions]`.
 The parentheses in `return(self.health > 0)` are not necessary.
 The owner then reported a correction in 00:35.69. The agent did not see the changed code.
 
+- [Day 12: Inheritance](https://www.hackerrank.com/challenges/30-inheritance/problem): solved in 09:12.91 (owner-reported, 2026-11-08).
+  `Student` inherits from `Person` and calls `super().__init__`. `calculate` goes through a dictionary of grade limits from high to low.
+
+Agent check, 2026-11-08: the agent ran the solution on a sample input and on all 10,201 pairs of scores from 0 to 100. All results agreed with a reference solution.
+HackerRank test results were not shown to the agent.
+Agent comment: `calculate` is correct because a dictionary keeps insertion order (Python 3.7 and later). The order of the items is thus necessary for the result.
+A scores value of less than 0 gives an average below 0, and `calculate` then returns `None`. The task does not state whether such input can occur.
+
 ## Recall questions
 
 1. What is the difference between a class and an instance?
