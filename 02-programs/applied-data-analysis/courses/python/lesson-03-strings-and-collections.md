@@ -5,7 +5,7 @@ program: applied-data-analysis
 course: Python
 status: draft
 created: 2026-11-06
-updated: 2026-11-06
+updated: 2026-11-08
 ---
 # Lesson 3: strings and collections
 
@@ -183,6 +183,28 @@ The agent ran each case below with Python 3.9.6.
 
 Exercise 8 has no answer in the notebook. The answer above is agent-written and checked.
 The Exercise 9 answer in the notebook calls `words.count` once for each unique word. Its time is O(n·k). `Counter` makes one pass.
+
+## Owner attempts on CodingBat
+
+On 2026-11-08 the owner reported one solved CodingBat problem.
+The time is owner-reported. The CodingBat test results were not shown to the agent.
+
+- [count_code](https://codingbat.com/prob/p186048): solved in 44:53.64.
+  At each loop step, the solution uses `find("co")` on a slice. It then checks for `e` at offset 3 and makes the string shorter after a match.
+
+Agent check, 2026-11-08: the agent ran the solution on 13 sample inputs and on all 87,381 strings of up to 8 characters from the letters `c`, `o`, `e`, and `x`.
+All results agreed with a reference solution.
+Agent comment: the result is correct, but the code is hard to read. The loop changes `str` while `range` keeps the initial length, and the name `str` hides the built-in type.
+A fixed-index loop gives the same result without `find` or a change to the string:
+
+```python
+def count_code(text):
+    count = 0
+    for i in range(len(text) - 3):
+        if text[i:i + 2] == "co" and text[i + 3] == "e":
+            count += 1
+    return count
+```
 
 ## Recall questions
 
