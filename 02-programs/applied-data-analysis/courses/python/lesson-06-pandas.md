@@ -176,6 +176,14 @@ A local variable with the name of its function operates here, but a different na
 The owner then wrote a second version in 03:01.60 (owner-reported), with named conditions and square brackets.
 Agent check: this version has an error. It uses `>` but the task says "at least", which is `>=`. A country with an area of exactly 3,000,000 or a population of exactly 25,000,000 is not in the result.
 
+- [Classes With at Least 5 Students](https://leetcode.com/problems/classes-with-at-least-5-students/): solved in 26:18.38 (owner-reported, 2026-11-08), then written again in 02:30.61.
+  The first version joins student names with `sum()` and measures the length of the joined text. The second version uses `count()`.
+
+Agent check, 2026-11-08: the agent ran both versions on a table made by the agent, with the task's class names. The results were correct.
+The agent then ran them on 2 students named `Anna` and `Boris` in one class.
+The first version has an error: it gives this class, because the joined text has 9 characters. It counts characters, not students. It operates only if each name has one character.
+The second version is correct. It also operates with exactly 5 students.
+
 ## Recall questions
 
 1. What is the difference between `data["Age"]` and `data[["Age"]]`?
