@@ -183,6 +183,7 @@ Agent check, 2026-11-08: the agent ran the solution with the 11 tests from the [
 Agent comment: `Alien.total_aliens_created += 1` is correct. `self.total_aliens_created += 1` would make an instance variable and not change the shared counter.
 A list comprehension gives shorter code: `[Alien(x, y) for x, y in positions]`.
 The parentheses in `return(self.health > 0)` are not necessary.
+The owner then reported a correction in 00:35.69. The agent did not see the changed code.
 
 ## Recall questions
 
