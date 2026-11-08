@@ -349,3 +349,39 @@ Python verb use: `display` means to present an object through an interactive out
 | subclass | Class that inherits from a second class. Noun |
 | override | To replace a superclass method with a subclass method. Verb |
 | abstract base class | Class that requires its subclasses to supply specified methods. Noun |
+
+## NumPy and data analysis terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| NumPy | Python library for calculations on numeric arrays. Noun |
+| NumPy array | Multidimensional `np.ndarray` object. Noun |
+| vector | One-dimensional sequence of numbers. Noun |
+| matrix | Two-dimensional table of numbers. Noun |
+| tensor | Array with more than two axes. Noun |
+| axis | One dimension of a NumPy array. Noun |
+| aggregation | Calculation that gives one result from many values. Noun |
+| view | NumPy array that shares its data with a second array. Noun |
+| boolean mask | Array of `True` and `False` values that selects elements. Noun |
+| identity matrix | Square matrix with ones on its diagonal and zeros at other positions. Noun |
+| transpose | Matrix with rows and columns exchanged. Noun |
+| pseudoinverse | Generalized inverse for a matrix that has no inverse. Noun |
+| singular matrix | Square matrix that has no inverse. Noun |
+| least squares | Method that finds the smallest sum of squared errors. Noun |
+| normal equation | Formula that gives linear regression weights directly. Noun |
+| seed | Initial value that makes random results reproducible. Noun |
+| variance | Mean of the squared differences from the mean. Noun |
+| standard deviation | Square root of the variance. Noun |
+| moving average | Mean of a window that moves along a series. Noun |
+| outlier | Value far from most other values. Noun |
+| trend | Long-term direction of a series. Noun |
+| seasonality | Pattern that repeats in a series at a fixed period. Noun |
+| embedding | Vector of numbers that describes an item. Noun |
+| feature | Input variable of a model. Noun |
+| min-max normalization | Linear change of values to the range from 0 to 1. Noun |
+| standardization | Change of values to mean 0 and standard deviation 1. Noun |
+| RMSE | Root mean square error, a measure of prediction error. Noun |
+| cosine similarity | Cosine of the angle between two vectors. Noun |
+| sigmoid | Function that changes a number to a value from 0 to 1. Noun |
+| softmax | Function that changes a vector to probabilities with sum 1. Noun |
+| one-hot encoding | Vector of zeros with a one at the position of a class. Noun |

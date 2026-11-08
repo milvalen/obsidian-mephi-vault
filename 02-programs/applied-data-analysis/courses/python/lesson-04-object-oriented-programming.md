@@ -9,7 +9,7 @@ updated: 2026-11-08
 ---
 # Lesson 4: object-oriented programming
 
-[Python](python.md) · [Lesson 3](lesson-03-strings-and-collections.md)
+[Python](python.md) · [Lesson 3](lesson-03-strings-and-collections.md) · [Lesson 5](lesson-05-numpy.md)
 
 ## Context and evidence
 

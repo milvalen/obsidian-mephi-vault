@@ -60,6 +60,11 @@ The [Python classes tutorial](https://docs.python.org/3/tutorial/classes.html) s
 The source also names the [encapsulation article](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)), without a new content check.
 The vault does not retain the source notebook or original text.
 
+[Lesson 5: NumPy](../02-programs/applied-data-analysis/courses/python/lesson-05-numpy.md) summarizes the notebook supplied on 2026-11-08.
+The original author, lecture date, and notebook URL are unknown.
+The [NumPy documentation](https://numpy.org/doc/stable/) is the reference that the source names.
+The vault does not retain the source notebook or original text.
+
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.
