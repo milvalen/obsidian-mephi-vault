@@ -173,6 +173,9 @@ Agent check, 2026-11-08: the agent ran the solution on a small table made by the
 Agent comment: `world.area` operates here, but this form fails when a column name is the same as a `DataFrame` attribute. For a column named `size`, `d.size` gives the table size and `d["size"]` gives the column.
 A local variable with the name of its function operates here, but a different name is clearer.
 
+The owner then wrote a second version in 03:01.60 (owner-reported), with named conditions and square brackets.
+Agent check: this version has an error. It uses `>` but the task says "at least", which is `>=`. A country with an area of exactly 3,000,000 or a population of exactly 25,000,000 is not in the result.
+
 ## Recall questions
 
 1. What is the difference between `data["Age"]` and `data[["Age"]]`?
