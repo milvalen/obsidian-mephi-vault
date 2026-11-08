@@ -113,6 +113,9 @@ For `A @ B`, shapes `(m, k)` and `(k, l)` give `(m, l)`. Other shapes cause `Val
 
 Agent addition: `solve` and `lstsq` are usually a better choice than a calculation with `inv`.
 
+Agent check: rounding can hide a singular matrix. The source stores `LinAlgError` for `inv` of `[[9, 8, 7], [6, 5, 4], [3, 2, 1]]`.
+With NumPy 2.0.2 on the owner's Mac, the same call gave a result and no error. Do not use this error as the only singularity check.
+
 ## Shape changes and selection
 
 `arr.reshape(2, 6)` changes the shape. The number of elements must stay the same.
