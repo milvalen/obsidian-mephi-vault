@@ -161,6 +161,18 @@ The source fills `Cabin` with its most frequent value. In the original data, 77%
 After the fill, one cabin has 78% of all passengers. This is not a correct description of the data.
 A separate "unknown" value or a column that marks missing values keeps this information.
 
+## Owner attempts
+
+On 2026-11-08 the owner reported one solved LeetCode problem.
+The time is owner-reported. The LeetCode test results were not shown to the agent.
+
+- [Big Countries](https://leetcode.com/problems/big-countries/): solved in 11:06.01.
+  The solution filters rows with two conditions in parentheses and the vertical bar operator. It then selects three columns.
+
+Agent check, 2026-11-08: the agent ran the solution on a small table made by the agent, with values at both limits. The results were correct.
+Agent comment: `world.area` operates here, but this form fails when a column name is the same as a `DataFrame` attribute. For a column named `size`, `d.size` gives the table size and `d["size"]` gives the column.
+A local variable with the name of its function operates here, but a different name is clearer.
+
 ## Recall questions
 
 1. What is the difference between `data["Age"]` and `data[["Age"]]`?
