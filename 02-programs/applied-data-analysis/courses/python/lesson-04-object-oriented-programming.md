@@ -171,6 +171,19 @@ Agent addition: an [abstract base class](https://docs.python.org/3/library/abc.h
 The source pattern `time or datetime.now()` gets the time at each call.
 A default parameter `time=datetime.now()` gets the time once, when Python executes the definition.
 
+## Owner attempts
+
+On 2026-11-08 the owner reported one solved Exercism problem.
+The time is owner-reported. The Exercism test results were not shown to the agent.
+
+- [Ellen's Alien Game](https://exercism.org/tracks/python/exercises/ellens-alien-game): solved in 29:51.96.
+  The solution has an `Alien` class with a class variable counter, `hit`, `is_alive`, `teleport`, and an empty `collision_detection`. A loop in `new_aliens_collection` makes the list of aliens.
+
+Agent check, 2026-11-08: the agent ran the solution with the 11 tests from the [Exercism Python repository](https://github.com/exercism/python/tree/main/exercises/concept/ellens-alien-game). All tests passed.
+Agent comment: `Alien.total_aliens_created += 1` is correct. `self.total_aliens_created += 1` would make an instance variable and not change the shared counter.
+A list comprehension gives shorter code: `[Alien(x, y) for x, y in positions]`.
+The parentheses in `return(self.health > 0)` are not necessary.
+
 ## Recall questions
 
 1. What is the difference between a class and an instance?
