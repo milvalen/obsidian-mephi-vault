@@ -402,3 +402,20 @@ Python verb use: `display` means to present an object through an interactive out
 | median | Middle value of sorted data. Noun |
 | mode | Most frequent value. Noun |
 | identifier column | Column with values that identify each row. Noun |
+
+## Data project terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| merge | To join two tables by the values of key columns. Verb. Also the noun for this operation |
+| left merge | Merge that keeps all rows of the first table. Noun |
+| merge key | Column whose values connect the rows of two tables. Noun |
+| hidden missing value | Text such as `Не указано` that marks data that does not exist. Noun |
+| exchange rate | Price of one currency in a second currency. Noun |
+| multi-label encoding | One `bool` column for each category, with more than one `True` value permitted in a row. Noun |
+| histogram | Chart that shows the number of values in each range. Noun |
+| box plot | Chart that shows the median, the middle 50% of values, and outliers. Noun |
+| heatmap | Chart that shows values in a table as colors. Noun |
+| scatter plot | Chart with one point for each pair of values. Noun |
+| pivot table | Table of aggregated values for two categories. Noun |
+| association | Relation between two variables, without a proved cause. Noun |

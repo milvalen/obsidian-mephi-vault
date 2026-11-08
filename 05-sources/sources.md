@@ -72,6 +72,12 @@ The source loads [the Titanic data file](https://raw.githubusercontent.com/Maria
 The source also names a [Titanic article](https://neurohive.io/ru/osnovy-data-science/razbor-resheniya-zadachi-titanik-na-kaggle-dlya-nachinajushhih/) and a [comparison with other tools](http://pandas.geekwriter.ru/getting_started/comparison/index.html), without a new content check.
 The vault does not retain the source notebook, data file, or original text.
 
+[Lessons 8 and 9: resume data analysis project](../02-programs/applied-data-analysis/courses/python/lesson-08-09-resume-analysis.md) summarizes the notebook supplied on 2026-11-08.
+The original author, lecture dates, and notebook URL are unknown.
+The notebook uses a resume data file and an exchange rate file. Their records are about real people, so the vault has no links to them.
+The agent did not download these files.
+The vault does not retain the source notebook, data files, or original text.
+
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.

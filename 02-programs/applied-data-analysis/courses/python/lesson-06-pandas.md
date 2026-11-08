@@ -9,7 +9,7 @@ updated: 2026-11-08
 ---
 # Lesson 6: pandas
 
-[Python](python.md) · [Lesson 5](lesson-05-numpy.md)
+[Python](python.md) · [Lesson 5](lesson-05-numpy.md) · [Lessons 8 and 9](lesson-08-09-resume-analysis.md)
 
 ## Context and evidence
 

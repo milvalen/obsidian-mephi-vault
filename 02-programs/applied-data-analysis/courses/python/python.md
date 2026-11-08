@@ -11,7 +11,7 @@ updated: 2026-11-08
 
 [Program](../../applied-data-analysis.md) · [Lesson 1](lesson-01-python-basics.md)
 
-The supplied material identifies Lessons 1 to 6 as Python.
+The supplied material identifies Lessons 1 to 6, 8, and 9 as Python. Lesson 7 was not supplied.
 Python is a study-material label here. The official course title remains unknown.
 Program placement follows the current Applied Data Analysis context.
 The material does not confirm enrollment or attendance.
@@ -24,3 +24,4 @@ The material does not confirm enrollment or attendance.
 - [Lesson 4: object-oriented programming](lesson-04-object-oriented-programming.md)
 - [Lesson 5: NumPy](lesson-05-numpy.md)
 - [Lesson 6: pandas](lesson-06-pandas.md)
+- [Lessons 8 and 9: resume data analysis project](lesson-08-09-resume-analysis.md)
