@@ -209,6 +209,12 @@ def count_code(text):
 The owner then wrote this version in 02:11.67 (owner-reported). The logic is the same. It keeps the name `str` from the CodingBat function signature.
 The agent ran this version on the same 87,381 strings. All results agreed with the reference solution.
 
+- [centered_average](https://codingbat.com/prob/p126968): solved in 03:47.33 (owner-reported, 2026-11-08). The solution sorts the list, removes the last item with `pop`, removes the first item with a slice, and then uses `//`.
+
+Agent check, 2026-11-08: the agent ran the `centered_average` solution on the 3 samples and on 100,000 random lists. All results agreed with a reference solution.
+Agent comment: the result is correct, but `sort` and `pop` change the caller's list. After a call with `[3, 1, 2]`, the list is `[1, 2, 3]` without its last item, thus `[1, 2]`.
+This version does not change the input: `(sum(nums) - min(nums) - max(nums)) // (len(nums) - 2)`.
+
 ## Recall questions
 
 1. Which collection types are mutable?
