@@ -216,6 +216,12 @@ The time is owner-reported. The HackerRank test results were not shown to the ag
 Agent check, 2026-11-08: the agent ran the final solution on one input, with the result 3.
 Agent comment: `_` is the usual name for a value that the code does not use. Input has no empty line at the end, so use the count from the first line.
 
+- [Dot and Cross](https://www.hackerrank.com/challenges/np-dot-and-cross/problem): solved in 16:52.07 (owner-reported, 2026-11-08).
+  A first attempt read a size line before matrix `B`, but the input has only one size line. The agent identified this error. The final solution reads `n` once, calls a helper function two times, and prints `A @ B`.
+
+Agent check, 2026-11-08: the agent ran the final solution on the task sample. The output agreed with the sample output.
+Agent comment: `A, B = f(n), f(n)` is correct because Python calculates the right side from left to right. Thus `A` gets the first matrix.
+
 ## Recall questions
 
 1. What does NumPy do with `[1, 2.0, "3"]`?
