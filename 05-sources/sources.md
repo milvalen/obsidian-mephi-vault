@@ -54,6 +54,12 @@ The [built-in types reference](https://docs.python.org/3/library/stdtypes.html) 
 The source also names a [string method reference](https://python-reference.readthedocs.io/en/latest/docs/str/), without a new content check.
 The vault does not retain the source notebook or original text.
 
+[Lesson 4: object-oriented programming](../02-programs/applied-data-analysis/courses/python/lesson-04-object-oriented-programming.md) summarizes the notebook supplied on 2026-11-08.
+The original author, lecture date, and notebook URL are unknown.
+The [Python classes tutorial](https://docs.python.org/3/tutorial/classes.html) supports the corrections.
+The source also names the [encapsulation article](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)), without a new content check.
+The vault does not retain the source notebook or original text.
+
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.

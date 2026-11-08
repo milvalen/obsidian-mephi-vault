@@ -326,3 +326,26 @@ Python verb use: `display` means to present an object through an interactive out
 | `frozenset` | Immutable Python set. Noun |
 | subset | Set whose items are all in a second set. Noun |
 | symmetric difference | Items that are in exactly one of two sets. Noun |
+
+## Python object-oriented terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| object-oriented programming (OOP) | Programming method that puts data and behavior together in objects. Noun |
+| instance | One object made from a class. Noun |
+| attribute | Name that an object has, for data or for a method. Noun |
+| instance variable | Data that belongs to one instance. Noun |
+| class variable | Data in a class that all its instances share. Noun |
+| method | Function defined in a class. Noun |
+| constructor | Method that sets the initial state of a new instance. In Python, `__init__`. Noun |
+| getter | Method that gives the value of an attribute. Noun |
+| setter | Method that changes the value of an attribute. Noun |
+| encapsulation | Control of access to the data and methods of an object. Noun |
+| name mangling | Python change of a `__attr` name to `_ClassName__attr`. Noun |
+| polymorphism | Different behavior of different classes for the same method call. Noun |
+| duck typing | Use of an object according to its methods, not its class. Noun |
+| inheritance | Use of the attributes of one class by a second class. Noun |
+| superclass | Class from which a second class inherits. Noun |
+| subclass | Class that inherits from a second class. Noun |
+| override | To replace a superclass method with a subclass method. Verb |
+| abstract base class | Class that requires its subclasses to supply specified methods. Noun |

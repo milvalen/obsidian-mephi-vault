@@ -9,7 +9,7 @@ updated: 2026-11-08
 ---
 # Lesson 3: strings and collections
 
-[Python](python.md) · [Lesson 2](lesson-02-loops-and-functions.md)
+[Python](python.md) · [Lesson 2](lesson-02-loops-and-functions.md) · [Lesson 4](lesson-04-object-oriented-programming.md)
 
 ## Context and evidence
 
