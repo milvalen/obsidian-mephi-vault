@@ -205,6 +205,17 @@ The other tasks have no attempts. The vault does not store answers for them yet.
 | 5.1 | Percentage of days with sales above the mean, through a boolean mask |
 | 5.2 | Min-max normalization of the sales series |
 
+## Owner attempts
+
+On 2026-11-08 the owner reported one solved HackerRank problem.
+The time is owner-reported. The HackerRank test results were not shown to the agent.
+
+- [Min and Max](https://www.hackerrank.com/challenges/np-min-and-max/problem): solved in 48:42.27.
+  The first attempt waited for an empty input line and stopped with `EOFError`. The agent then supplied code that reads `n` lines. The final solution has this code in a shorter form.
+
+Agent check, 2026-11-08: the agent ran the final solution on one input, with the result 3.
+Agent comment: `_` is the usual name for a value that the code does not use. Input has no empty line at the end, so use the count from the first line.
+
 ## Recall questions
 
 1. What does NumPy do with `[1, 2.0, "3"]`?
