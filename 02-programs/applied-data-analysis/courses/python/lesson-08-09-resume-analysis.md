@@ -9,7 +9,7 @@ updated: 2026-11-08
 ---
 # Lessons 8 and 9: resume data analysis project
 
-[Python](python.md) · [Lesson 6](lesson-06-pandas.md)
+[Python](python.md) · [Lesson 6](lesson-06-pandas.md) · [EDA for homework](exploratory-data-analysis.md)
 
 ## Context and evidence
 

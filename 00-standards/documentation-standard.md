@@ -83,6 +83,20 @@ A prose change does not create new runtime evidence.
 | Review | Recall attempt, feedback, correction, and next planned review |
 
 Keep previous student attempts and corrections available.
+
+### Alignment with assessed work
+
+Write each study note so that the owner can do the assessed work of the course.
+When a course supplies homework, record its format on the course page: task types, checks, grading rules, and submission method.
+Make a table of the skills that the homework needs. Link each skill to the note that teaches it. Identify skills that no note teaches.
+Write a note for each missing skill in the same change.
+
+In a lecture note, put the plain explanation of each skill before the source corrections.
+For each skill, give a short verified example, the expected output, and how to read it.
+If the homework grades written conclusions, also give an example conclusion with a fact, a meaning, and a limit.
+Use agent-made data in examples. Do not use the homework data.
+
+Do not store homework answers, completed notebooks, or graded conclusions in this public vault.
 Keep measured data separate from its explanation.
 
 Use active recall before you read the answer. Repeat study in separate sessions.

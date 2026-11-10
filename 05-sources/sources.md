@@ -78,6 +78,10 @@ The notebook uses a resume data file and an exchange rate file. Their records ar
 The agent did not download these files.
 The vault does not retain the source notebook, data files, or original text.
 
+[Exploratory data analysis for homework](../02-programs/applied-data-analysis/courses/python/exploratory-data-analysis.md) uses the format of two homework notebooks supplied by 2026-11-10.
+The vault does not retain the notebooks, their data, or answers.
+Its references are the [pandas documentation](https://pandas.pydata.org/docs/) and the [seaborn tutorial](https://seaborn.pydata.org/tutorial.html), opened on 2026-11-10.
+
 The owner supplied the [Module 4 request-path section](../02-programs/software-engineering/courses/system-administration/module-4-request-path.md) again on 2026-10-19.
 The existing note now records that receipt and an additional official-source check.
 Earlier evidence dates remain unchanged. No fresh command results or source transcript were saved.

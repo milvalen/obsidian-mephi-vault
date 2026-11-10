@@ -419,3 +419,16 @@ Python verb use: `display` means to present an object through an interactive out
 | scatter plot | Chart with one point for each pair of values. Noun |
 | pivot table | Table of aggregated values for two categories. Noun |
 | association | Relation between two variables, without a proved cause. Noun |
+
+## Homework and EDA terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| autotest | Code cell that checks a solution with `assert` statements. Noun |
+| conclusion | Text that states a fact from an output, its meaning, and its limit. Noun |
+| binary feature | Feature with two values. Noun |
+| categorical feature | Feature with named values and no order. Noun |
+| ordinal feature | Feature with ordered values and steps that are not equal. Noun |
+| redundant feature | Feature that another feature fully sets. Noun |
+| correlation | Number from −1 to 1 that measures a linear relation between two columns. Noun |
+| whisker | Line of a box plot that shows the range of values that are not outliers. Noun |

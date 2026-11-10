@@ -20,6 +20,10 @@ updated: "{{date:YYYY-MM-DD}}"
 
 <!-- Add known information. Identify unknown information. -->
 
+## Skills for assessed work
+
+<!-- For each skill: plain explanation, verified example, expected output, how to read it. -->
+
 ## Derivations and examples
 
 <!-- Add known information. Identify unknown information. -->
