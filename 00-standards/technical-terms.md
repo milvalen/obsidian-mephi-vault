@@ -335,6 +335,10 @@ Python verb use: `display` means to present an object through an interactive out
 | private key | Secret part of a key pair. Noun |
 | passphrase | Password that protects a private key. Noun |
 | personal access token | Secret text that replaces a password for GitHub over HTTPS. Noun |
+| branch | Name that points to one commit and moves with each new commit. Noun |
+| `HEAD` | Reference to the current branch or commit. Noun |
+| stash | To keep changes that are not committed in a separate store. Verb |
+| merged branch | Branch whose commits are all in the current branch. Noun |
 
 ## Python collection terms
 

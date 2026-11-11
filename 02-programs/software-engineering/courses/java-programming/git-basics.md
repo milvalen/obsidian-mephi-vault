@@ -9,7 +9,7 @@ updated: 2026-11-11
 ---
 # Git basics and SSH keys for GitHub
 
-[Java Programming](java-programming.md) · [Java strings](strings.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Java strings](strings.md) · [Git branches](git-branches.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 

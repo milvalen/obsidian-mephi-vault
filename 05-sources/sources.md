@@ -124,3 +124,6 @@ Owner-supplied strings lecture text, received 2026-11-06. Author, module number,
 
 Owner-supplied Git unit text, received 2026-11-11. Author, module number, and URL are unknown. Two referenced screencasts and the screenshots were not supplied.
 [Summary](../02-programs/software-engineering/courses/java-programming/git-basics.md). The agent checks use Pro Git and GitHub Docs, opened on 2026-11-11.
+
+Owner-supplied Git branches unit text, received 2026-11-11. Author, module number, and URL are unknown. The diagram and two screencasts were not supplied.
+[Summary](../02-programs/software-engineering/courses/java-programming/git-branches.md). The agent checks use Pro Git and the Git reference, opened on 2026-11-11.
