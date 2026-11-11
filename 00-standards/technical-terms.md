@@ -317,6 +317,25 @@ Python verb use: `display` means to present an object through an interactive out
 | palindrome | Text that reads the same in both directions. Noun |
 | substring | Continuous part of a string. Noun |
 
+## Git and SSH terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| Git | Version control system that records the history of files. Noun |
+| Git repository | Project folder with a `.git` database of commits. Noun |
+| commit | Recorded state of the staged files in the history. Noun. Also the verb: to record such a state |
+| working directory | Files of a repository on the disk that a user changes. Noun |
+| staging area | List of changes for the next commit, also called the index. Noun |
+| untracked file | File that Git has no record of. Noun |
+| stage | To put a change in the staging area. Verb |
+| remote repository | Copy of a repository on a server, for example GitHub. Noun |
+| push | To send local commits to a remote repository. Verb |
+| SSH key pair | Public key and private key that identify a user to an SSH server. Noun |
+| public key | Part of a key pair that a user can give to other persons. Noun |
+| private key | Secret part of a key pair. Noun |
+| passphrase | Password that protects a private key. Noun |
+| personal access token | Secret text that replaces a password for GitHub over HTTPS. Noun |
+
 ## Python collection terms
 
 | Term | Meaning and permitted form |

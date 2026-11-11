@@ -9,7 +9,7 @@ updated: 2026-11-06
 ---
 # Java strings
 
-[Java Programming](java-programming.md) · [Java arrays](arrays.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Java arrays](arrays.md) · [Git basics](git-basics.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
