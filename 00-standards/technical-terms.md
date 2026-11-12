@@ -315,6 +315,14 @@ Python verb use: `display` means to present an object through an interactive out
 | locale | Set of language and region rules for text, numbers, and dates. Noun |
 | format specifier | Template element, such as `%d`, that controls the text form of a value. Noun |
 | palindrome | Text that reads the same in both directions. Noun |
+| library | Code that other programmers wrote for use in many programs. Noun |
+| standard library | Classes that come with the JDK. Noun |
+| external library | Library that you add to a project, usually as a JAR file. Noun |
+| module | Named group of Java packages, for example `java.base`. Noun |
+| package | Named group of Java classes, for example `java.lang`. Noun |
+| import | Declaration that makes a class from a different package available by its short name. Noun |
+| JDK | Java Development Kit: the compiler, the runtime, and the standard library. Noun |
+| decompiled code | Source code that a tool makes from compiled class files. Noun |
 | substring | Continuous part of a string. Noun |
 
 ## Git and SSH terms

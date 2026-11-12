@@ -9,7 +9,7 @@ updated: 2026-11-12
 ---
 # Git merge conflicts
 
-[Java Programming](java-programming.md) · [Git branches](git-branches.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Git branches](git-branches.md) · [Standard library](standard-library.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
