@@ -127,3 +127,6 @@ Owner-supplied Git unit text, received 2026-11-11. Author, module number, and UR
 
 Owner-supplied Git branches unit text, received 2026-11-11. Author, module number, and URL are unknown. The diagram and two screencasts were not supplied.
 [Summary](../02-programs/software-engineering/courses/java-programming/git-branches.md). The agent checks use Pro Git and the Git reference, opened on 2026-11-11.
+
+Owner-supplied Git merge conflicts unit text, received 2026-11-12. Author, module number, and URL are unknown. Four images and a screencast were not supplied.
+[Summary](../02-programs/software-engineering/courses/java-programming/git-merge-conflicts.md). The agent checks use Pro Git and the Git reference, opened on 2026-11-12.

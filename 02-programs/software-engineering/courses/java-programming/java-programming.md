@@ -18,7 +18,7 @@ The semester, instructor, course code, and prerequisites are unknown.
 
 ## Syllabus and sources
 
-The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text on 2026-11-06, and Git unit texts on 2026-11-11. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
+The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text on 2026-11-06, and Git unit texts on 2026-11-11 and 2026-11-12. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
 
 ## Lectures and concepts
 
@@ -26,6 +26,7 @@ The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text o
 - [Java strings](strings.md) — concatenation, comparison, common methods, palindromes and formatting.
 - [Git basics and SSH keys for GitHub](git-basics.md) — local repository, file states, push to GitHub, SSH keys.
 - [Git branches](git-branches.md) — make, move between, rename and delete branches.
+- [Git merge conflicts](git-merge-conflicts.md) — merge, the cause of a conflict, conflict markers and resolution.
 
 Use the [lecture template](../../../../90-templates/lecture.md) for actual lectures and the [concept template](../../../../90-templates/concept.md) for focused explanations.
 

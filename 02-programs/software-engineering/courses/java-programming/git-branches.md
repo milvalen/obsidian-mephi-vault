@@ -9,11 +9,11 @@ updated: 2026-11-11
 ---
 # Git branches
 
-[Java Programming](java-programming.md) · [Git basics](git-basics.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Git basics](git-basics.md) · [Merge conflicts](git-merge-conflicts.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
-The owner supplied this unit text on 2026-11-11. It follows the [Git basics unit](git-basics.md). The next unit is about team development.
+The owner supplied this unit text on 2026-11-11. It follows the [Git basics unit](git-basics.md). The [next unit](git-merge-conflicts.md) is about merge conflicts.
 Its module number, author, and URL are unknown. The text refers to a diagram and two screencasts, one for the console and one for an IDE. The owner did not supply them.
 The vault keeps an English summary, not the original text or images.
 

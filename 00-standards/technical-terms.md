@@ -339,6 +339,11 @@ Python verb use: `display` means to present an object through an interactive out
 | `HEAD` | Reference to the current branch or commit. Noun |
 | stash | To keep changes that are not committed in a separate store. Verb |
 | merged branch | Branch whose commits are all in the current branch. Noun |
+| merge commit | Commit with two parent commits that joins two branches. Noun |
+| fast-forward | Merge that only moves a branch name forward, with no new commit. Noun |
+| merge base | Last commit that two branches share. Noun |
+| merge conflict | Merge result where both branches changed the same or neighboring lines. Noun |
+| conflict marker | Line `<<<<<<<`, `=======`, or `>>>>>>>` that Git puts in a file with a merge conflict. Noun |
 
 ## Python collection terms
 
