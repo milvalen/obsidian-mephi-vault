@@ -110,7 +110,7 @@ Agent check: for `a = b = 1e200`, `Math.sqrt(a * a + b * b)` gives `Infinity`, b
 
 ## Owner attempts
 
-- [Exercism Darts (Java)](https://exercism.org/tracks/java/exercises/darts), reported 2026-11-16. No time was reported. The Exercism test results were not shown to the agent.
+- [Exercism Darts (Java)](https://exercism.org/tracks/java/exercises/darts), solved in 19:55.64 (owner-reported, 2026-11-16). The Exercism test results were not shown to the agent.
   The solution calculates the distance with `Math.hypot` and checks the rings from the outside: `> 10`, `> 5`, `> 1`.
 
 Agent check, 2026-11-16: the agent ran the solution on 13 cases made by the agent, with points on each ring line and next to it. All results were correct.
