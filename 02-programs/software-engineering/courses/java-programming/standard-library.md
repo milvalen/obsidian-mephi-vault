@@ -5,7 +5,7 @@ status: draft
 program: software-engineering
 course: Java Programming
 created: 2026-11-12
-updated: 2026-11-12
+updated: 2026-11-16
 ---
 # Java standard library
 
@@ -107,6 +107,15 @@ Agent check: for `a = b = 1e200`, `Math.sqrt(a * a + b * b)` gives `Infinity`, b
 | `cannot find symbol` for `Scanner` | No `import java.util.Scanner;` | Add the import, or let the IDE add it |
 | Decompiled code without comments | The JDK has no source archive | Install a JDK with `src.zip`, or download sources in the IDE |
 | `incompatible types: possible lossy conversion from double to int` | A `double` result goes into an `int` variable | Use `double`, or make the conversion explicit with `(int)` |
+
+## Owner attempts
+
+- [Exercism Darts (Java)](https://exercism.org/tracks/java/exercises/darts), reported 2026-11-16. No time was reported. The Exercism test results were not shown to the agent.
+  The solution calculates the distance with `Math.hypot` and checks the rings from the outside: `> 10`, `> 5`, `> 1`.
+
+Agent check, 2026-11-16: the agent ran the solution on 13 cases made by the agent, with points on each ring line and next to it. All results were correct.
+The `>` comparisons put a point on a line in the inner ring, as the task requires.
+The owner asked about a map. A `HashMap` finds only equal keys, so it cannot find a range. A `TreeMap` with the keys 1, 5, and 10 and `ceilingEntry(distance)` gives the smallest radius that is not less than the distance. The agent checked this form on the same 13 cases.
 
 ## Recall questions
 
