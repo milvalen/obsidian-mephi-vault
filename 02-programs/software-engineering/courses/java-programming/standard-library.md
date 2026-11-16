@@ -117,6 +117,14 @@ Agent check, 2026-11-16: the agent ran the solution on 13 cases made by the agen
 The `>` comparisons put a point on a line in the inner ring, as the task requires.
 The owner asked about a map. A `HashMap` finds only equal keys, so it cannot find a range. A `TreeMap` with the keys 1, 5, and 10 and `ceilingEntry(distance)` gives the smallest radius that is not less than the distance. The agent checked this form on the same 13 cases.
 
+- Second task of the unit: read three integers with `Scanner` and write each on a separate line. Solved in 00:33.56 (owner-reported, 2026-11-16). The owner did not supply the task source or the test results.
+  The solution uses `import java.util.*;`, three calls of `nextInt()`, and three calls of `println`.
+
+Agent check, 2026-11-16: the agent ran the solution with OpenJDK 17 on 7 inputs made by the agent.
+Numbers on one line, numbers on separate lines, extra spaces and tabs, and the limits `2147483647` and `-2147483648` gave the correct output.
+Two numbers gave `NoSuchElementException`. A word or `2147483648` gave `InputMismatchException`. The task does not ask for these cases.
+`import java.util.*;` imports all classes of the package. `import java.util.Scanner;` shows which class the code uses.
+
 ## Recall questions
 
 1. What is the difference between a standard library and an external library?
