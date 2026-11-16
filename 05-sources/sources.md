@@ -133,3 +133,6 @@ Owner-supplied Git merge conflicts unit text, received 2026-11-12. Author, modul
 
 Owner-supplied standard library unit text, received 2026-11-12. Author, module number, and URL are unknown. Three screenshots and a screencast were not supplied.
 [Summary](../02-programs/software-engineering/courses/java-programming/standard-library.md). The agent checks use the Java SE 17 API and IntelliJ IDEA help, opened on 2026-11-12.
+
+Owner-supplied Date and Calendar unit text, received 2026-11-16. Author, module number, and URL are unknown. Five screenshots and the referenced page of pattern letters were not supplied.
+[Summary](../02-programs/software-engineering/courses/java-programming/date-and-calendar.md). The agent checks use the Java SE 17 API, opened on 2026-11-16.

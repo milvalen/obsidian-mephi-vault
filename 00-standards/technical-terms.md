@@ -324,6 +324,12 @@ Python verb use: `display` means to present an object through an interactive out
 | JDK | Java Development Kit: the compiler, the runtime, and the standard library. Noun |
 | decompiled code | Source code that a tool makes from compiled class files. Noun |
 | substring | Continuous part of a string. Noun |
+| Unix epoch | The moment 1970-01-01 00:00:00 UTC. Java counts time in milliseconds from it. Noun |
+| timestamp | Number that identifies a moment, for example milliseconds after the Unix epoch. Noun |
+| time zone | Region rule that changes a moment to a local date and time, for example `Europe/Moscow`. Noun |
+| UTC | Coordinated Universal Time: the reference time with no time zone offset. Noun |
+| deprecated | Marked in the API as a part that you must not use in new code. Adjective |
+| format pattern | Text such as `yyyy-MM-dd` that sets the text form of a date. Noun |
 
 ## Git and SSH terms
 

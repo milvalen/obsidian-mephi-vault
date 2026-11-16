@@ -4,7 +4,7 @@ type: course
 status: draft
 program: software-engineering
 created: 2026-10-11
-updated: 2026-11-11
+updated: 2026-11-16
 ---
 # Java Programming
 
@@ -18,7 +18,7 @@ The semester, instructor, course code, and prerequisites are unknown.
 
 ## Syllabus and sources
 
-The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text on 2026-11-06, Git unit texts on 2026-11-11 and 2026-11-12, and a standard library unit text on 2026-11-12. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
+The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text on 2026-11-06, Git unit texts on 2026-11-11 and 2026-11-12, a standard library unit text on 2026-11-12, and a Date and Calendar unit text on 2026-11-16. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
 
 ## Lectures and concepts
 
@@ -28,6 +28,7 @@ The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text o
 - [Git branches](git-branches.md) — make, move between, rename and delete branches.
 - [Git merge conflicts](git-merge-conflicts.md) — merge, the cause of a conflict, conflict markers and resolution.
 - [Java standard library](standard-library.md) — libraries, modules, packages, `import`, and source view in the IDE.
+- [Java Date and Calendar](date-and-calendar.md) — Unix time, `Date`, `Calendar`, date formats, and `java.time`.
 
 Use the [lecture template](../../../../90-templates/lecture.md) for actual lectures and the [concept template](../../../../90-templates/concept.md) for focused explanations.
 
