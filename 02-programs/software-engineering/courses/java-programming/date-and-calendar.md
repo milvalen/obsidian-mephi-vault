@@ -183,7 +183,16 @@ The practical rule is useful for this course: repeat the recall questions of a u
 
 ## Owner attempts
 
-No attempts yet.
+- [Codewars Unlucky Days (Java)](https://www.codewars.com/kata/56eb0be52caf798c630013c0), 7 kyu: count the Fridays on the 13th day of the months of a year. Solved in 16:22.57 (owner-reported, 2026-11-16).
+  The solution sets day 13 of each month with `Calendar.set(year, month, 13)`, with months 0 to 11, and compares `DAY_OF_WEEK` with `Calendar.FRIDAY`.
+  The first compile failed: no `import java.util.Calendar;`, the loop variable `month` with the condition on `i`, and a call of `get` on the result of `set`, which returns `void`.
+- Second form of the same task, 13:37.19 (owner-reported, 2026-11-16). The owner read the top solution on Codewars and then wrote it again.
+  It uses `java.time`: a stream of `Month.values()`, `LocalDate.of(year, month, 13)`, `getDayOfWeek()`, and a count of `DayOfWeek.FRIDAY`.
+
+Agent check, 2026-11-16: the agent compared both forms with Zeller's congruence for the Gregorian calendar. Both gave 3 for 2015 and 1 for 1986.
+For the years 1583 to 3000, both forms gave the correct result in all 1418 years.
+For the years 1 to 1582, the `Calendar` form gave a different result in 908 of 1582 years. `GregorianCalendar` uses the Julian calendar before 15 October 1582. `LocalDate` uses the Gregorian rules for all years.
+The second form uses streams, method references, and a lambda. The course has not shown them yet.
 
 ## Open questions
 
