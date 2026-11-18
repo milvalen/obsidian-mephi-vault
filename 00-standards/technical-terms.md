@@ -350,6 +350,13 @@ Python verb use: `display` means to present an object through an interactive out
 | mojibake | Unreadable text caused by decoding with the wrong charset. Noun |
 | try-with-resources | Java statement that closes resources at the end of a block. Noun |
 | bridge class | `InputStreamReader` or `OutputStreamWriter`, which converts between byte and character streams. Noun |
+| file stream | Java stream connected to a file, with a byte or a character interface. Noun |
+| end of file (EOF) | Condition in which a stream has no more data to read. Noun |
+| append mode | File mode that adds data after the existing content. Noun |
+| ZIP archive | File that contains one or more compressed entries. Noun |
+| ZIP entry | One file or directory in a ZIP archive. Noun |
+| print stream | `PrintStream`, a byte output stream with `print` and `println` methods. Noun |
+| print writer | `PrintWriter`, a character output stream with `print` and `println` methods. Noun |
 
 ## Git and SSH terms
 

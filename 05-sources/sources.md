@@ -139,3 +139,6 @@ Owner-supplied Date and Calendar unit text, received 2026-11-16. Author, module 
 
 Owner-supplied character streams unit text, received 2026-11-18. Author, module number, and URL are unknown. A stream diagram, a mojibake example, and two "русификация" screenshots were not supplied.
 [Summary](../02-programs/software-engineering/courses/java-programming/character-streams.md). The agent checks use the Java SE 17 API and JEP 400, opened on 2026-11-18.
+
+Owner-supplied file streams unit text, received 2026-11-18. Author, module number, and URL are unknown. A diagram from javaskool.com was not supplied.
+[Summary](../02-programs/software-engineering/courses/java-programming/file-streams.md). The agent checks use the Java SE 17 API, opened on 2026-11-18.

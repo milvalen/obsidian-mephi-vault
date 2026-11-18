@@ -9,11 +9,11 @@ updated: 2026-11-18
 ---
 # Java character streams
 
-[Java Programming](java-programming.md) · [Date and Calendar](date-and-calendar.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Date and Calendar](date-and-calendar.md) · [File streams](file-streams.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
-The owner supplied this unit text on 2026-11-18. It follows the [Date and Calendar unit](date-and-calendar.md). The next unit is about the `java.nio` API.
+The owner supplied this unit text on 2026-11-18. It follows the [Date and Calendar unit](date-and-calendar.md). The next unit is [Java file streams](file-streams.md).
 Its module number, author, and URL are unknown. The text refers to several images: a diagram of streams, a mojibake example, and two "русификация" screenshots. The owner did not supply them.
 The vault keeps an English summary, not the original text or images.
 
