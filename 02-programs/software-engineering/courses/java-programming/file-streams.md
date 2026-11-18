@@ -247,7 +247,11 @@ The source recommends try-with-resources and closing streams. It also recommends
 
 ## Owner attempts
 
-No attempts yet.
+Exercism [Word Count](https://exercism.org/tracks/java/exercises/word-count), solved in 34:32 (owner-reported, 2026-11-18). The task counts words in a sentence, lower-cased, with punctuation stripped and apostrophes inside words kept.
+  The solution splits with the regex `[\p{Punct}\s&&[^']]|(?<!\p{L})'|'(?!\p{L})` and counts into a `HashMap` with `getOrDefault`.
+
+Agent check, 2026-11-18: the agent ran the solution against all 15 cases of the official `canonical-data.json` of the exercise. All 15 passed.
+Two observations. `word == "'"` compares references; it should be `word.equals("'")`. It is harmless here because a lone apostrophe token does not survive the split. `\p{Punct}` covers only ASCII punctuation; non-ASCII punctuation (for example `«`, `—`, `¡`) would stay inside a word token.
 
 ## Open questions
 
