@@ -25,8 +25,8 @@ This placement follows the program context and does not confirm enrollment.
 
 ## Assessment requirements and verified deadlines
 
-| Assessment | Deadline | Status | Source |
-|---|---|---|---|
+| Assessment | Deadline            | Status        | Source                                        |
+| ---------- | ------------------- | ------------- | --------------------------------------------- |
 | Homework 1 | 2026-11-08 at 23:59 | Not submitted | The owner supplied the deadline on 2026-11-06 |
 
 The task text, the course, the submission method, and the time zone are unknown.

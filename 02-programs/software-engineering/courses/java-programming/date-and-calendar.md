@@ -9,11 +9,11 @@ updated: 2026-11-16
 ---
 # Java Date and Calendar
 
-[Java Programming](java-programming.md) · [Standard library](standard-library.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Standard library](standard-library.md) · [Character streams](character-streams.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
-The owner supplied this unit text on 2026-11-16. It follows the [standard library unit](standard-library.md). The next unit is about classes for files.
+The owner supplied this unit text on 2026-11-16. It follows the [standard library unit](standard-library.md). The next unit is [Java character streams](character-streams.md).
 Its module number, author, and URL are unknown. The text refers to five screenshots of console output and to a page with the format pattern letters. The owner did not supply them.
 The vault keeps an English summary, not the original text or images.
 

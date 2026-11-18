@@ -331,6 +331,26 @@ Python verb use: `display` means to present an object through an interactive out
 | deprecated | Marked in the API as a part that you must not use in new code. Adjective |
 | format pattern | Text such as `yyyy-MM-dd` that sets the text form of a date. Noun |
 
+## Java I/O terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| byte stream | Input or output that reads or writes bytes. Noun |
+| character stream | Input or output that reads or writes characters. Noun |
+| reader | Object that reads characters from a source. Noun |
+| writer | Object that writes characters to a destination. Noun |
+| buffer | Temporary storage for data before a read or write. Noun |
+| flush | To send buffered data to its destination. Verb |
+| charset | Mapping between characters and bytes. Noun |
+| encoding | Conversion of characters to bytes. Noun |
+| decoding | Conversion of bytes to characters. Noun |
+| UTF-8 | Variable-length charset for Unicode text. Noun |
+| UTF-16 | Charset that uses 16-bit code units. Noun |
+| byte order mark (BOM) | Initial bytes that identify a charset and byte order. Noun |
+| mojibake | Unreadable text caused by decoding with the wrong charset. Noun |
+| try-with-resources | Java statement that closes resources at the end of a block. Noun |
+| bridge class | `InputStreamReader` or `OutputStreamWriter`, which converts between byte and character streams. Noun |
+
 ## Git and SSH terms
 
 | Term | Meaning and permitted form |
