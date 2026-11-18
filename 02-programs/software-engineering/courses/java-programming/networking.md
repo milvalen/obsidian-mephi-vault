@@ -210,7 +210,12 @@ The source recommends closing sockets, setting the charset, and handling network
 
 ## Owner attempts
 
-No attempts yet.
+- [HackerRank Java Exception Handling (Try-catch)](https://www.hackerrank.com/challenges/java-exception-handling-try-catch/problem), solved in 10:41 (owner-reported, 2026-11-19). The task divides two integers and prints a message for a zero divisor or for an input outside the 32-bit range.
+  The solution divides `sc.nextInt()` by `sc.nextInt()`, catches `ArithmeticException` with a fixed message, and catches `Exception` to print the canonical class name.
+
+Agent check, 2026-11-19: the agent ran the solution with OpenJDK 17 on 7 inputs.
+`10 3` gave `3`. `10 0` gave `java.lang.ArithmeticException: / by zero`. `2147483648 1`, `-2147483649 1`, and `1 2147483648` gave `java.util.InputMismatchException`. `5 -2` gave `-2`. One number alone gave `java.util.NoSuchElementException`, which the task does not ask for.
+The result is correct for the task. The `ArithmeticException` message is hardcoded; `e.getMessage()` would give the same text without a fixed string. `sc.close()` runs only on the normal path, and the extra `;;` is unnecessary.
 
 ## Open questions
 
