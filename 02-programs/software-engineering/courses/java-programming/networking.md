@@ -41,6 +41,23 @@ Sources for agent checks:
 | Send an HTTP GET request | `HttpClient.newHttpClient().send(...)` | Status `200` and the response body |
 | Follow a redirect | `HttpClient.Redirect.NORMAL` | The final status `200` |
 
+## Materials
+
+Videos, English:
+
+1. [Java Network Sockets + Virtual Threads = Cool!](https://www.youtube.com/watch?v=sFizpxHkIlI) — Will Tollefson, 2024-04-26. Basic client and server, then one thread per client.
+2. [How To Call a REST API In Java - Simple Tutorial](https://www.youtube.com/watch?v=9oq7Y8n1t00) — Coding with John, 2022-06-06. HTTP request and the response body.
+3. [How to call a Java REST API using JDK Http Client](https://www.youtube.com/watch?v=MAw5Ku1OVFA) — Dan Vega, 2024-01-29. `HttpClient` from Java 11.
+
+Browser exercise: [HackerRank Java Exception Handling (Try-catch)](https://www.hackerrank.com/challenges/java-exception-handling-try-catch/problem). It practises the exception handling that network code needs. A public judge cannot open sockets, so a checked socket exercise does not exist.
+
+Local exercises:
+
+1. Echo server on port 0: print `getLocalPort()`, accept one client, send one line, read one line, close.
+2. Multi-client server: a loop around `accept()`, one thread per client. Each client sends a name and gets a reply.
+3. HTTP GET: call `https://example.com` with `HttpClient`, print the status and the body. Set a connect timeout.
+4. Error cases: connect to a closed port and catch `ConnectException`. Set `setSoTimeout(500)` and catch `SocketTimeoutException`.
+
 ## Client, server, port, socket
 
 A server listens on a port. A client connects to an address and a port. After the connection, both sides read and write bytes through the socket streams.
