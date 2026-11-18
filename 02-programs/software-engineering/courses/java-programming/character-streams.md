@@ -257,7 +257,7 @@ The source says to use character streams for text and byte streams for binary da
 
 ## Owner attempts
 
-No attempts yet.
+Owner reported completing the Exercism [Grep](https://exercism.org/tracks/java/exercises/grep) exercise on 2026-11-18. The exercise asks for a simplified `grep` that reads files and returns matching lines. The owner did not supply the code or the time.
 
 ## Open questions
 
