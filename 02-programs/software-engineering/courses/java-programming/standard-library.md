@@ -133,6 +133,8 @@ Three lines of text gave `1 Hello world`, `2 I am a file`, `3 Read me until end-
 The numbering starts at 1: `i++` returns the current value and then increments. The earlier concern that the code starts at 2 was wrong; the run showed the first line numbered 1.
 `Scanner` is correct here but slower than `BufferedReader` for large input, because `Scanner` parses and buffers internally. For this task the size is small, so the choice is fine.
 
+- The same [HackerRank Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file/problem) task, re-solved in 07:00 (owner-reported, 2026-11-18) with `BufferedReader`. The agent check and the style notes are in [character-streams.md](character-streams.md#owner-attempts).
+
 ## Recall questions
 
 1. What is the difference between a standard library and an external library?

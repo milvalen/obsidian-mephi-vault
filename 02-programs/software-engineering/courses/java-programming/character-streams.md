@@ -267,6 +267,13 @@ Three lines of text gave `1 Hello world`, `2 I am a file`, `3 Read me until end-
 The numbering starts at 1: `i++` returns the current value and then increments. The earlier concern that the code starts at 2 was wrong; the run showed the first line numbered 1.
 `Scanner` is correct here but slower than `BufferedReader` for large input, because `Scanner` parses and buffers internally. For this task the size is small, so the choice is fine.
 
+- [HackerRank Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file/problem), re-solved in 07:00 (owner-reported, 2026-11-18) with `BufferedReader`.
+  The solution wraps `System.in` in `InputStreamReader` and `BufferedReader`, reads with `readLine()` until `null`, and prints `i++ + " " + line`. An `IOException` is caught and printed.
+
+Agent check, 2026-11-18: the agent ran the solution with OpenJDK 17 on the same 5 inputs.
+All outputs were correct, including empty input, a blank line in the middle, text without a final newline, and Windows line endings. `readLine()` returns `null` at end of file, so the loop ends without an extra line.
+The loop and numbering are correct. Two style points: `java.util.*`, `java.text.*`, `java.math.*`, and `java.util.regex.*` are unused imports; and the `BufferedReader` is never closed. For `System.in` the missing close is harmless, but try-with-resources (`try (BufferedReader br = ...)`) would close it and remove the manual `catch` block.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
