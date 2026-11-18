@@ -259,6 +259,14 @@ The source says to use character streams for text and byte streams for binary da
 
 Owner reported completing the Exercism [Grep](https://exercism.org/tracks/java/exercises/grep) exercise on 2026-11-18. The exercise asks for a simplified `grep` that reads files and returns matching lines. The owner did not supply the code or the time.
 
+- [HackerRank Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file/problem), solved in 03:37 (owner-reported, 2026-11-18). The task reads lines until end of file and prints each line with its number.
+  The solution uses `Scanner`, `hasNextLine()`, and `nextLine()`, with the counter `i` starting at 1. The output line is `System.out.println(i++ + " " + sc.nextLine());`.
+
+Agent check, 2026-11-18: the agent ran the solution with OpenJDK 17 on 5 inputs made by the agent.
+Three lines of text gave `1 Hello world`, `2 I am a file`, `3 Read me until end-of-file.`. Empty input gave no output. A blank line in the middle was numbered as an empty line. Text without a final newline was numbered correctly. Windows line endings (`\r\n`) were numbered correctly.
+The numbering starts at 1: `i++` returns the current value and then increments. The earlier concern that the code starts at 2 was wrong; the run showed the first line numbered 1.
+`Scanner` is correct here but slower than `BufferedReader` for large input, because `Scanner` parses and buffers internally. For this task the size is small, so the choice is fine.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.

@@ -125,6 +125,14 @@ Numbers on one line, numbers on separate lines, extra spaces and tabs, and the l
 Two numbers gave `NoSuchElementException`. A word or `2147483648` gave `InputMismatchException`. The task does not ask for these cases.
 `import java.util.*;` imports all classes of the package. `import java.util.Scanner;` shows which class the code uses.
 
+- [HackerRank Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file/problem), solved in 03:37 (owner-reported, 2026-11-18). The task reads lines until end of file and prints each line with its number.
+  The solution uses `Scanner`, `hasNextLine()`, and `nextLine()`, with the counter `i` starting at 1. The output line is `System.out.println(i++ + " " + sc.nextLine());`.
+
+Agent check, 2026-11-18: the agent ran the solution with OpenJDK 17 on 5 inputs made by the agent.
+Three lines of text gave `1 Hello world`, `2 I am a file`, `3 Read me until end-of-file.`. Empty input gave no output. A blank line in the middle was numbered as an empty line. Text without a final newline was numbered correctly. Windows line endings (`\r\n`) were numbered correctly.
+The numbering starts at 1: `i++` returns the current value and then increments. The earlier concern that the code starts at 2 was wrong; the run showed the first line numbered 1.
+`Scanner` is correct here but slower than `BufferedReader` for large input, because `Scanner` parses and buffers internally. For this task the size is small, so the choice is fine.
+
 ## Recall questions
 
 1. What is the difference between a standard library and an external library?
