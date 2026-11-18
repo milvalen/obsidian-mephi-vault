@@ -278,6 +278,10 @@ The loop and numbering are correct. Two style points: `java.util.*`, `java.text.
 
 Agent check, 2026-11-18: the agent ran the refined version on the same 5 inputs. All outputs were correct, including empty input, a blank line in the middle, text without a final newline, and Windows line endings. The try-with-resources block closes the reader on both normal and exceptional exit.
 
+- Third version in 03:07 (owner-reported, 2026-11-18). The owner dropped try-with-resources, declared the `BufferedReader` outside the `try`, and called `br.close()` at the end of the block.
+
+Agent check, 2026-11-18: the agent ran this version on the same 5 inputs. All outputs were correct. Closing `System.in` is safe here because the program reads nothing after the loop. The close sits on the normal path only: if `readLine()` or `println` throws, `br.close()` is skipped. For a program that ends right after, the leak is harmless; in longer code the close belongs in `finally` or in try-with-resources.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
