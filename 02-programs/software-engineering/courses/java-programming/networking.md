@@ -217,6 +217,10 @@ Agent check, 2026-11-19: the agent ran the solution with OpenJDK 17 on 7 inputs.
 `10 3` gave `3`. `10 0` gave `java.lang.ArithmeticException: / by zero`. `2147483648 1`, `-2147483649 1`, and `1 2147483648` gave `java.util.InputMismatchException`. `5 -2` gave `-2`. One number alone gave `java.util.NoSuchElementException`, which the task does not ask for.
 The result is correct for the task. The `ArithmeticException` message is hardcoded; `e.getMessage()` would give the same text without a fixed string. `sc.close()` runs only on the normal path, and the extra `;;` is unnecessary.
 
+- Refined version in 03:24 (owner-reported, 2026-11-19). The owner wrapped the `Scanner` in try-with-resources and built the `ArithmeticException` message from `e.getClass().getCanonicalName()` and `e.getMessage()`.
+
+Agent check, 2026-11-19: the agent ran the refined version on the same 7 inputs. All required outputs were correct. The scanner closes on both the normal and the exceptional path. The unused imports `java.io.*`, `java.text.*`, `java.math.*`, and `java.util.regex.*` remain; only `java.util.*` is needed for `Scanner`.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
