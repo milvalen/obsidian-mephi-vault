@@ -253,6 +253,11 @@ Exercism [Word Count](https://exercism.org/tracks/java/exercises/word-count), so
 Agent check, 2026-11-18: the agent ran the solution against all 15 cases of the official `canonical-data.json` of the exercise. All 15 passed.
 Two observations. `word == "'"` compares references; it should be `word.equals("'")`. It is harmless here because a lone apostrophe token does not survive the split. `\p{Punct}` covers only ASCII punctuation; non-ASCII punctuation (for example `«`, `—`, `¡`) would stay inside a word token.
 
+- Refined version in 05:39 (owner-reported, 2026-11-18). The owner removed the `word == "'"` check and replaced `getOrDefault` with `merge(lower, 1, Integer::sum)`.
+
+Agent check, 2026-11-18: the agent ran the refined version against the same 15 canonical cases. All 15 passed. Edge inputs `''` and `a '' b` produced no lone apostrophe token, so the removed check was dead code.
+A variant with `[\p{P}\p{S}\s&&[^']]` in place of `[\p{Punct}\s&&[^']]` also passed all 15 cases. It splits `¡Sí!`, `«word»`, and `a—b` correctly, while `\p{Punct}` keeps those punctuation marks inside the token.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
