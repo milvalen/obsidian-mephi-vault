@@ -142,3 +142,6 @@ Owner-supplied character streams unit text, received 2026-11-18. Author, module 
 
 Owner-supplied file streams unit text, received 2026-11-18. Author, module number, and URL are unknown. A diagram from javaskool.com was not supplied.
 [Summary](../02-programs/software-engineering/courses/java-programming/file-streams.md). The agent checks use the Java SE 17 API, opened on 2026-11-18.
+
+Owner-supplied networking unit text, received 2026-11-18. Author, module number, and URL are unknown. A TCP diagram from naukri.com was not supplied.
+[Summary](../02-programs/software-engineering/courses/java-programming/networking.md). The agent checks use the Java SE 17 API and a local HTTP server, opened on 2026-11-18.

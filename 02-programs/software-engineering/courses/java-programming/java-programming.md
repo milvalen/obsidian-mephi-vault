@@ -18,7 +18,7 @@ The semester, instructor, course code, and prerequisites are unknown.
 
 ## Syllabus and sources
 
-The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text on 2026-11-06, Git unit texts on 2026-11-11 and 2026-11-12, a standard library unit text on 2026-11-12, a Date and Calendar unit text on 2026-11-16, a character streams unit text on 2026-11-18, and a file streams unit text on 2026-11-18. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
+The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text on 2026-11-06, Git unit texts on 2026-11-11 and 2026-11-12, a standard library unit text on 2026-11-12, a Date and Calendar unit text on 2026-11-16, a character streams unit text on 2026-11-18, a file streams unit text on 2026-11-18, and a networking unit text on 2026-11-18. The owner did not supply a syllabus or textbooks. Add source references with exact pages, slides or URLs when available.
 
 ## Lectures and concepts
 
@@ -31,6 +31,7 @@ The owner supplied an arrays lecture text on 2026-11-02 a strings lecture text o
 - [Java Date and Calendar](date-and-calendar.md) — Unix time, `Date`, `Calendar`, date formats, and `java.time`.
 - [Java character streams](character-streams.md) — byte streams and character streams, `Reader` and `Writer`, buffering, charsets, and encoding.
 - [Java file streams](file-streams.md) — `FileInputStream` and `FileOutputStream`, character file streams, ZIP archives, `PrintStream` and `PrintWriter`.
+- [Java networking](networking.md) — TCP sockets, `Socket` and `ServerSocket`, and the Java 11 `HttpClient`.
 
 Use the [lecture template](../../../../90-templates/lecture.md) for actual lectures and the [concept template](../../../../90-templates/concept.md) for focused explanations.
 

@@ -9,11 +9,11 @@ updated: 2026-11-18
 ---
 # Java file streams
 
-[Java Programming](java-programming.md) · [Character streams](character-streams.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [Character streams](character-streams.md) · [Networking](networking.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
-The owner supplied this unit text on 2026-11-18. It follows the [character streams unit](character-streams.md). The next unit is about buffered streams.
+The owner supplied this unit text on 2026-11-18. It follows the [character streams unit](character-streams.md). The next unit is [Java networking](networking.md).
 Its module number, author, and URL are unknown. The text refers to a diagram from javaskool.com. The owner did not supply the diagram.
 The vault keeps an English summary, not the original text or images.
 

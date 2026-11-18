@@ -358,6 +358,23 @@ Python verb use: `display` means to present an object through an interactive out
 | print stream | `PrintStream`, a byte output stream with `print` and `println` methods. Noun |
 | print writer | `PrintWriter`, a character output stream with `print` and `println` methods. Noun |
 
+## Java networking terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| socket | End point of a network connection, made of an address and a port. Noun |
+| server socket | `ServerSocket`, a socket that listens on a port and accepts connections. Noun |
+| port | Number that identifies a service on a host, from 0 to 65535. Noun |
+| well-known port | Port from 1 to 1023 reserved for standard services. Noun |
+| socket address | Combination of an address and a port that identifies a socket. Noun |
+| TCP | Connection-oriented protocol that delivers bytes in order without message boundaries. Noun |
+| HTTP | Application protocol for requests and responses in the web. Noun |
+| HTTP request | Message with a method, a URI, and headers. Noun |
+| HTTP response | Message with a status code, headers, and a body. Noun |
+| status code | Three-digit number that reports the result of an HTTP request. Noun |
+| HTTP client | `HttpClient`, the Java 11 API for HTTP requests. Noun |
+| redirect | Server response that points the client to another URI. Noun |
+
 ## Git and SSH terms
 
 | Term | Meaning and permitted form |
