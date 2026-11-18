@@ -145,3 +145,6 @@ Owner-supplied file streams unit text, received 2026-11-18. Author, module numbe
 
 Owner-supplied networking unit text, received 2026-11-18. Author, module number, and URL are unknown. A TCP diagram from naukri.com was not supplied.
 [Summary](../02-programs/software-engineering/courses/java-programming/networking.md). The agent checks use the Java SE 17 API and a local HTTP server, opened on 2026-11-18.
+
+Owner-supplied NIO unit text, received 2026-11-19. Author, module number, and URL are unknown. The text has no images.
+[Summary](../02-programs/software-engineering/courses/java-programming/nio.md). The agent checks use the Java SE 17 API and a local HTTP server, opened on 2026-11-19.

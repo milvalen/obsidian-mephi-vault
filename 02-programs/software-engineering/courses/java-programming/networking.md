@@ -9,11 +9,11 @@ updated: 2026-11-18
 ---
 # Java networking
 
-[Java Programming](java-programming.md) · [File streams](file-streams.md) · [Home](../../../../README.md)
+[Java Programming](java-programming.md) · [File streams](file-streams.md) · [NIO](nio.md) · [Home](../../../../README.md)
 
 ## Context and evidence
 
-The owner supplied this unit text on 2026-11-18. It follows the [file streams unit](file-streams.md).
+The owner supplied this unit text on 2026-11-18. It follows the [file streams unit](file-streams.md). The next unit is [Java NIO](nio.md).
 Its module number, author, and URL are unknown. The text refers to a TCP diagram from naukri.com. The owner did not supply the diagram.
 The vault keeps an English summary, not the original text or images.
 

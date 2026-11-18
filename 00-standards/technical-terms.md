@@ -375,6 +375,23 @@ Python verb use: `display` means to present an object through an interactive out
 | HTTP client | `HttpClient`, the Java 11 API for HTTP requests. Noun |
 | redirect | Server response that points the client to another URI. Noun |
 
+## Java NIO terms
+
+| Term | Meaning and permitted form |
+| --- | --- |
+| Java NIO | New I/O API from JDK 1.4, based on buffers and channels. Noun |
+| channel | Connection to a data source that reads into a buffer and writes from a buffer. Noun |
+| selector | Object that reports which registered channels are ready. Noun |
+| selectable channel | Channel that can work in non-blocking mode, for example `SocketChannel`. Noun |
+| heap buffer | Buffer backed by a Java array. Noun |
+| direct buffer | Buffer outside the Java heap. Noun |
+| flip | To set the limit to the position and the position to zero. Verb |
+| clear | To set the position to zero and the limit to the capacity. Verb |
+| non-blocking mode | Channel mode in which read and write return at once. Noun |
+| zero-copy | Transfer that avoids a copy through user space. Noun. `transferTo` does not guarantee it |
+| Path | Interface that represents a file or directory path. Noun |
+| Files | Utility class for file and directory operations. Noun |
+
 ## Git and SSH terms
 
 | Term | Meaning and permitted form |
