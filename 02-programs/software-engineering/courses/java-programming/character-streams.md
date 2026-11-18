@@ -274,6 +274,10 @@ Agent check, 2026-11-18: the agent ran the solution with OpenJDK 17 on the same 
 All outputs were correct, including empty input, a blank line in the middle, text without a final newline, and Windows line endings. `readLine()` returns `null` at end of file, so the loop ends without an extra line.
 The loop and numbering are correct. Two style points: `java.util.*`, `java.text.*`, `java.math.*`, and `java.util.regex.*` are unused imports; and the `BufferedReader` is never closed. For `System.in` the missing close is harmless, but try-with-resources (`try (BufferedReader br = ...)`) would close it and remove the manual `catch` block.
 
+- Refined version in 04:34 (owner-reported, 2026-11-18). The owner removed the unused imports and wrapped the `BufferedReader` in try-with-resources; only `java.io.*` remains.
+
+Agent check, 2026-11-18: the agent ran the refined version on the same 5 inputs. All outputs were correct, including empty input, a blank line in the middle, text without a final newline, and Windows line endings. The try-with-resources block closes the reader on both normal and exceptional exit.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
