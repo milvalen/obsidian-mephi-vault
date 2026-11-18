@@ -282,6 +282,10 @@ Agent check, 2026-11-18: the agent ran the refined version on the same 5 inputs.
 
 Agent check, 2026-11-18: the agent ran this version on the same 5 inputs. All outputs were correct. Closing `System.in` is safe here because the program reads nothing after the loop. The close sits on the normal path only: if `readLine()` or `println` throws, `br.close()` is skipped. For a program that ends right after, the leak is harmless; in longer code the close belongs in `finally` or in try-with-resources.
 
+- Fourth version, time not reported. The owner replaced `import java.io.*;` with three explicit imports: `InputStreamReader`, `BufferedReader`, and `IOException`. The code is otherwise unchanged.
+
+Agent check, 2026-11-18: the agent compiled and ran this version on the same 5 inputs. All outputs were correct. Explicit imports show which classes the code uses and avoid the wildcard.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
