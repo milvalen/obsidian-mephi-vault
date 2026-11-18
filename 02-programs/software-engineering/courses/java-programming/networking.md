@@ -221,6 +221,8 @@ The result is correct for the task. The `ArithmeticException` message is hardcod
 
 Agent check, 2026-11-19: the agent ran the refined version on the same 7 inputs. All required outputs were correct. The scanner closes on both the normal and the exceptional path. The unused imports `java.io.*`, `java.text.*`, `java.math.*`, and `java.util.regex.*` remain; only `java.util.*` is needed for `Scanner`.
 
+- Owner reported removing the unused imports on 2026-11-19. The owner did not supply the final code, so the agent did not check it.
+
 ## Open questions
 
 - The module number, the author, and the URL of the unit.
